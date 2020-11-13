@@ -977,7 +977,7 @@ body.lock {
 	flex: 0 0 460px;
 	font-size: 40px;	
 	text-align: left;
-	margin-right: 97px;	
+	margin-right: 120px;	
 }
 
 .anons__content {
@@ -1078,7 +1078,7 @@ body.lock {
 }
 
 .anons__offer-text {
-	max-width: 200px;
+	max-width: 189px;
 }
 
 .anons__section-footer {
