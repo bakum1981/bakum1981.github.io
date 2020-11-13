@@ -949,8 +949,9 @@ body.lock {
 /*верстка заглушки*/
 .anons {
 	background-repeat: no-repeat;
-	background-position: top;
-	background-size: 100%;	
+	background-position: top center;
+	/*background-size: 100%;*/
+	background-attachment: fixed;	
 }
 .anons__container {
 	margin: 0 auto;
@@ -1173,19 +1174,25 @@ body.lock {
 
 
 	.anons__header {
+		justify-content: center;
 		flex-wrap: wrap;
 		padding-bottom: 20px;
 	}
 
 	.anons__logo {
 		margin-top: 18px;
-		flex:  1 1 100%;		
+		flex:  0 1 100%;		
+	}
+
+	.anons__logo img {
+		display: block;
+		margin: 0 auto;
 	}
 
 	.anons__title {
 		flex: 0 1 100%;
-		font-size: 35px;			
-		margin-right: 20px;	
+		font-size: 35px;
+		margin-right: 0;			
 	}
 
 	.anons__section-footer {
@@ -1258,6 +1265,12 @@ body.lock {
 		.anons-social {
 			margin-bottom: 5px;
 		}
+
+		/*.anons {
+			background-repeat: no-repeat;
+			background-position: top center;
+			background-size: 100%;		
+		}*/
 	}	
 
 	
