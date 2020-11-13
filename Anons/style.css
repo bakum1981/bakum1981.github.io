@@ -966,7 +966,7 @@ body.lock {
 
 .anons__logo {
 	margin-top: 18px;
-	flex:  0 1 305px;
+	flex:  0 0 305px;
 }
 
 .anons__logo img {
@@ -974,7 +974,7 @@ body.lock {
 }
 
 .anons__title {
-	flex: 1 1 460px;
+	flex: 0 0 460px;
 	font-size: 40px;	
 	text-align: left;
 	margin-right: 97px;	
@@ -1171,13 +1171,19 @@ body.lock {
 		flex: 1 1 50%;			
 	}
 
+
+	.anons__header {
+		flex-wrap: wrap;
+		padding-bottom: 20px;
+	}
+
 	.anons__logo {
 		margin-top: 18px;
-		flex:  0 1 500px;
+		flex:  1 1 100%;		
 	}
 
 	.anons__title {
-		flex: 0 1 auto;
+		flex: 0 1 100%;
 		font-size: 35px;			
 		margin-right: 20px;	
 	}
@@ -1247,6 +1253,10 @@ body.lock {
 
 		.anons__section-footer--right {
 			padding-right: 15px;
+		}
+
+		.anons-social {
+			margin-bottom: 5px;
 		}
 	}	
 
