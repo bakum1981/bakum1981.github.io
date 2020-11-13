@@ -949,10 +949,9 @@ body.lock {
 /*верстка заглушки*/
 .anons {
 	background-repeat: no-repeat;
-	background-position: top center;
-	/*background-size: 100%;*/
-	background-attachment: fixed;	
+	background-position: top center;	
 }
+
 .anons__container {
 	margin: 0 auto;
 	margin: 0 auto;       
