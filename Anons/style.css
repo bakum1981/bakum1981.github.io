@@ -950,7 +950,7 @@ body.lock {
 .anons {
 	background-repeat: no-repeat;
 	background-position: top;
-	background-size: cover;
+	background-size: 100%;	
 }
 .anons__container {
 	margin: 0 auto;
@@ -1095,7 +1095,8 @@ body.lock {
 
 .anons-footer__container {
 	display: block;
-	padding-top: 12px;
+	padding-top: 12px;	
+    padding-bottom: 35px;
 }
 
 .anons-social {
