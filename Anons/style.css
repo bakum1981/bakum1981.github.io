@@ -1271,6 +1271,10 @@ body.lock {
 			background-position: top center;
 			background-size: 100%;		
 		}*/
+
+		.anons__header {
+			padding-top: 5px;
+		}
 	}	
 
 	
