@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Check</title>
+	<link href="hamburgers.min.css" rel="stylesheet">	
+	<link rel="stylesheet" href="style.css">	
+</head>
+<body>	
+	<div class="check check__wrap popap">
+		<div class="check__close close">
+			<img src="close.svg" alt="Иконка закрыть">
+		</div>
+		<div class="check__container">					
+		<form action="#" class="check__form">
+			<div class="flex-row">			
+				<div class="check__title title">загрузить файл</div>			
+				<input placeholder='ФИО*' required name="name" type="text" class="check__input name">
+				<input placeholder='E-mail*' required name="email" type="text" class="check__input email">
+				<input placeholder='Телефон*' required name="phone" type="text" class="check__input phone">			
+			</div><!-- flex-row -->	
+			<div class="flex-row--bottom">				
+				<div class=check__load-text>Загрузите чек</div> 
+				<a href='#' class="check__load button-download">Загрузите файл</a>				
+			</div><!-- flex-row--bottom -->	
+			<div class='check__info'>
+				<p class='check__info-title'>Фоография должна соответствовать следующим требованиям:</p>
+				<p>-Формат JPG или PNG, не более 2 Мб;</p>
+				<p>-Информация на Чеке должна быть легко читаема и содержать следующие поля: дата и время покупки;
+				ИНН; наименование и адрес торговой точки; Сумма Чека; ФН; ФП;/ФПД
+				</p>
+				<p>QR-код должен быть четким и легко считываться;</p>
+				<p>Не допускается сканированные копии, скриншоты, оттиски, картинки,
+				<p>Не допускается использование файлов полученных в сети интернет;</p>
+			</div>
+			<div class="check__checkboxces">				
+				<div class="check__checkbox check__checkbox--top"><input type="checkbox" class="confirm"> <span>Подтверждаю согласие с <a href="#">политикой в отношении обработки персональных данных</a></span></div>			
+				<div class="check__checkbox check__checkbox--bottom"><input type="checkbox" class="confirm"> <span>Я знакомлен с <a href="#">Правилами Акции</a></span></div>	
+				<div class=check-btn>
+					<input class="button-download send-btn"type="button" value="Отправить">	
+				</div>
+			</div><!-- check__checkboxces -->
+		</form><!-- check__container -->
+		</div><!-- check -->
+	</div> <!-- check -->
+	
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>
