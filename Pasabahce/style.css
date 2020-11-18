@@ -1910,12 +1910,13 @@ body.lock {
 	flex: 1 1 53%;
 	margin-left: -1%;
 	padding-top: 36px;
-    padding-left: 34px;			
+    padding-left: 34px;
+    overflow: auto;	
+    padding-bottom: 10px;	
 }
 
 .item-serving__text {
 	max-width: 415px;
-	overflow: auto;
 }
 
 .item-serving__description--bottom {
