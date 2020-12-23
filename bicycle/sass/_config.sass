@@ -1,0 +1,123 @@
+// USER VARIABLES SECTION
+
+$accent: orange // Accent Color
+$fontsize: 20px // Body Font Size
+$textcolor: #fff // Text Color
+$activecolor: #007397
+$system: -apple-system, BlinkMacSystemFont, Arial, sans-serif // System Font Family
+$montserrat: MR, sans-serif // Roboto Font Family
+
+// Bootstrap compatible gutter variable => $gutter
+$grid-gutter-width: 20px
+$gutter: $grid-gutter-width
+
+// IMPORT SECTION
+
+@import 'node_modules/bootstrap/scss/bootstrap-reboot.scss' // Bootstrap Reboot collection
+@import 'node_modules/bootstrap/scss/mixins/_breakpoints.scss' // Bootstrap Breakpoints mixin
+@import "../libs/slick-1.8.1/slick/slick.css" //slider library
+// @import 'node_modules/bootstrap/scss/bootstrap-grid.scss' // Optional Bootstrap Grid
+// @import 'node_modules/bootstrap/scss/utilities/_sizing.scss' // Optional Bootstrap Utilites
+@import "_mixins/font-face"
+
++font-face("LB", "../fonts/Lato-Bold")
++font-face("LI", "../fonts/Lato-Italic")
++font-face("LL", "../fonts/Lato-Light")
++font-face("PSB", "../fonts/Lato-Regular")
++font-face("MPR", "../fonts/myriadpro-regular")
+
+
+// GENERAL DOCUMENT STYLES
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+input, textarea
+	outline: none
+	&:focus:required:invalid
+		border-color: red
+	&:required:valid
+		border-color: green
+
+body
+	font-family: $montserrat
+	line-height: 1.5
+	&.lock 
+		overflow: hidden		
+
+.wrapper 
+	overflow: hidden
+ul 
+	margin: 0
+	padding: 0
+	list-style: none
+
+.container
+	width: 1200px			
+	margin: 0 auto
+	padding: 0 15px
+
+.hamburger-inner, .hamburger-inner:after, 
+.hamburger-inner:before	
+	width: 35px
+	height: 3px
+a:hover
+	text-decoration: none
+	color: #fff
+	
+.hamburger 
+	display: none
+.title
+	color: #3c3f3d
+	font-family: "PSB"
+	font-size: 32px
+	font-style: normal
+	letter-spacing: 1px
+	line-height: 48px
+	text-align: left
+	text-transform: uppercase	
+@media screen and (max-width: 781px)
+	.title 
+		font-size: calc(16px + 16 * (100vw / 780))
+.button
+	display: inline-flex		
+	padding: 20px 30px
+	width: 370px
+	background-color: #007397	
+	color: #ffffff
+	font-family: MB
+	font-size: 16px
+	font-style: normal
+	letter-spacing: 1px
+	line-height: 16px
+	text-align: center
+	text-transform: uppercase	
+	cursor: pointer
+	position: relative
+	z-index: 2	
+	&::after 
+		content: ""
+		position: absolute
+		width: 0
+		height: 100%
+		top: 0
+		left: 50%
+		background-color: darken(#007397, 5%)
+		z-index: -1
+		transition: all 0.4s
+	&:hover	
+		&::after 		
+			left: 0
+			width: 100%
+
+					
+
+
+
+
+
+	
