@@ -1,14 +1,42 @@
 $(function() {
-	
+	/**
+	 * NodeList.prototype.forEach() polyfill
+	 * https://developer.mozilla.org/en-US/docs/Web/API/NodeList/forEach#Polyfill
+	 */
+	if (window.NodeList && !NodeList.prototype.forEach) {
+		NodeList.prototype.forEach = function (callback, thisArg) {
+			thisArg = thisArg || window;
+			for (var i = 0; i < this.length; i++) {
+				callback.call(thisArg, this[i], i, this);
+			}
+		};
+	}
+
 	// open or close mobile menu
-	let brg_btn = document.querySelector('.hamburger'); 
+	let brg_btn = document.querySelector('.hamburger'); 	
 	brg_btn.onclick = function() {
 		let menu = document.querySelector('.header__nav');
 		let body = document.querySelector('body');	
 		brg_btn.classList.toggle('is-active')
 		menu.classList.toggle('active')
 		body.classList.toggle('lock')  //remove scroll on body
-	}	
+	}
+
+	// hide adaptiv menu on click element of menu	
+	const hideMenu = () => {
+		let menuEl = document.querySelectorAll('.header__menu-el-nav'); 
+		menuEl.forEach(item => {
+			item.onclick = function() {
+				let menu = document.querySelector('.header__nav');
+				let body = document.querySelector('body');	
+				brg_btn.classList.remove('is-active')
+				menu.classList.remove('active')
+				body.classList.remove('lock')  //remove scroll on body
+			}	
+		})
+	}
+	
+	hideMenu()
 
 	// sliders
 	$('.sliders').slick({
@@ -223,11 +251,6 @@ $(function() {
 
 		document.getElementById("passwordReg").onchange = validatePassword;
 	    document.getElementById("repeat-password").onchange = validatePassword;
-
-
-	   $('.preloader').delay(1000).fadeOut('slow');
-	    
-
 
 });	
               
