@@ -162,6 +162,7 @@ $(function() {
 
 	toggleModal('.modal-registration', '.registration-link', '.close')	
 	toggleModal('.modal-entrance', '.header__entrance', '.close')	
+	toggleModal('.modal-entrance', '.header__entrance--adaptiv', '.close')	
 	toggleModal('.modal-cranberry', '.cranberry__show-more', '.close')	
 	toggleModal('.modal-banana', '.banana__show-more', '.close')
 	toggleModal('.modal-registration', '.entrance-form__link', '.close')
