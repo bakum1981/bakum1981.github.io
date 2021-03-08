@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width">
@@ -99,7 +99,7 @@
 						<a class="section-footer__link winners__social-link-instagram" href="https://www.instagram.com/pasabahcerussia/"><img src="img/icons/instagramFooter.svg" alt="Иконка футер"></a>						
 						<div class='section-footer__inscription'>/pasabance</div>
 					</div><!-- winners__socials -->
-					</div><!-- winners__footer--right -->			
+					</div><!-- winners__footer-right -->			
 				</div><!-- winners__footer -->		
 			</div><!-- container -->
 		</div><!-- winners -->
@@ -122,9 +122,130 @@
 				</div><!-- footer__social -->
 			</div><!-- container footer__container -->
 		</footer>
+
+		<!-- popups -->
+		<!-- entrancePopup -->
+		<div class="entrance-wrapper entrance__popup popup">
+			<div class="entrance__wrap popup__wrap popup__bg">
+				<div class="entrance__close close"></div>
+				<div class="entrance__container popap__container">
+
+				<form action="mail.php" method="POST" class="popup__form">			
+					<div class="popup__title title">вход в личный кабинет</div>						
+					<input placeholder='E-mail*'  name="email" type="email" class="popup__input entrance__input email" required>			
+					<input placeholder='Пароль*' required name="password" type="password" class="popup__input entrance__input password">
+					<input class="button-download send-btb" type="submit" value="Отправить">
+				</form><!-- entrance__container -->			
+				</div><!-- entrance -->
+			</div> <!-- entrance -->
+		</div><!-- entrance-wrapper -->
+
+		<!-- checkPopup -->
+		<div class='popup check__wrap popup__wrap'>
+			<div class="check popup__bg">
+				<div class="check__close close"></div>
+				<div class="check__container popup__container">					
+				<form action="mail.php" method="POST" class="popup__form check__form" >					
+					<div class="flex-row">			
+						<div class="popup__title title">Загрузите чек</div>			
+						<input placeholder='ФИО*' required name="name" type="text" class="popup__input popup__input check__input name">
+						<input placeholder='E-mail*' required name="email" type="email" class="popup__input popup__input check__input email">
+						<input placeholder='Телефон*' required name="phone" type="text" class="popup__input popup__input check__input phone">			
+					</div><!-- flex-row -->	
+					<div class="flex-row--bottom">				
+						<div class=check__load-text>Загрузите чек</div> 
+						<input class = "file__load button-download" type="file" name="file" id="file" accept="image/*" onchange="myFun()" multiple >
+						<label for="file" class="button-download check__load"><span>Загрузить файл</span></label>		
+						<label for="file" class="chose">Добавить файл</label>							
+					</div><!-- flex-row-bottom -->	
+					<div class="check__gallery">
+						<div class="check__gallery-img check__gallery-img--one"><img src="img/upload.jpg" id="preview1" alt='preview'></div>
+						<div class="check__gallery-img check__gallery-img--two"><img src="img/upload.jpg"  id="preview2" alt='preview'></div>
+						<div class="check__gallery-img check__gallery-img--three"><img src="img/upload.jpg"  id="preview3" alt='preview'></div>
+						<div class="check__gallery-img check__gallery-img--four"><img src="img/upload.jpg"  id="preview4" alt='preview'></div>
+						<div class="check__gallery-img check__gallery-img--five"><img src="img/upload.jpg"  id="preview5" alt='preview'></div>				
+						<div class="check__gallery-img check__gallery-img--six"><img src="img/upload.jpg"  id="preview6" alt='preview'></div>				
+						<div class="check__gallery-img check__gallery-img--seven"><img src="img/upload.jpg"  id="preview7" alt='preview'></div>				
+						<div class="check__gallery-img check__gallery-img--eight"><img src="img/upload.jpg"  id="preview8" alt='preview'></div>				
+					</div>
+					<div class='check__info'>
+						<p class='check__info-title'>Фотография должна соответствовать следующим требованиям:</p>
+						<p>-Формат JPG или PNG, не более 2 Мб;</p>
+						<p>-Информация на Чеке должна быть легко читаема и содержать следующие поля: дата и время покупки;
+						ИНН; наименование и адрес торговой точки; Сумма Чека; ФН; ФП;/ФПД
+						</p>
+						<p>QR-код должен быть четким и легко считываться;</p>
+						<p>Не допускается сканированные копии, скриншоты, оттиски, картинки,
+						<p>Не допускается использование файлов полученных в сети интернет;</p>
+					</div>
+					<div class="check__checkboxces">				
+						<div class="checkbox-text check__checkbox check__checkbox--top"><input type="checkbox" class="confirm"> <span>Подтверждаю согласие с <a href="#">политикой в отношении обработки персональных данных</a></span></div>			
+						<div class="checkbox-text check__checkbox check__checkbox--bottom"><input type="checkbox" class="confirm"> <span>Я ознакомлен с <a href="#">Правилами Акции</a></span></div>	
+						<div class=check-btn>
+							<input class="button-download send-btn" type="submit" value="Отправить">	
+						</div>
+					</div><!-- check__checkboxces -->
+				</form><!-- check__container -->
+				</div><!-- check -->
+			</div> <!-- bg -->
+		</div><!-- popup -->
+
+
+		<!-- feetbackPopup -->
+		<div class="feedback feetback__wrap popup__wrap popup">
+			<div class="popup__bg">	
+			<div class="feedback__close close"></div>
+				<div class="popup__container">					
+					<form action="mail.php" method="POST" >								
+						<div class="list__container">						
+							<div class="popup__title title">Обратная связь</div>
+							<div class="list__input-wrapper">						
+								<div class="feetback__input-wrap">
+									<div class="select__arrow"><img src="img/arrow-bottom.svg" alt="Стрелка"></div>					
+									<input placeholder='Вопрос*' name="question" type="text" class="popup__input  list__input question" required>					
+								</div>
+								<ul class='select__list'>
+									<li class="select__list-item"><a href="#">Регистрация чеков</a></li>
+									<li class="select__list-item"><a href="#">Получено призов</a></li>
+									<li class="select__list-item"><a href="#">Правила акции</a></li>
+									<li class="select__list-item"><a href="#">Технические проблемы</a></li>
+								</ul>
+							</div>	
+							<div class="feetback__inputs">
+								<input placeholder='ФИО*' required name="name" type="text" class="popup__input feetback__input name">
+								<input placeholder='E-mail*' required name="email" type="email" class="popup__input feetback__input email">			
+								<input placeholder='Телефон*' required name="phone" type="text" class="popup__input feetback__input phone">					
+							</div>
+							<textarea  name="message*" required placeholder='Сообщение*' class='message'  id="message" ></textarea>
+							<div class="feetback__checkbox"><input type="checkbox" class="confirm"> <span>Подтверждаю согласие с <a href="#">политикой в отношении обработки персональных данных</a></span></div>			
+							<input class="button-download send-btb" type="submit" value="Отправить">
+						</div> 
+					</form> 
+				</div> <!-- popup__container -->
+			</div><!-- popup__bg	 -->
+		</div> <!-- feedback -->	
+
+		<div class="personal popup  personal__wrap">
+			<div class="popup__wrap personal-popup-wrap popup__bg">
+			<div class="entrance__close close"></div>
+				<div class="popup__container">
+					<form action="mail.php" method="POST" class="popup__form personal-popup">			
+						<div class="popup__title title">Мои данные</div>	
+						<input placeholder='ФИО*' required name="name" type="text" class="popup__input  personal-dates__input">					
+						<input placeholder='E-mail*' required name="email" type="email" class="popup__input entrance__input">
+						<input placeholder='Телефон*' required name="phone" type="text" class="popup__input personal-dates__input">								
+						<input placeholder='Дата рождения*' required name="phone" type="text" class="popup__input personal-dates__input">													
+						<div class="personal-dates__checkbox checkbox-text"><input type="checkbox" class="confirm"> <span>Подтверждаю согласие с <a href="#">политикой в отношении обработки персональных данных</a></span></div>			
+						<input class="button-download send-btb" type="submit" value="Отправить">
+						<a class='change-link' href="#">Изменить пароль</a>
+					</form><!-- entrance__container -->
+				</div><!-- popup-container -->						
+			</div><!-- popup-wrap -->
+		</div><!-- personal -->		
 	</div> 
 	<!-- wrapper -->
 	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script src="popup.js"></script>
 	<script src="script.js"></script>
 </body>
 </html>
