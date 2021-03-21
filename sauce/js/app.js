@@ -25,10 +25,10 @@ $(function() {
 	// hide adaptiv menu on click element of menu	
 	const hideMenu = () => {
 		let menuEl = document.querySelectorAll('.header__menu-el-nav'); 
+		let body = document.querySelector('body');
+		let menu = document.querySelector('.header__nav');	
 		menuEl.forEach(item => {
 			item.onclick = function() {
-				let menu = document.querySelector('.header__nav');
-				let body = document.querySelector('body');	
 				brg_btn.classList.remove('is-active')
 				menu.classList.remove('active')
 				body.classList.remove('lock')  //remove scroll on body
@@ -106,6 +106,7 @@ $(function() {
 		const modal = document.querySelector(modalSelector)
 		const trigger = document.querySelector(triggerSelector)
 		const close = document.querySelectorAll(closeSelector)
+		let menu = document.querySelector('.header__nav');
 		const windows = document.querySelectorAll('.modal') //all modal windows
 	// 	// show modal on click
 		trigger.addEventListener('click', (e) =>  {
@@ -133,6 +134,9 @@ $(function() {
  		 	body.classList.remove('lock') //add scroll on body 
  		 	ordButton.style.zIndex = '1'
  		 	modal.setAttribute('data-modal', false) 
+ 		 	if(menu.classList.contains('active')){
+ 		 		body.classList.add('lock')
+ 		 	}
  		 }
 		});
 
@@ -143,7 +147,9 @@ $(function() {
 				body.classList.remove('lock') //add scroll on body
 				ordButton.style.zIndex = '1'
 				modal.setAttribute('data-modal', false)
-				
+				if(menu.classList.contains('active')){
+					body.classList.add('lock')
+				}
 			})  
 		})
 
@@ -154,7 +160,9 @@ $(function() {
 				body.classList.remove('lock') //add scroll on body
 				ordButton.style.zIndex = '1'
 				modal.setAttribute('data-modal', false)
-				
+				if(menu.classList.contains('active')){
+					body.classList.add('lock')
+				}
 			}
 		})
 
@@ -238,6 +246,49 @@ $(function() {
 	}
 
 	forms()
+
+	
+	function addWebP() {
+		// a function that checks whether the browser supports  format webp and, depending on this, substitutes the required picture
+		function canUseWebp() {
+		    // created element canvas
+		    let elem = document.createElement('canvas');
+		    if (!!(elem.getContext && elem.getContext('2d'))) {
+		    	// created element webp
+		        return elem.toDataURL('backgroundMain.webp').indexOf('data:backgroundMain/webp') == 0;
+		    }
+		    // else Webp don't use
+		    return false;
+		}
+
+			// get all elements with data-attribute 'data-bg'
+   		let images = document.querySelectorAll('[data-bg]');
+   		// check each element
+   		 for (let i = 0; i < images.length; i++) {
+   		 	// get value each of element 
+   		     let image = images[i].getAttribute('data-bg');
+   		     // each element add value backgroundImage in jpg format
+   		     images[i].style.backgroundImage = 'url(' + image + ')';
+   		 }
+		
+   		 // check use browser Firefox or not and get it version
+   		 let isitFirefox = window.navigator.userAgent.match(/Firefox\/([0-9]+)\./);
+   		 let firefoxVer = isitFirefox ? parseInt(isitFirefox[1]) : 0;
+		
+   		 if (canUseWebp() || firefoxVer >= 65) {
+   		 	// do the same for webp
+   		     let imagesWebp = document.querySelectorAll('[data-bg-webp]');
+   		     for (let i = 0; i < imagesWebp.length; i++) {
+   		         let imageWebp = imagesWebp[i].getAttribute('data-bg-webp');
+   		         imagesWebp[i].style.backgroundImage = 'url(' + imageWebp + ')';
+   		     }
+   		 }
+
+	}
+
+
+addWebP()
+	
 		
 	
 	const validatePassword = () => {
@@ -252,6 +303,8 @@ $(function() {
 
 		document.getElementById("passwordReg").onchange = validatePassword;
 	    document.getElementById("repeat-password").onchange = validatePassword;
+
+
 
 });	
               
