@@ -9,8 +9,36 @@ import regeneratorRuntime from "regenerator-runtime"
 // // Import vendor jQuery plugin example (not module)
 // require('~/app/libs/mmenu/dist/mmenu.js')
 
-document.addEventListener("DOMContentLoaded", () => {
-	// Custom JS
+$(function(){	// Custom JS
+	// open or close mobile menu
+	let brg_btn = document.querySelector('.hamburger');
+	brg_btn.onclick = function () {
+		let menu = document.querySelector('.main__nav');
+		let body = document.querySelector('body');
+		brg_btn.classList.toggle('is-active')
+		menu.classList.toggle('active')
+		body.classList.toggle('lock')  //remove scroll on body
+	}
+
+// hide adaptiv menu on click element of menu	
+function hideMenu(){
+	let brg_btn = document.querySelector('.hamburger');
+	let menuEl = document.querySelectorAll('.main__link'); 
+	let menu = document.querySelector('.main__nav')
+	let body = document.querySelector('body');
+		for(let i=0; i<menuEl.length; i++){
+			let clickItem = menuEl[i]
+			clickItem.onclick = function() {
+				brg_btn.classList.remove('is-active')
+				menu.classList.remove('active')
+				body.classList.remove('lock')  //remove scroll on body
+			}
+		}		
+	}
+
+hideMenu()
+
+
 
 	// show gallery of images after click on picture
 	$('.popup').magnificPopup({
@@ -84,47 +112,61 @@ document.addEventListener("DOMContentLoaded", () => {
 				})
 			})
 
-			
+
 		}
 
 		// hide modal when click on space around modal
 		windows.forEach(item => {
 			item.addEventListener('click', function (e) {
 				if (e.target === item) {
-						item.classList.remove('modal-active')
-						body.classList.remove('lock') //add scroll on body
-						item.setAttribute('data-modal', false)
+					item.classList.remove('modal-active')
+					body.classList.remove('lock') //add scroll on body
+					item.setAttribute('data-modal', false)
 
 				}
 			})
 		})
 
 	}
-		toggleModal()
+	toggleModal()
 
-		
-		const form = document.getElementById('discount-form')
-		document.addEventListener('submit', formsend)
 
-		async function formsend(e) {
-			e.preventDefault()
-			let formdata = new FormData(form)
-			form.classList.add('sending')
-			let response = await fetch('sendmail.php', {
-				method: 'POST',
-				body: formdata
-			})
-			if (response.ok) {
-				let result = await response.json()
-				console.log(result)
-				alert(result.message)
-				form.reset()
-				form.classList.remove('sending')
-			} else {
-				alert("Что-то пошло не так")
-				form.classList.remove('sending')
-			}
+	const form = document.getElementById('discount-form')
+	document.addEventListener('submit', formsend)
+
+	async function formsend(e) {
+		e.preventDefault()
+		let formdata = new FormData(form)
+		form.classList.add('sending')
+		let response = await fetch('sendmail.php', {
+			method: 'POST',
+			body: formdata
+		})
+		if (response.ok) {
+			let result = await response.json()
+			alert(result.message)
+			form.reset()
+			form.classList.remove('sending')
+		} else {
+			alert("Что-то пошло не так")
+			form.classList.remove('sending')
 		}
+	}
 
+	
+	// move to top of screen
+	$('.top-arrow').click(function(){
+		$('html, body').animate({scrollTop: 0}, 800);
+	});
+	
+	
 
-	})
+	$(window).scroll(function(){
+		const $top = $('.top-arrow')
+		if($(this).scrollTop() > 20){
+			$top.fadeIn()			
+		}else{
+			$top.fadeOut()		
+		}
+	});
+});
