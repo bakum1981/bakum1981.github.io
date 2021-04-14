@@ -59,6 +59,7 @@ hideMenu()
 		}
 	});
 
+	
 	// show or hide modal windows
 	function toggleModal() {
 		let body = document.querySelector('body');
@@ -130,11 +131,12 @@ hideMenu()
 	}
 	toggleModal()
 
-
-	const form = document.getElementById('discount-form')
+	// turn on function "formsend" during event submit
 	document.addEventListener('submit', formsend)
 
+	// send data to mail
 	async function formsend(e) {
+	const form = document.getElementById('discount-form')
 		e.preventDefault()
 		let formdata = new FormData(form)
 		form.classList.add('sending')
@@ -156,11 +158,11 @@ hideMenu()
 	
 	// move to top of screen
 	$('.top-arrow').click(function(){
-		$('html, body').animate({scrollTop: 0}, 800);
+		$('html, body').css('scrollTop', '0')
 	});
 	
-	
 
+	// show or hide top-arrow during scroll
 	$(window).scroll(function(){
 		const $top = $('.top-arrow')
 		if($(this).scrollTop() > 20){

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
+
 
 <head>
   <meta charset="utf-8" />
@@ -17,12 +18,14 @@
 </head>
 
 <body>
-  <div class="wrapper">
+  <div class="wrapper background">
     <a title="Viber" href="viber://add?number=89165260996" class="main__viber"><img src="images/main/viber.svg"
         alt="Вайбер"></a>
+
+     <!-- block header    -->
     <header class="header header__wrap" id="header" >
       <div class="header__row header__row-desctop">
-        <a href='#' class="header__logo">
+        <a href='index.html' class="header__logo">
           <div class="header__image">
             <img src="images/logo.svg" alt="Логотип">
           </div>
@@ -81,7 +84,7 @@
           </div>
           <!-- header__contacts -->
         </div>
-          <a href='#' class="header__logo header__flex-el">
+          <a href='index.html' class="header__logo header__flex-el">
             <div class="header__image">
               <img src="images/logo.svg" alt="Логотип">
             </div>
@@ -94,20 +97,17 @@
     </header>
     <!-- header -->
 
-    <!-- </body>
-
-</html> -->
-<a title="Viber" href="viber://add?number=89165260996" class="main__viber"><img src="images/main/viber.svg"
-		alt="Вайбер"></a>
+ <div class="content">
+<!-- main block -->
 <section class="main" id="main">
 	<div class="main__row">
 		<div class="main__column main__column--left">
 			<ul class="main__nav">
-				<li class="main__link main__link--blue"><a href="#">ГЛАВНАЯ</a></li>
+				<li class="main__link main__link--blue"><a href="index.html">ГЛАВНАЯ</a></li>
 				<li class="main__link main__link--aqua"><a href="#">О НАС</a></li>
 				<li class="main__link main__link--light-blue"><a href="#">ИСПЫТАНИЯ ПРОДУКЦИИ</a></li>
 				<li class="main__link main__link--brown"><a href="#">ЦЕНЫ</a></li>
-				<li class="main__link main__link--gray"><a href="#">НОВОСТИ</a></li>
+				<li class="main__link main__link--gray"><a href="news.html">НОВОСТИ</a></li>
 				<li class="main__link main__link--violet"><a href="#">КОНТАКТЫ</a></li>
 			</ul>
 		</div>
@@ -118,7 +118,7 @@
 					<img src="images/main/bg.png" alt="Логотип">
 				</div>
 				<div class="main__text-wrapper">
-					<div class="main__text">Новый современный испытательный лабораторный центр</div>
+					<h1 class="main__text">Новый современный испытательный лабораторный центр</h1>
 					<a href="#" class="main__button button trigger" data-popup="discount">получить
 						скидку</a>
 				</div>
@@ -134,14 +134,14 @@
 <section class="about" id="about">
 	<div class="about__row">
 		<div class="about__column about__column--left popup">
-			<a href="01.jpeg" class="about__img">
+			<a href="images/photo/01.jpeg" class="about__img">
 				<div class="hexagon hexagon2">
 					<div class="hexagon-in1">
 						<div class="hexagon-in2 hexagon-in2--1"></div>
 					</div>
 				</div>
 			</a>
-			<a href="02.jpeg" class="about__img">
+			<a href="images/photo/02.jpeg" class="about__img">
 				<div class="hexagon hexagon2">
 					<div class="hexagon-in1">
 						<div class="hexagon-in2 hexagon-in2--2"></div>
@@ -149,7 +149,7 @@
 				</div>
 			</a>
 			<div class="about__column--bottom">
-				<a href="03.jpeg" class="about__img about__img--short">
+				<a href="images/photo/03.jpeg" class="about__img about__img--short">
 
 					<div class="hexagon hexagon2">
 						<div class="hexagon-in1">
@@ -158,31 +158,30 @@
 					</div>
 
 				</a>
-				<a href="04.jpeg" class="about__img">
+				<a href="images/photo/04.jpeg" class="about__img">
 					<div class="hexagon hexagon2">
 						<div class="hexagon-in1">
 							<div class="hexagon-in2 hexagon-in2--4"></div>
 						</div>
 					</div>
 				</a>
-				<a href="05.jpeg" class="about__img">
+				<a href="images/photo/05.jpeg" class="about__img">
 					<div class="hexagon hexagon2">
-
 						<div class="hexagon-in1">
 							<div class="hexagon-in2 hexagon-in2--5"></div>
 						</div>
 					</div>
 				</a>
-				<a href="06.jpg"></a>
-				<a href="07.jpg"></a>
-				<a href="08.jpg"></a>
-				<a href="09.jpg"></a>
-				<a href="10.jpg"></a>
-				<a href="11.jpg"></a>
-				<a href="12.jpg"></a>
-				<a href="13.jpg"></a>
-				<a href="14.jpg"></a>
-				<a href="15.jpg"></a>
+				<a href="images/photo/06.jpg"></a>
+				<a href="images/photo/07.jpg"></a>
+				<a href="images/photo/08.jpg"></a>
+				<a href="images/photo/09.jpg"></a>
+				<a href="images/photo/10.jpg"></a>
+				<a href="images/photo/11.jpg"></a>
+				<a href="images/photo/12.jpg"></a>
+				<a href="images/photo/13.jpg"></a>
+				<a href="images/photo/14.jpg"></a>
+				<a href="images/photo/15.jpg"></a>
 			</div>
 
 		</div>
@@ -192,7 +191,7 @@
 			<div class="about__container">
 				<div class="about__column about__column--right">
 					<div class="about__body">
-						<div class="about__title">О нас</div>
+						<h2 class="about__title">О нас</h2>
 						<div class="about__text">
 							<div class="about__text--top">
 								<p><span>ИЛЦ ИСТЭК-ЛАБ</span> - это новый современный испытательный лабораторный центр,
@@ -293,7 +292,7 @@
 <!-- why block -->
 <section class="why why__block" id="why">
 	<div class="why__container">
-		<div class="why__title">Почему мы?</div>
+		<h2 class="why__title">Почему мы?</h2>
 		<div class="why__row">
 			<div class="why__column">
 				<div class="why__img">
@@ -346,10 +345,10 @@
 	<div class="what__container">
 		<div class="what__row">
 			<div class="what__column what__column--left">
-				<div class="what__title what__title-desctop">Что мы делаем?</div>
-				<div class="what__title what__title-mobile">Что <br> мы делаем?</div>
+				<h2 class="what__title what__title-desctop">Что мы делаем?</h2>
+				<h2 class="what__title what__title-mobile">Что <br> мы делаем?</h2>
 				<div class="what__text what__text1">
-					<div class="what__text-title what__text-title--top">Производственный контроль </div>
+					<h3 class="what__text-title what__text-title--top">Производственный контроль </h3>
 					<p class="what__text--top">
 						<strong class="what__text--top-title">Испытания продукции и сырья</strong> <br>
 					<p class="what__text--top-content">На соответствие нормативной документации и
@@ -370,7 +369,7 @@
 						заявку</a>
 				</div>
 				<div class="what__text what__text--bottom">
-					<div class="what__text-title what__text-title--bottom">Испытания продукции</div>
+					<h3 class="what__text-title what__text-title--bottom">Испытания продукции</h3>
 					<p><strong>Парфюмерно-косметическая продукция</strong></p>
 					<p><strong>Средства гигиены полости рта</strong></p>
 					<p><strong>Средства индивидуальной защиты дерматологические</strong></p>
@@ -387,11 +386,13 @@
 	<a href="#" class="button button__send trigger button__mobile" data-popup="request">оставить
 		заявку</a>
 </section>
+
+<!-- block question -->
 <section class="question" id="question">
 	<div class="question__container">
 		<div class="question__row question__row-desctop">
 			<div class="question__colum">
-				<div class="question__title">Хотите узнать стоимость?</div>
+				<h2 class="question__title">Хотите узнать стоимость?</h2>
 				<div class="question__inner">
 					<p>
 						Заполните <a href="#">форму заявки </a> на сайте
@@ -407,7 +408,7 @@
 				</div>
 			</div>
 			<div class="question__colum question__colum--middle">
-				<div class="question__title">Нужен сертификат?</div>
+				<h2 class="question__title">Нужен сертификат?</h2>
 				<div class="question__inner question__inner--middle">
 					Переходите на сайт нашего партнёра <a href='#'>АНО ЭКЦ ИСТЭК</a>
 				</div>
@@ -416,7 +417,7 @@
 				</a>
 			</div>
 			<div class="question__colum">
-				<div class="question__title">У вас есть вопросы?</div>
+				<h2 class="question__title">У вас есть вопросы?</h2>
 				<div class="question__inner">
 					<p class="question--middle">
 						Задайте вопрос нашему специалисту по телефону:
@@ -492,17 +493,19 @@
 					</div>
 				</div>
 			</div>
-
 		</div>
+	</div>
 		<a href='#' class='button button__send trigger   button__mobile button__mobile-question' data-popup="request">оставить
 			заявку</a>
 </section>
+
+</div>
 
 <!-- footer -->
 <footer class="footer" id="footer">
 	<div class="footer__container">
 		<div class="footer__title-wrap">
-			<div class="footer__title">Как нас найти?</div>
+			<h2 class="footer__title">Как нас найти?</h2>
 			<div class="footer__social footer__social-desctop">
 				<div class="footer__link footer__link--vk"><img src="images/header/vk.png" alt="Иконка">
 				</div>
@@ -537,7 +540,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="footer__social mobile-footer">
+	<div class="footer__social mobile-footer page-footer">
 		<div class="footer__link mobile-footer__link footer__link--vk"><img src="images/header/vk.png" alt="Иконка">
 		</div>
 		<div class="footer__link mobile-footer__link footer__link--fb"><img src="images/header/facebook.png" alt="Иконка">
@@ -546,8 +549,7 @@
 		</div>
 	</div>
 	<div class="map" id='map'>
-		<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?
-		um=constructor%3Ad9d723f2701c5e48f3abd6bdcfe7dd2ac2ddce7ac9dfba195c67528ca35a2a99&amp;width=100%25&amp;height=375&amp;
+		<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?		um=constructor%3Ad9d723f2701c5e48f3abd6bdcfe7dd2ac2ddce7ac9dfba195c67528ca35a2a99&amp;width=100%25&amp;height=375&amp;
 		lang=ru_UA&amp;scroll=true"></script>
 	</div>
 </footer>
@@ -633,13 +635,13 @@
 		</div>
 		<div class="modal__img-license">
 		    <picture>
-                <source srcset="images/Лиценция.webp" type="image/webp">
-                <img src="images/Лиценция.jpg" alt="Лиценция">
+                <source srcset="images/Лиценция-1.webp" type="image/webp">
+                <img src="images/Лиценция-1.jpg" alt="Лиценция">
             </picture> 
 		</div>
 	</div> <!-- modal__content-->
 </div> <!-- modal -->
-
+</div>
 
 
 <script src="js/app.min.js"></script>
