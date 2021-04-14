@@ -41,7 +41,10 @@ hideMenu()
 
 
 	// show gallery of images after click on picture
-	$('.popup').magnificPopup({
+	const popupGallery = () => {
+		const popup = document.querySelector('.popup')
+		if(popup){
+			$('.popup').magnificPopup({
 		delegate: 'a',
 		type: 'image',
 		tLoading: 'Loading image #%curr%...',
@@ -58,6 +61,12 @@ hideMenu()
 			}
 		}
 	});
+		}
+		
+
+	}
+		popupGallery()
+	
 
 	
 	// show or hide modal windows
@@ -67,7 +76,8 @@ hideMenu()
 		const close = document.querySelectorAll('.modal__close')
 		const windows = document.querySelectorAll('.modal') //all modal windows
 
-		// show modal on click
+		if(trigger){
+			// show modal on click
 		trigger.forEach(item => {
 			item.addEventListener('click', function (e) {
 				const currentItem = e.target.getAttribute('data-popup')
@@ -86,6 +96,8 @@ hideMenu()
 				}
 			})
 		})
+		}
+		
 
 
 
@@ -93,12 +105,15 @@ hideMenu()
 		document.addEventListener('keydown', function (event) {
 			const keycode = event.keyCode;
 			if (keycode === 27) {
-				windows.forEach(item => {
+				if(windows){
+					windows.forEach(item => {
 					item.classList.remove('modal-active')
 					body.classList.remove('lock') //add scroll on body 
 					item.setAttribute('data-modal', false)
 				})
 
+				}
+				
 			}
 		});
 
