@@ -11,7 +11,7 @@
 
   <meta name="viewport" content="width=device-width" />
 
-  <link rel="icon" href="images/favicon.png" />
+  <link rel="icon" href="images/favicon.svg" />
   <meta property="og:image" content="images/dist/preview.jpg" />
 
   <link rel="stylesheet" href="css/main.min.css" />
@@ -25,7 +25,7 @@
       <div class="news-header__container">
         <div class="news-header--top header__row-desctop">
           <div class="header__row header__row-desctop news-header__row">
-            <a href='index.html' class="news-header__logo">
+            <a href='https://bakum1981.github.io/istek-lab/' class="news-header__logo">
               <div class="header__image">
                 <img src="images/logo.svg" alt="Логотип">
               </div>
@@ -37,13 +37,15 @@
 
             <div class="header__contacts">
               <div class="header__contacts-wrap news-header__contacts">
-                <a class="header__viber news-header__column news-header__column--left" href="viber://add?number=89165260996">
+                <a class="header__viber news-header__column news-header__column--left"
+                  href="whatsapp://send?phone=+79165260596">
                   <img src="images/viber.png" alt="Viber">
                 </a>
                 <div class="news-header__column news-header__column--right">
                   <a href='tel:+79017917519' class="news-header__phone header__phone">+7(901)791-75-19</a>
                   <div class="header__links">
-                    <a href='mailto:info@istek-lab.ru' class='news-header__mail header__mail'>info@istek-lab.ru</a>
+                    <a href='mailto:info@istek-lab.ru'
+                      class='news-header__mail header__mail'>info@istek-lab.ru</a>
                   </div>
                 </div>
 
@@ -62,7 +64,8 @@
         </div>
         <div class="header__flex-el">
           <div class="header__contacts">
-            <a class="header__viber news-header__column news-header__column--left" href="viber://add?number=89165260996">
+            <a class="header__viber news-header__column news-header__column--left"
+              href="whatsapp://send?phone=+79165260596">
               <img src="images/viber.png" alt="Viber">
             </a>
             <div class="header__contacts-wrap">
@@ -76,11 +79,11 @@
           </div>
           <!-- header__contacts -->
         </div>
-        <a href='index.html' class="header__logo header__flex-el page-logo">
+        <a href='https://bakum1981.github.io/istek-lab/' class="header__logo header__flex-el page-logo">
           <div class="header__image">
             <img src="images/logo.svg" alt="Логотип">
           </div>
-          <div class="header__label">
+          <div class="header__label news-header__label">
             <img src="images/header/logoLabel.svg" alt="Надпись">
           </div>
         </a>
@@ -88,30 +91,40 @@
       </div>
 
       <div class="news-header--bottom header__row-desctop">
-        <ul class="news-header__nav">
-          <div class="news-header__nav-column">
-            <li class="main__link main__link--blue news-header__link news-header__link--blue"><a
-                href="index.html">ГЛАВНАЯ</a></li>
-            <li class="main__link main__link--aqua news-header__link"><a href="#">О НАС</a></li>
-            <li class="main__link main__link--light-blue news-header__link news-header__link--light-blue"><a
-                href="http://bakum1981.github.io/tests">ИСПЫТАНИЯ ПРОДУКЦИИ</a></li>
-          </div>
-          <div class="news-header__nav-column">
-            <li class="main__link main__link--brown news-header__link"><a href="#">ЦЕНЫ</a></li>
-            <li class="main__link main__link--gray news-header__link"><a href="index.html">НОВОСТИ</a></li>
-            <li class="main__link main__link--violet news-header__link news-header__link--violet"><a
-                href="#">КОНТАКТЫ</a></li>
-          </div>
-        </ul>
+        <div class="news-header__nav">
+          <ul class="news-header__nav-column">
+            <li class="page-nav__link  main__link news-header__link news-header__link--blue"><a
+                class="news-header--blue page-nav__link page-nav__link--blue main__link--blue"
+                href="https://bakum1981.github.io/istek-lab/">ГЛАВНАЯ</a></li>
+            <li class="page-nav__link main__link  news-header__link"><a class="main__link--aqua"
+                href="index.html?#about">О НАС</a></li>
+            <li
+              class="page-nav__link page-nav__link--end page-nav__link--light-blue main__link  news-header__link news-header__link--light-blue">
+              <a class="main__link--light-blue" href="https://bakum1981.github.io/tests/">ИСПЫТАНИЯ ПРОДУКЦИИ</a>
+            </li>
+          </ul>
+          <ul class="news-header__nav-column">
+            <li class="page-nav__link main__link  news-header__link"><a class="main__link--brown"
+                href="https://bakum1981.github.io/price/">ЦЕНЫ</a></li>
+            <li class="page-nav__link main__link  news-header__link"><a class="main__link--gray"
+                href="https://bakum1981.github.io/istek-lab/news">НОВОСТИ</a></li>
+            <li
+              class="page-nav__link main__link  page-nav__link--end news-header__link news-header__link--violet">
+              <a class="page-nav__link main__link--violet page-nav__link--violet news-header--violet"
+                href="index.html?#contacts">КОНТАКТЫ</a></li>
+          </ul>
+        </div>
       </div>
 
-      <ul class="header__row-mobile  main__nav page-nav">
-        <li class="main__link main__link--blue"><a href="index.html">ГЛАВНАЯ</a></li>
-        <li class="main__link main__link--aqua"><a href="#">О НАС</a></li>
-        <li class="main__link main__link--light-blue"><a href="http://bakum1981.github.io/tests">ИСПЫТАНИЯ ПРОДУКЦИИ</a></li>
-        <li class="main__link main__link--brown"><a href="#">ЦЕНЫ</a></li>
-        <li class="main__link main__link--gray"><a href="news.html">НОВОСТИ</a></li>
-        <li class="main__link main__link--violet"><a href="#">КОНТАКТЫ</a></li>
+      <ul class="header__menu-mobile  main__nav page-nav">
+        <li class="page-nav__link main__link"><a class="main__link--blue" href="https://bakum1981.github.io/istek-lab/">ГЛАВНАЯ</a></li>
+        <li class="page-nav__link main__link"><a class="main__link--aqua" href="index.html?#about">О НАС</a></li>
+        <li class="page-nav__link main__link"><a class="main__link--light-blue" href="https://bakum1981.github.io/tests/">ИСПЫТАНИЯ
+            ПРОДУКЦИИ</a></li>
+        <li class="page-nav__link main__link"><a class="main__link--brown" href="https://bakum1981.github.io/price/">ЦЕНЫ</a></li>
+        <li class="page-nav__link main__link"><a class="main__link--gray" href="https://bakum1981.github.io/news/">НОВОСТИ</a></li>
+        <li class="page-nav__link main__link"><a class="main__link--violet" href="index.html?#contacts">КОНТАКТЫ</a>
+        </li>
       </ul>
 
       <!-- header__container -->
@@ -125,93 +138,83 @@
             <img src="images/news/news1.jpg" alt="Картинка">
           </div>
           <div class="news-main__label news-one__label">
-            <div class="news-main__label-title news-one__label-title">НОВЫЙ</div>
-            <div class="news-main__label-text news-one__label-text">современный
-              испытательный лабораторный центр</div>
+            <img src="images/news/N1.png" alt="Круг">
           </div>
         </div>
       </div>
-    </div>
-  </div>
-  </div>
 
-  <section class="news-one-content">
+      <section class="news-one-content">
 
-    <div class="news-one-content__body">
+        <div class="news-one-content__body">
           <div class="news-main__date news-one__date">5 апреля 2021 г.</div>
-      <h2 class="news-one-content__title">Наш испытательный лабораторный центр начал свою работу!</h2>
-      <p>Внимание! На сегодняшний день ИЛЦ ИСТЭК-ЛАБ предоставляет услуги по проведению испытаний:</p>
+          <h2 class="news-one-content__title">Наш испытательный лабораторный центр начал свою работу!</h2>
+          <p>Внимание! На сегодняшний день ИЛЦ ИСТЭК-ЛАБ предоставляет услуги по проведению испытаний:</p>
 
-      <ul class='news-one-content__list'>
-        <li class='news-one-content__item'>парфюмерно-косметической продукции </li>
-        <li class='news-one-content__item'>средств индивидуальной защиты дерматологических </li>
-        <li class='news-one-content__item'>зубных паст</li>
-        <li class='news-one-content__item'>зубных порошков </li>
-        <li class='news-one-content__item'>средств гигиены полости рта </li>
-        <li class='news-one-content__item'>эфирных масел</li>
-        <li class='news-one-content__item'>товаров бытовой химии </li>
-        <li class='news-one-content__item'>средств для стирки</li>
-      </ul>
-
-
-      <p class="news-one-content__offer">Нужно подтвердить категорию направленной эффективности (очищающую способность)
-        или провести
-        анализ на устойчивость к пониженным температурам или подтвердить антимикробную активность
-        средств индивидуальной защиты дерматологических?</p>
-
-      <p class="news-one-content__team">Наша команда состоит только из высококвалифицированных специалистов!</p>
-
-      <p class="news-one-content__aproach">Мы только открылись и поэтому у нас лояльная ценовая политика и
-        индивидуальный подход
-        к каждому клиенту!</p>
-
-      <p class="news-one-content__time">Мы знаем, что время - это важный ресурс в бизнесе, поэтому стремимся оказать
-        услуги в сжатые сроки!</p>
-
-      <p class="news-one-content--bottom">Ждем вас!</p>
-
-    </div>
-  </section>
- <div class="footer__social page-footer">
-        <div class="page-footer__row">
-          <ul class="page-footer__menu">
-            <li class='page-footer__item'><a href="#">Главная</a></li>
-            <li class='page-footer__item'><a href="#">О нас</a></li>
-            <li class='page-footer__item'><a href="#">Испытания  продукции</a></li>
-            <li class='page-footer__item'><a href="#">Цены</a></li>
-            <li class='page-footer__item'><a href="#">Новости</a></li>
-            <li class='page-footer__item'><a href="#">Контакты</a></li>
-            <li class='page-footer__item'><a href="#">Карта сайта</a></li>                         
+          <ul class='news-one-content__list'>
+            <li class='news-one-content__item'>парфюмерно-косметической продукции </li>
+            <li class='news-one-content__item'>средств индивидуальной защиты дерматологических </li>
+            <li class='news-one-content__item'>зубных паст</li>
+            <li class='news-one-content__item'>зубных порошков </li>
+            <li class='news-one-content__item'>средств гигиены полости рта </li>
+            <li class='news-one-content__item'>эфирных масел</li>
+            <li class='news-one-content__item'>товаров бытовой химии </li>
+            <li class='news-one-content__item'>средств для стирки</li>
           </ul>
-          <div class="page-footer__contacts">
-            <a href="tel:+79017917519" class="page-footer__phone">+7(901)791-75-19</a>
-            <div class="page-footer__mail">
-              info@istek-lab.ru
-            </div>
-          </div>
-          <div class="page-footer__socials">
-              <a class="page-footer__link footer__link--vk" href="https://vk.com/isteklab"><img src="images/header/vk.png"
-            alt="Иконка">
-        </a>
-        <a class="page-footer__link footer__link--fb" href="https://www.facebook.com/isteklab"><img
-            src="images/header/facebook.png" alt="Иконка">
-        </a>
-        <a class="page-footer__link footer__link--inst" class="socials-header--link"
-          href="https://www.instagram.com/istek_lab/"><img src="images/header/instagram.png" alt="Иконка">
-        </a>
-          </div>
-        
-      </div>
+
+
+          <p class="news-one-content__offer">Нужно подтвердить категорию направленной эффективности (очищающую
+            способность)
+            или провести
+            анализ на устойчивость к пониженным температурам или подтвердить антимикробную активность
+            средств индивидуальной защиты дерматологических?</p>
+
+          <p class="news-one-content__team">Наша команда состоит только из высококвалифицированных специалистов!</p>
+
+          <p class="news-one-content__aproach">Мы только открылись и поэтому у нас лояльная ценовая политика и
+            индивидуальный подход
+            к каждому клиенту!</p>
+
+          <p class="news-one-content__time">Мы знаем, что время - это важный ресурс в бизнесе, поэтому стремимся оказать
+            услуги в сжатые сроки!</p>
+
+          <p class="news-one-content--bottom">Ждем вас!</p>
+
         </div>
-</body>
+      </section>
+    </div>
+    <footer class="footer__social page-footer footer-desctop">
+      <div class="page-footer__row">
+        <ul class="page-footer__menu">
+          <li class='page-footer__item'><a href="https://bakum1981.github.io/istek-lab/istek-lab">Главная</a></li>
+          <li class='page-footer__item'><a href="#about">О нас</a></li>
+          <li class='page-footer__item'><a href="https://bakum1981.github.io/istek-lab/tests">Испытания продукции</a></li>
+          <li class='page-footer__item'><a href="https://bakum1981.github.io/istek-lab/price">Цены</a></li>
+          <li class='page-footer__item'><a href="https://bakum1981.github.io/istek-lab/news">Новости</a></li>
+          <li class='page-footer__item'><a href="#contacts">Контакты</a></li>
+          <li class='page-footer__item'><a href="#">Карта сайта</a></li>
+        </ul>
+        <div class="page-footer__contacts">
+          <a class="page-footer__phone" href="tel:+79017917519">+7(901)791-75-19</a>
+          <a class="page-footer__mail" href="mailto:info@istek-lab.ru">
+            info@istek-lab.ru
+          </a>
+        </div>
+        <div class="page-footer__socials socials">
+          <a class="page-footer__link socials__link socials__link--vk" href="https://vk.com/isteklab"><img
+              src="images/header/vk.png" alt="Иконка">
+          </a>
+          <a class="page-footer__link socials__link socials__link--fb"
+            href="https://www.facebook.com/isteklab"><img src="images/header/facebook.png" alt="Иконка">
+          </a>
+          <a class="page-footer__link socials__link socials__link--inst"
+            href="https://www.instagram.com/istek_lab/"><img src="images/header/instagram.png" alt="Иконка">
+          </a>
+        </div>
 
-</html>
-
-</div>
-
-
-<script src="js/app.min.js"></script>
-
+      </div>
+    </footer>
+  </div>
+  <script src="js/app.min.js"></script>
 </body>
 
 </html>
