@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Books</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oranienbaum&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="wrapper">
+  <header class="header" id="header">
+    <div class="header__wrapper">
+      <div class="container">
+        <div class="header__row">
+          <div class="hamburger header__flex-el">
+            <span class="hamburger__inner"></span>
+          </div><!-- hamburger -->
+          <nav class="header__nav">
+            <ul class="header__menu">
+              <li class="header__item"><a class="header__link" href="#">обо мне</a></li>
+              <li class="header__item"><a class="header__link" href="#">блог</a></li>
+              <li class="header__item"><a class="header__link" href="#">книги</a></li>
+              <li class="header__item"><a class="header__link" href="#">лекторий</a></li>
+              <li class="header__item"><a class="header__link" href="#">эго хантинг</a></li>
+            </ul><!-- header__menu -->
+          </nav><!-- header__nav -->
+          <div class="header__menu--right">
+            <div class="header__languages">
+              <a class="header__language" href="#">ру</a> <span> /</span>
+              <a class="header__language" href="#"> en</a>
+            </div><!-- header__languages -->
+            <div class="header__panel">
+              <a class="header__search header__icon" href="#">
+                <form class="search-form" action="#">
+                  <input class="search-form__input" type="text" placeholder="Поиск">
+                </form>
+                <img class="header__trigger" src="images/header/01.png" alt="Поиск">
+              </a>
+              <a data-fancybox data-src="#modal" class="header__authorization header__icon btn btn-primary" href="javascript:;css/"><img src="images/header/02.png" alt="Авторизация"></a>
+              <a class="header__cart header__icon" href="#"><img src="images/header/03.png" alt="Корзина"></a>
+            </div><!-- header__panel -->
+          </div><!-- header__menu-right -->
+        </div><!-- header__row -->
+        <a href="index.html" class="header__logo">books</a>
+      </div><!-- container -->
+    </div><!-- header__wrapper -->
+  </header>
+    <main class="main">
+
+      <!-- ----------------new---------------- -->
+      <section class="new" id="new">
+        <div class="new__wrapper">
+           <div class="new__row">
+          <div class="new__inner">
+            <div class="container">
+              <div class="new__body">
+            <h1 class="title new__title">новая книга <br> уже в продаже на нашем сайте</h1>
+            <div class="new__text">Краткое описание содержания книги <br> в две строчки</div>
+            <a class="button" href="#"><span class="button__inner"><span class="button__text">читать описание</span></span></a>
+            </div>
+        </div><!-- container -->
+          </div><!-- header__inner -->
+          <div class="new__column--right" style="background-image: url(images/new/02.jpg);">
+            <div class="new__image"><img class="new__img"src="images/new/01.png" alt="Книга"></div>
+          </div>
+        </div><!-- new__row-->
+        <div class="new__row">
+          <div class="new__inner">
+            <div class="container">
+              <div class="new__body">
+            <h1 class="title new__title">новая книга <br> уже в продаже на нашем сайте</h1>
+            <div class="new__text">Краткое описание содержания книги <br> в две строчки</div>
+            <a class="button" href="#"><span class="button__inner"><span class="button__text">читать описание</span></span></a>
+            </div>
+        </div><!-- container -->
+          </div><!-- header__inner -->
+          <div class="new__column--right" style="background-image: url(images/new/02.jpg);">
+            <div class="new__image"><img class="new__img"src="images/new/01.png" alt="Книга"></div>
+          </div>
+        </div><!-- new__row-->
+        <div class="new__row">
+          <div class="new__inner">
+            <div class="container">
+              <div class="new__body">
+            <h1 class="title new__title">новая книга <br> уже в продаже на нашем сайте</h1>
+            <div class="new__text">Краткое описание содержания книги <br> в две строчки</div>
+            <a class="button" href="#"><span class="button__inner"><span class="button__text">читать описание</span></span></a>
+            </div>
+        </div><!-- container -->
+          </div><!-- header__inner -->
+          <div class="new__column--right" style="background-image: url(images/new/02.jpg);">
+            <div class="new__image"><img class="new__img"src="images/new/01.png" alt="Книга"></div>
+          </div>
+        </div><!-- new__row-->
+        </div><!-- new__wrapper -->
+      </section>
+      <!-- ----------------new---------------- -->
+
+      <!-- ------------main-blog--------------- -->
+     <section class="main-blog blog" id="main-blog">
+      <div class="container">
+      <div class="main-blog__wrapper">
+       <h2 class="title main-blog__title">Блог</h2>
+       <div class="main-blog__row blog-row">
+        <div class="blog-row__column">
+         <div class="main-blog__item blog-row__item">
+           <a href="#" class="main-blog__picture blog-row__picture">
+             <img src="images/mainBlog/01.jpg" alt="Фото" class="main-blog__img">
+           </a>
+           <a href="#" class="main-blog__links blog-row__links">
+             <span class="main-blog__category blog-row__category">Искусство</span>
+             <h3 class="main__blog-title blog-row__title">Путешествие в Испанию</h3>
+             <span class="main___blog-text blog-row__text">Путешествие в Испанию должно быть интересным и недорогим...</span>
+             <span class="main-blog__read link">Читать подробнее</span>
+           </a>
+         </div><!-- blog-row__item -->
+         </div><!-- blog-column -->
+         <div class="blog-row__column">
+         <div class="main-blog__item blog-row__item">
+           <a href="#" class="main-blog__picture blog-row__picture">
+             <img src="images/mainBlog/02.jpg" alt="Фото" class="main-blog__img">
+           </a>
+           <a href="#" class="main-blog__links blog-row__links">
+             <span class="main-blog__category blog-row__category">Искусство</span>
+             <h3 class="main__blog-title blog-row__title">Путешествие в Венгрию</h3>
+             <span class="main___blog-text blog-row__text">Путешествие в Испанию должно быть интересным и недорогим...</span>
+             <span class="main-blog__read link">Читать подробнее</span>
+           </a>
+         </div><!-- blog-row__item -->
+         </div><!-- blog-column -->
+         <div class="blog-row__column">
+         <div class="main-blog__item blog-row__item">
+           <a href="#" class="main-blog__picture blog-row__picture">
+             <img src="images/mainBlog/03.jpg" alt="Фото" class="main-blog__img">
+           </a>
+           <a href="#" class="main-blog__links blog-row__links">
+             <span class="main-blog__category blog-row__category">Искусство</span>
+             <h3 class="main__blog-title blog-row__title">Путешествие в Париж</h3>
+             <span class="main___blog-text blog-row__text">Путешествие в Испанию должно быть интересным и недорогим...</span>
+             <span class="main-blog__read link">Читать подробнее</span>
+           </a>
+         </div><!-- blog-row__item -->
+         </div><!-- blog-column -->
+       </div><!-- main-blog__row -->
+       <a class="button main-blog__button" href="#"><span class="button__inner"><span class="button__text">Смотреть все публикации</span></span></a>
+       </div><!-- container -->
+     </div><!-- main-blog__wrapper -->
+     </section><!-- main-blog -->
+     <!-- ------------main-blog--------------- -->
+
+     <!-- -------------------main__books------------------------ -->
+     <section class="main-books" id="main-books">
+         <div class="main-books__wrapper">
+          <div class="container">
+            <div class="main-books__content">
+           <h2 class="title main-books__title">Книги</h2>
+           <div class="main-books__sliders">
+             <div class="main-books__slider" style="background-image: url(images/mainBooks/01.jpg);">
+            <div class="main-books__inner">
+            <h4 class="main-books__slider-title">Одетые в белое</h4>
+             <div class="main-books__author">Джон До</div>
+             <div class="main-books__copy"><span>&copy;2019</span></div>
+             </div><!-- main-books__inner -->
+           </div><!-- main-books___slider" -->
+           <div class="main-books__slider" style="background-image: url(images/mainBooks/01.jpg);">
+            <div class="main-books__inner">
+            <h4 class="main-books__slider-title">Одетые в белое</h4>
+             <div class="main-books__author">Джон До</div>
+             <div class="main-books__copy"><span>&copy;2019</span></div>
+             </div><!-- main-books__inner -->
+           </div><!-- main-books___slider" -->
+           <div class="main-books__slider" style="background-image: url(images/mainBooks/01.jpg);">
+            <div class="main-books__inner">
+            <h4 class="main-books__slider-title">Одетые в белое</h4>
+             <div class="main-books__author">Джон До</div>
+             <div class="main-books__copy"><span>&copy;2019</span></div>
+             </div><!-- main-books__inner -->
+           </div><!-- main-books___slider" -->
+           </div><!-- main-books__sliders -->
+           
+             
+            <div class="main-books__buttons">
+              <a class="button main-books__button" href="#"><span class="main-books__button-inner button__inner button__active"><span class="button__text">Купить / читать</span></span></a>
+              <a class="button main-books__button" href="#"><span class="main-books__button-inner button__inner"><span class="button__text">Подробнее</span></span></a>
+            </div><!-- main-books__buttons -->
+              </div><!-- main-books__content -->
+         </div><!-- container" -->
+       </div><!-- main-books___wrapperr -->
+     </section>
+     <!-- -------------------main__books------------------------ -->
+
+     <!-- ---------------------lectory--------------------------------- -->
+     <section class="main-lectory" id="main-lectory">
+        <div class="main-lectory__wrapper">
+        <div class="container">
+          <h2 class="title main-lectory__title">
+            лекторий
+          </h2>
+          <div class="lectory-row main-lectory__inner">
+            <a class="lectory-row__item" href="#">
+              <span class="lectory-row__picture">
+                <img src="images/mainLecture/01.jpg" alt="Фото" class="lectory-row__img">
+              </span>
+              <h6 class="lectory-row__title">Этюды</h6>
+              <span class="lectory-row__text">Путешествие в Испанию должно быть интересным и недорогим...</span>
+              <span class="lectory-row__buy link">Смотреть за 390 рублей</span>
+            </a><!-- lectory-row__item -->
+            <a class="lectory-row__item" href="#">
+              <span class="lectory-row__picture">
+                <img src="images/mainLecture/02.jpg" alt="Фото" class="lectory-row__img">
+              </span>
+              <h6 class="lectory-row__title">Этюды</h6>
+              <span class="lectory-row__text">Путешествие в Испанию должно быть интересным и недорогим...</span>
+              <span class="lectory-row__buy link">Смотреть за 390 рублей</span>
+            </a><!-- lectory-row__item -->
+            <a class="lectory-row__item" href="#">
+              <span class="lectory-row__picture">
+                <img src="images/mainLecture/01.jpg" alt="Фото" class="lectory-row__img">
+              </span>
+              <h6 class="lectory-row__title">Этюды</h6>
+              <span class="lectory-row__text">Путешествие в Испанию должно быть интересным и недорогим...</span>
+              <span class="lectory-row__buy link">Смотреть за 390 рублей</span>
+            </a><!-- lectory-row__item -->
+            <a class="lectory-row__item" href="#">
+              <span class="lectory-row__picture">
+                <img src="images/mainLecture/02.jpg" alt="Фото" class="lectory-row__img">
+              </span>
+              <h6 class="lectory-row__title">Этюды</h6>
+              <span class="lectory-row__text">Путешествие в Испанию должно быть интересным и недорогим...</span>
+              <span class="lectory-row__buy link" >Смотреть за 390 рублей</span>
+            </a><!-- lectory-row__item -->
+          </div><!-- #lectory-row -->
+          <a class="button main-lectory__button" href="#"><span class="button__inner"><span class="button__text">Смотреть все курсы</span></span></a>
+        </div><!-- container -->
+        </div><!-- main-lectory__wrapper -->
+       
+     </section>
+     <!-- ---------------------lectory--------------------------------- -->
+
+     <!-- -----------------------main-hunting---------------------------------- -->
+     <section class="main-hunting" id="main-hunting">
+      <div class="main-hunting__wrapper">
+       <div class="container">
+        <h2 class="title main-hunting__title">Эго хантинг</h2>
+         <div class="hunting-row">
+           <a class="hunting-row__item" href="#">
+             <span class="hunting-row__picture"><img src="images/mainHunting/01.jpg" alt="" class="hunting-row__img"></span>
+             <span class="hunting-row__number">Эго хантинг №1</span>
+             <h6 class="hunting-row__title">Гордыня</h6>
+             <span class="hunting-row__text">Путешествие в Испанию должно быть интересным и недорогим...</span>
+             <span class="hunting-row__read link">Читать далее</span>
+           </a>
+           <a class="hunting-row__item" href="#">
+             <span class="hunting-row__picture"><img src="images/mainHunting/02.jpg" alt="" class="hunting-row__img"></span>
+             <span class="hunting-row__number">Эго хантинг №2</span>
+             <h6 class="hunting-row__title">Гордыня</h6>
+             <span class="hunting-row__text">Путешествие в Испанию должно быть интересным и недорогим...</span>
+             <span class="hunting-row__read link">Читать далее</span>
+           </a>
+           <a class="hunting-row__item" href="#">
+             <span class="hunting-row__picture"><img src="images/mainHunting/03.jpg" alt="" class="hunting-row__img"></span>
+             <span class="hunting-row__number">Эго хантинг №3</span>
+             <h6 class="hunting-row__title">Гордыня</h6>
+             <span class="hunting-row__text">Путешествие в Испанию должно быть интересным и недорогим...</span>
+             <span class="hunting-row__read link">Читать далее</span>
+           </a>
+         </div><!-- hunting-row -->
+       </div><!-- container -->
+       </div><!-- main-hunting__wrapper -->
+     </section>
+     <!-- -----------------------main-hunting---------------------------------- -->
+
+     <!-- ---------------------------subscribe---------------------------------------- -->
+      <section class="subscribe" id="subscribe">
+        <div class="container">
+          <div class="subscribe__body">
+        <h3 class="subscribe__title">Подпишитесь на рассылку</h3><!-- subscribe__title -->
+        <form action="#" class="subscribe__form">
+          <div class="subscribe__email">
+            <input class="subscribe__input" type="email" name="email" placeholder="Введите свой e-mail">
+          </div>
+          <button class="button subscribe__button" type="submit"><span class="button__inner subscribe__button-inner"><span class="button__text">подписаться</span></span></button>
+        </form><!-- subscribe__form" -->
+        </div><!-- subscribe__body -->
+        </div><!-- container -->
+      </section>
+
+     <!-- ---------------------------subscribe---------------------------------------- -->
+
+     <!-- -------------------instagram----------------------------------------------------- -->
+     <section class="instagram" id="instagram">
+      <div class="instagram__wrapper">
+      <div class="container">
+       <div class="instagram__title">instagram</div>
+       <div class="instagram__row">
+         <div class="instagram__item"><img src="images/instagram/01.jpg" alt="Фото"></div>
+         <div class="instagram__item"><img src="images/instagram/02.jpg" alt="Фото"></div>
+         <div class="instagram__item"><img src="images/instagram/03.jpg" alt="Фото"></div>
+         <div class="instagram__item"><img src="images/instagram/01.jpg" alt="Фото"></div>
+         <div class="instagram__item"><img src="images/instagram/02.jpg" alt="Фото"></div>
+         <div class="instagram__item"><img src="images/instagram/03.jpg" alt="Фото"></div>
+       </div><!-- instagram__row -->
+       </div><!-- container -->
+       </div><!-- instagram__wrapper -->
+     </section>
+      <!-- -------------------instagram----------------------------------------------------- -->
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__header">
+          <div class="footer__header-row">
+            <div class="footer__nav">
+              <a class="footer__nav-item" href="#">Обратная связь</a>
+              <a class="footer__nav-item" href="#">Тех. поддержка</a>
+              <a class="footer__nav-item" href="#">Контакты для сотрудничества</a>
+            </div><!-- footer__nav -->
+            <div class="footer__socials">
+              <a class="footer__link" href="#"><img src="images/footer/инстаграм.svg" alt="инстаграм"></a>
+              <a class="footer__link" href="#"><img src="images/footer/вк.svg.svg" alt="вк"></a>
+              <a class="footer__link" href="#"><img src="images/footer/фейсбук.svg.svg" alt="фейсбук"></a>
+              <a class="footer__link" href="#"><img src="images/footer/твитер.svg.svg" alt="твитер"></a>
+              <a class="footer__link" href="#"><img src="images/footer/ютуб.svg.svg" alt="ютуб"></a>
+            </div><!-- footer__socials -->
+          </div><!-- footer__header-row -->
+      </div><!-- footer__header -->
+
+          <div class="footer__bottom">
+            <div class="footer__bottom-row">
+              <div class="footer__content">
+              <a class="footer__copy"><span>&copy;</span>2019, Все права защищены</a>
+              <div class="footer__items">
+                <a href="#" class="footer__item">Пользовательское соглашение. </a>
+                <a href="#" class="footer__item">Политика конфиденциальности. </a>
+                <a href="#" class="footer__item">Правила использования cookies.</a>
+              </div><!-- footer__items -->
+              </div><!-- footer__content -->
+              <div class="footer__age">18+</div>
+            </div><!-- footer__bottom-row -->
+          </div><!-- footer__bottom -->
+      </div><!-- container -->
+      
+    </footer>
+    
+</div>
+
+<div style="display: none;" id="modal">
+          <h2 class="modal__title">Форма авторизации!</h2>
+          <form action="#" class="form-authorization">
+            <div class="form-authorization__item">
+              <input class="form-authorization__input" type="text" placeholder="Имя">
+            </div>
+            <div class="form-authorization__item">
+              <input class="form-authorization__input" type="text" placeholder="Логин">
+            </div>
+            <button class="button form-authorization__button" type="submit">
+              Отправить
+            </button><!-- submit -->
+          </form>
+        </div>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
