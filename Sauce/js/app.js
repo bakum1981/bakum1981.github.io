@@ -63,14 +63,7 @@ $(function() {
 		let search_input = document.querySelector('.search__input')
 		e.preventDefault()
 		search_input.classList.toggle('active')
-		// add animation
-		if(search_input.classList.contains('active')){
-			search_input.style.animation = "incrementedWidth 0.7s ease"
-			search_input.style.width = "150px"
-		}else{
-			search_input.style.animation = "decrementedWidth 0.7s ease"
-			search_input.style.width = "0px"
-		}
+		
 	})
 
 
@@ -312,7 +305,31 @@ $(function() {
 		document.getElementById("passwordReg").onchange = validatePassword;
 	    document.getElementById("repeat-password").onchange = validatePassword;
 
-
+// provide smooth transition to section
+	function goToSection(){
+		// get all elements with attibute data-goto
+		const menuLinks = document.querySelectorAll('.header__menu-el a[data-goto]')
+		if(menuLinks.length > 0){ //add click on each element
+			for(let i=0; i<menuLinks.length; i++){
+				const clickItem = menuLinks[i]
+				clickItem.addEventListener('click', onMenuClick)
+			}
+			function onMenuClick(e) { //do smooth transition to section
+				const menuLink = e.target
+				if(menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)){
+					const gotoBlock = document.querySelector(menuLink.dataset.goto)
+					const gotoBlockValue = gotoBlock.getBoundingClientRect().top + pageYOffset - document.querySelector('.header__row').offsetHeight
+					window.scrollTo({
+						top: gotoBlockValue,
+						behavior: "smooth"
+					})
+				}
+				e.preventDefault()
+			}
+		}
+	}
+	
+	goToSection()
 
 });	
               
