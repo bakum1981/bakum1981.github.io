@@ -14,6 +14,7 @@
 
   <div class="wrapper">
     <header class="header" id="header">
+      <div class="header__wrapper">
       <div class="header__container container">
         <div class="header__row">
           <div class="hamburger">
@@ -21,18 +22,18 @@
           </div>
           <!-- hamburger  -->
           <div class="header__logo logo">
-            <span>Logo</span>
+            <a href="#">Logo</a>
             <div class="logo__text">
               Скупка и выкуп электроники, офисной техники. Ремонт и утилизация техники,
               компьютеров, телевизоров.
             </div>
           </div><!-- header__logo -->
           <nav class="header__nav">
-            <ul class="header__menu">
+            <ul class="header__menu" data-spollers="991,max", data-one-spoller>
               <li class="header__item"><a class="header__link" href="#">Главная</a></li>
-              <li class="header__item"><a class="header__link" href="#">Товары и услуги</a>
+              <li class="header__item"><a class="header__link" href="#" data-spoller>Товары и услуги</a>
                 <ul class="header__submenu">
-                  <li class="header__submenu-item"><a class="header__submenu-link" href="#">Скупка и выкуп техники</a>
+                  <li class="header__submenu-item" ><a class="header__submenu-link" href="#">Скупка и выкуп техники</a>
                   </li>
                   <li class="header__submenu-item"><a class="header__submenu-link" href="#">Утилизация и переработка
                       техники</a></li>
@@ -58,6 +59,7 @@
             </a>
           </div>
         </div><!-- header__row -->
+        </div><!-- header__wrapper -->
       </div><!-- header__container -->
     </header>
     <main class="main">
@@ -65,29 +67,30 @@
       <!-- main block -->
       <section class="about" id="about" style="background-image: url(images/main/01.jpg);">
         <div class="about__wrapper">
+          <div class="about__container container">
           <div class="about__inner">
-            <div class="about__content">
-              <h1 class="title about__title">
+            <div class="about__contentS">
+              <h1 class="title about__title _anim-items _anim-no-hide">
                 Мы купим любую бу мебель, которую вы хотите продать!
               </h1>
-              <div class="about__text">
+              <div class="about__text _anim-items _anim-no-hide">
                 Лучшая скупка мебели по Киеву и окрестностям. Наш ломбард
                 предлагает купить мебель, которой вы перестали пользоваться или просто хотите продать.
               </div>
-              <div class="connection about__connection">
-                <h3 class="connection__title about__connection-title title">
+              <div class="connection about__connection _anim-items">
+                <h3 class="connection__title about__connection-title title _anim-show">
                   Связаться с нами
                 </h3>
-                <div class="connection__buttons buttons  about__buttons">
-                  <a class="connection__button about__button button" href="tel:+0934444444">Позвонить нам
+                <div class="connection__buttons buttons  about__buttons _anim-items">
+                  <a class="connection__button about__button button _anim-scale" href="tel:+0934444444">Позвонить нам
                     (093)4444444</a>
-                  <a class="connection__button about__button button" href="@DorogoCruto">Оставить заявку на оценку в
+                  <a class="connection__button about__button button _anim-scale" href="@DorogoCruto">Оставить заявку на оценку в
                     телеграмм @DorogoCruto</a>
                 </div><!-- main__buttons -->
               </div><!-- main__connection -->
             </div><!-- about__content -->
           </div><!-- main__inner -->
-
+          </div>
         </div><!-- about__wrapper -->
 
 
@@ -99,8 +102,8 @@
           <div class="offers__container container">
             <div class="offers__row">
               <div class="offers__questions">
-                <div class="offers__question">Срочно понадобились деньги?</div>
-                <div class="offers__question">Ищете, где продать жилую
+                <div class="offers__question _anim-items">Срочно понадобились деньги?</div>
+                <div class="offers__question _anim-items">Ищете, где продать жилую
                   или офисную мебель бу, шкаф
                   или мягкий уголок?
                 </div>
@@ -180,16 +183,16 @@
             </div>
             <h3 class="title offers-two__title">Скупка мебели бу Киев поможет вам заработать, избавиться
               от ненужных вещей и освободить занимаемое ими место.</h3>
-            <div class="connection offers-two__connection">
-              <h3 class="connection__title offers-two__connection-title title">
+            <div class="connection offers-two__connection _anim-items">
+              <h3 class="connection__title offers-two__connection-title title _anim-show">
                 Связаться с нами
               </h3>
-              <div class="connection__buttons buttons offers-two__buttons">
-                <a class="connection__button offers-two__button button" href="mailto:testcruto@gmail.com">Напишите на
+              <div class="connection__buttons buttons offers-two__buttons _anim-items">
+                <a class="connection__button offers-two__button button _anim-scale" href="mailto:testcruto@gmail.com">Напишите на
                   E-mail
                   testcruto@gmail.com
                 </a>
-                <a class="connection__button offers-two__button button" href="@DorogoCruto">Оставить заявку на оценку в
+                <a class="connection__button offers-two__button button _anim-scale" href="@DorogoCruto">Оставить заявку на оценку в
                   телеграмм @DorogoCruto</a>
               </div><!-- connection__button -->
             </div><!-- connection -->
@@ -205,48 +208,48 @@
               Преимущества сотрудничества со скупкой мебели в Киеве
             </h2>
             <div class="benefits__inner">
-              <div class="benefits__item">
+              <div class="benefits__item _anim-items">
                 <div class="benefits__img">
                   <img class="benefits__icon" src="images/benefits/01.png" alt="Иконка">
                 </div>
                 <div class="benefits__text">Хорошо платим</div>
-              </div><!-- benefits__item -->
-              <div class="benefits__item">
+              </div><!-- benefits__item _anim-items -->
+              <div class="benefits__item _anim-items">
                 <div class="benefits__img">
                   <img class="benefits__icon" src="images/benefits/02.png" alt="Иконка">
                 </div>
                 <div class="benefits__text benefits__text--small">Cправедливо оцениваем</div>
-              </div><!-- benefits__item -->
-              <div class="benefits__item">
+              </div><!-- benefits__item _anim-items -->
+              <div class="benefits__item _anim-items">
                 <div class="benefits__img">
                   <img class="benefits__icon" src="images/benefits/03.png" alt="Иконка">
                 </div>
                 <div class="benefits__text">Быстро приедем</div>
-              </div><!-- benefits__item -->
-              <div class="benefits__item">
+              </div><!-- benefits__item _anim-items -->
+              <div class="benefits__item _anim-items">
                 <div class="benefits__img">
                   <img class="benefits__icon" src="images/benefits/04.png" alt="Иконка">
                 </div>
                 <div class="benefits__text">Сами загрузим</div>
-              </div><!-- benefits__item -->
-              <div class="benefits__item">
+              </div><!-- benefits__item _anim-items -->
+              <div class="benefits__item _anim-items">
                 <div class="benefits__img">
                   <img class="benefits__icon" src="images/benefits/05.png" alt="Иконка">
                 </div>
                 <div class="benefits__text">Сразу расплатимся</div>
               </div>
-              <div class="benefits__item">
+              <div class="benefits__item _anim-items">
                 <div class="benefits__img">
                   <img class="benefits__icon" src="images/benefits/06.png" alt="Иконка">
                 </div>
                 <div class="benefits__text benefits__text--small">Официально оформим</div>
-              </div><!-- benefits__item -->
-              <div class="benefits__item">
+              </div><!-- benefits__item _anim-items -->
+              <div class="benefits__item _anim-items">
                 <div class="benefits__img">
                   <img class="benefits__icon" src="images/benefits/07.png" alt="Иконка">
                 </div>
                 <div class="benefits__text benefits__text--small">Покупаем у физ. и юр. лиц</div>
-              </div><!-- benefits__item -->
+              </div><!-- benefits__item _anim-items -->
             </div><!-- benefits__inner -->
             <div class="benefits__footer">
               <div class="benefits__footer-title">
@@ -280,18 +283,18 @@
                 <span class="connect__number">3</span>
               </div>
             </div><!-- connect__inner -->
-            <div class="connection connect__connection">
-              <h3 class="connection__title connect__connection-title title">
+            <div class="connection connect__connection _anim-items">
+              <h3 class="connection__title connect__connection-title title _anim-show">
                 Связаться с нами
               </h3>
-              <div class="connection__buttons buttons connect__buttons">
-                <a class="connection__button connect__button button" href="tel:+0934444444">Позвонить нам
+              <div class="connection__buttons buttons connect__buttons _anim-items">
+                <a class="connection__button connect__button button _anim-scale" href="tel:+0934444444">Позвонить нам
                   (093)4444444</a>
-                <a class="connection__button connect__button button" href="@DorogoCruto">Оставить заявку на оценку в
+                <a class="connection__button connect__button button _anim-scale" href="@DorogoCruto">Оставить заявку на оценку в
                   телеграмм @DorogoCruto</a>
-                <a class="connection__button connect__button button" href="mailto:testcruto@gmail.com">Напишите на
+                <a class="connection__button connect__button button _anim-scale" href="mailto:testcruto@gmail.com">Напишите на
                   E-mail testcruto@gmail.com </a>
-                <a class="connection__button connect__button button" href="viber://chat?number=%2B0930000000">Оставить
+                <a class="connection__button connect__button button _anim-scale" href="viber://chat?number=%2B0930000000">Оставить
                   заявкуна оценку в Viber (093)0000000</a>
               </div><!-- connection__button -->
             </div><!-- connection -->
@@ -309,7 +312,7 @@
                   <div class="reviews__img">
                     <img src="images/reviews/01.jpg" alt="photo">
                   </div>
-                  <div class="reviews__text">Потеряла работу и была в полном отчаянии – банк в
+                  <div class="reviews__text  _anim-items">Потеряла работу и была в полном отчаянии – банк в
                     кредите отказал, знакомые занять не смогли. Натолкнулась на объявление
                     «скупка бу мебели Киев» и позвонила наудачу – у меня были вещи, доставшиеся от уехавших друзей.
                     Хорошая обстановка, но места для нее не хватало. После звонка и рассказа о вещах приехали очень
@@ -322,7 +325,7 @@
 
                     <div class="reviews__profession">временно безработная</div>
 
-                  </div><!-- reviews__text -->
+                  </div><!-- reviews__text  _anim-items -->
                 </div><!-- reviews__header -->
                 <div class="reviews__footer">
                 </div><!-- reviews__footer -->
@@ -332,7 +335,7 @@
                   <div class="reviews__img">
                     <img src="images/reviews/02.jpg" alt="photo">
                   </div>
-                  <div class="reviews__text">В наследство досталась квартира с мебелью в Киеве.
+                  <div class="reviews__text  _anim-items">В наследство досталась квартира с мебелью в Киеве.
                     Пополняли семейный бюджет за счет сдачи в аренду,
                     но сын решил жениться и, естественно, квартиру для
                     молодой семьи начали готовить. Хотя все предметы были
@@ -343,7 +346,7 @@
                     грузчиков. Теперь и квартира свободна и деньги на ремонт есть!
                     <div class="reviews__name">Клавдия Сидорова</div>
                     <div class="reviews__profession"></div>
-                  </div><!-- reviews__text -->
+                  </div><!-- reviews__text  _anim-items -->
                 </div><!-- reviews__item -->
 
               </div><!-- reviews__header -->
@@ -354,7 +357,7 @@
 
                     <img src="images/reviews/03.jpg" alt="photo">
                   </div>
-                  <div class="reviews__text">
+                  <div class="reviews__text  _anim-items">
                     Наш бизнес центр – оставшееся еще со времен союза старое здание.
                     Ремонт сделан, а мебель оставалась еще с девяностых. Решили заменить,
                     нашли оптового поставщика, но от предыдущих залежей надо отделаться.
@@ -366,7 +369,7 @@
                     договаривались. Не думали – главное было отделаться, но в итоге заработали очень даже неплохо.
                     <div class="reviews__name">Вера Петрова</div>
                     <div class="reviews__profession">заместитель управляющего бизнес-центра</div>
-                  </div><!-- reviews__text -->
+                  </div><!-- reviews__text  _anim-items -->
                 </div><!-- reviews__header -->
 
               </div><!-- reviews__item -->
@@ -382,15 +385,16 @@
         <div class="container footer__container">
           <div class="footer__row">
             <div class="footer__item logo footer__logo">
-              <span>Logo</span>
+              <a href="#">Logo</a>
               <div class="logo__text footer__logo-text">Скупка и выкуп электроники, офисной техники. Ремонт и утилизация
                 техники,
                 компьютеров, телевизоров.</div>
             </div><!-- footer__logo -->
-            <div class="footer__item">
-              <h6 class="footer__title">
+            <div class="footer__item" data-spollers="768,max", data-one-spoller>
+              <h6 class="footer__title" data-spoller>
                 Ломбард техники online
               </h6>
+              <div class="footer__menu" >
               <p>Купим ноутбуки БУ</p>
               <p>Купим компьютеры</p>
               <p>Купим компьютерные комплектующие</p>
@@ -406,22 +410,27 @@
               <p>Выкупим музыкальное оборудование</p>
               <p>Скупка электроинструментов</p>
             </div>
-            <div class="footer__item">
-              <h6 class="footer__title">
+            </div>
+            <div class="footer__item" data-spollers="768,max", data-one-spoller>
+              <h6 class="footer__title" data-spoller>
                 Ремонт техники
               </h6>
+              <div class="footer__menu" >
               <p>Ремонт телевизоров</p>
               <p>Ремонт ноутбуков</p>
               <p class="footer--short">Вызов телемастера <br> на дом</p>
+              </div>
             </div>
-            <div class="footer__item">
-              <h6 class="footer__title">
+            <div class="footer__item" data-spollers="768,max", data-one-spoller>
+              <h6 class="footer__title" data-spoller>
                 Комиссионный магазин бу техники
               </h6>
+              <div class="footer__menu" >
               <p>Продажа ноутбуков БУ</p>
               <p>Продажа компьютеров БУ</p>
               <p>Продажа мониторов БУ</p>
               <p>Продажа принтеров БУ</p>
+            </div>
             </div>
           </div><!-- footer__row -->
         </div><!-- footer__container -->
