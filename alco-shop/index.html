@@ -1,0 +1,1213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Main</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <header class="header" id="header">
+      <div class="header__wrapper _lp">
+        <div class="container">
+          <div class="header__row">
+            <div class="header__button header__el">
+              <img src="images/icons/header-button.svg" alt="Button burger">
+            </div>
+            <a class="header__logo" href='#'>Logo</a>
+            <div class="header__panel">
+              <div class="header__panel-items" data-da=".header__nav-hidden, 768, first">
+                <a href="#popup" class="header__panel-item popup-link">Log in</a>
+                <a href="#popup2" class="header__panel-item popup-link">Create account</a>
+              </div><!-- header__panel-items -->
+              <form action="#" class="header__form header__el header__el--search" data-da=".header__nav-hidden, 768, 0">
+                <button class="header__search" data-trigger type='submit'><img src="images/icons/search.svg"
+                    alt="Иконка поиска"></button>
+                <div class="header__input">
+                  <input type="text" placeholder="Search">
+                  <button class="header__search" type='submit'><img src="images/icons/search.svg"
+                      alt="Иконка поиска"></button>
+                </div>
+              </form>
+              <a href="#" class="header__cart header__el header__el--cart">
+                <img class="header__cart-img" src="images/icons/cart.svg" alt="Cart">
+                <span class="header__price">40,25$</span>
+              </a>
+            </div><!-- header__panel -->
+          </div><!-- header__row -->
+        </div><!-- container -->
+      </div><!-- header__wrapper -->
+      <div class="header__bottom">
+        <div class="header__container container">
+          <nav class="header__nav">
+            <ul class="header__menu _lp">
+              <li class='header__menu-item' data-spollers="768,max"><a class='header__link' href="#">Whiskey</a>
+                <button class="header__arrow" data-spoller></button>
+                <ul class="header__menu-sublist">
+                  <li class="header__sub-item"><a class='header__sublink' href="#">Product1</a></li>
+                  <li class="header__sub-item"><a class='header__sublink' href="#">Product2</a></li>
+                  <li class="header__sub-item"><a class='header__sublink' href="#">Product3</a></li>
+                  <li class="header__sub-item"><a class='header__sublink' href="#">Product4</a></li>
+                  <li class="header__sub-item"><a class='header__sublink' href="#">Product5</a></li>
+                </ul>
+              </li>
+              <li class='header__menu-item' data-spollers="768,max"><a class='header__link' href="#">Tequila</a>
+                <button class="header__arrow" data-spoller></button>
+                <ul class="header__menu-sublist">
+                  <li class="header__sub-item"><a class='header__sublink' href="#">Product1</a></li>
+                  <li class="header__sub-item"><a class='header__sublink' href="#">Product2</a></li>
+                  <li class="header__sub-item"><a class='header__sublink' href="#">Product3</a></li>
+                  <li class="header__sub-item"><a class='header__sublink' href="#">Product4</a></li>
+                  <li class="header__sub-item"><a class='header__sublink' href="#">Product5</a></li>
+                </ul>
+              </li>
+              <li class='header__menu-item'><a class='header__link' href="#">Vodka</a></li>
+              <li class='header__menu-item'><a class='header__link' href="#">Gin</a></li>
+              <li class='header__menu-item'><a class='header__link' href="#">Cognac & Brandy</a></li>
+              <li class='header__menu-item'><a class='header__link' href="#">Rum</a></li>
+              <li class='header__menu-item' data-spollers="768,max"><a class='header__link' href="#">Liqueur & More</a>
+                <button class="header__arrow" data-spoller></button>
+                <ul class="header__menu-sublist">
+                  <li class="header__sub-item"><a class='header__sublink' href="#">Product1</a></li>
+                  <li class="header__sub-item"><a class='header__sublink' href="#">Product2</a></li>
+                  <li class="header__sub-item"><a class='header__sublink' href="#">Product3</a></li>
+                  <li class="header__sub-item"><a class='header__sublink' href="#">Product4</a></li>
+                  <li class="header__sub-item"><a class='header__sublink' href="#">Product5</a></li>
+                </ul>
+              </li>
+              <li class='header__menu-item'><a class='header__link' href="#">Champagne</a></li>
+              <li class='header__menu-item' data-spollers="768,max"><a class='header__link' href="#">Wine</a>
+                <button class="header__arrow" data-spoller></button>
+                <ul class="header__menu-sublist header__menu-sublist--bottom">
+                  <li class="header__sub-item"><a class='header__sublink' href="#">Product1</a></li>
+                  <li class="header__sub-item"><a class='header__sublink' href="#">Product2</a></li>
+                  <li class="header__sub-item"><a class='header__sublink' href="#">Product3</a></li>
+                  <li class="header__sub-item"><a class='header__sublink' href="#">Product4</a></li>
+                  <li class="header__sub-item"><a class='header__sublink' href="#">Product5</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <nav class="header__nav-hidden">
+            <ul class="header__menu">
+              <li class='header__menu-item' data-spollers="768,max"><a class='header__link' href="#">Whiskey</a>
+                <button class="header__arrow" data-spoller></button>
+                <ul class="header__menu-sublist">
+                  <li class="header__sub-item"><a class='header__sublink' href="#">Product1</a></li>
+                  <li class="header__sub-item"><a class='header__sublink' href="#">Product2</a></li>
+                  <li class="header__sub-item"><a class='header__sublink' href="#">Product3</a></li>
+                  <li class="header__sub-item"><a class='header__sublink' href="#">Product4</a></li>
+                  <li class="header__sub-item"><a class='header__sublink' href="#">Product5</a></li>
+                </ul>
+              </li>
+              <li class='header__menu-item' data-spollers="768,max"><a class='header__link' href="#">Tequila</a>
+                <button class="header__arrow" data-spoller></button>
+                <ul class="header__menu-sublist">
+                  <li class="header__sub-item"><a class='header__sublink' href="#">Product1</a></li>
+                  <li class="header__sub-item"><a class='header__sublink' href="#">Product2</a></li>
+                  <li class="header__sub-item"><a class='header__sublink' href="#">Product3</a></li>
+                  <li class="header__sub-item"><a class='header__sublink' href="#">Product4</a></li>
+                  <li class="header__sub-item"><a class='header__sublink' href="#">Product5</a></li>
+                </ul>
+              </li>
+              <li class='header__menu-item'><a class='header__link' href="#">Vodka</a></li>
+              <li class='header__menu-item'><a class='header__link' href="#">Gin</a></li>
+              <li class='header__menu-item'><a class='header__link' href="#">Cognac & Brandy</a></li>
+              <li class='header__menu-item'><a class='header__link' href="#">Rum</a></li>
+              <li class='header__menu-item' data-spollers="768,max"><a class='header__link' href="#">Liqueur & More</a>
+                <button class="header__arrow" data-spoller></button>
+                <ul class="header__menu-sublist">
+                  <li class="header__sub-item"><a class='header__sublink' href="#">Product1</a></li>
+                  <li class="header__sub-item"><a class='header__sublink' href="#">Product2</a></li>
+                  <li class="header__sub-item"><a class='header__sublink' href="#">Product3</a></li>
+                  <li class="header__sub-item"><a class='header__sublink' href="#">Product4</a></li>
+                  <li class="header__sub-item"><a class='header__sublink' href="#">Product5</a></li>
+                </ul>
+              </li>
+              <li class='header__menu-item'><a class='header__link' href="#">Champagne</a></li>
+              <li class='header__menu-item' data-spollers="768,max"><a class='header__link' href="#">Wine</a>
+                <button class="header__arrow" data-spoller></button>
+                <ul class="header__menu-sublist header__menu-sublist--bottom">
+                  <li class="header__sub-item"><a class='header__sublink' href="#">Product1</a></li>
+                  <li class="header__sub-item"><a class='header__sublink' href="#">Product2</a></li>
+                  <li class="header__sub-item"><a class='header__sublink' href="#">Product3</a></li>
+                  <li class="header__sub-item"><a class='header__sublink' href="#">Product4</a></li>
+                  <li class="header__sub-item"><a class='header__sublink' href="#">Product5</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav><!-- hide__menu -->
+        </div><!-- header__container -->
+      </div><!-- header__bottom -->
+    </header>
+
+    <!-- main -->
+    <main class="main">
+      <section class="slider-block main__slider" id="slider-block">
+        <div class="container">
+          <div class="swiper-container slider-block__items">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide slider-block__item" style='background-image: url("images/slider-block/01.png");
+                  background-image: -webkit-image-set(url("images/slider-block/01.webp") 1x);'>
+                <div class="slider-block__content">
+                  <h2 class="slider-block__title" data-swiper-parallax-opacity="0" data-swiper-parallax-scale="0.2">
+                    Lightning Fast Shipping
+                  </h2>
+                  <div class="slider-block__subtitle" data-swiper-parallax-opacity="0" data-swiper-parallax="-300"
+                    data-swiper-parallax-durration="500">
+                    From Our Haus to Yours
+                  </div>
+                </div>
+              </div><!-- main-slider -->
+              <div class="swiper-slide slider-block__item" style='background-image: url("images/slider-block/01.png");
+              background-image: -webkit-image-set(url("images/slider-block/01.webp") 1x);'>
+                <div class="slider-block__content">
+                  <h2 class="slider-block__title" data-swiper-parallax-opacity="0" data-swiper-parallax-scale="0.2">
+                    Lightning Fast Shipping
+                  </h2>
+                  <div class="slider-block__subtitle" data-swiper-parallax-opacity="0" data-swiper-parallax="-300"
+                    data-swiper-parallax-durration="500">
+                    From Our Haus to Yours
+                  </div>
+                </div>
+              </div><!-- main-slider -->
+              <div class="swiper-slide slider-block__item" style='background-image: url("images/slider-block/01.png");
+          background-image: -webkit-image-set(url("images/slider-block/01.webp") 1x);'>
+                <div class="slider-block__content">
+                  <h2 class="slider-block__title" data-swiper-parallax-opacity="0" data-swiper-parallax-scale="0.2">
+                    Lightning Fast Shipping
+                  </h2>
+                  <div class="swiper-slide slider-block__subtitle" data-swiper-parallax-opacity="0"
+                    data-swiper-parallax="-300" data-swiper-parallax-durration="500">
+                    From Our Haus to Yours
+                  </div>
+                </div>
+              </div><!-- main-slider -->
+              <div class="swiper-slide slider-block__item" style='background-image: url("images/slider-block/01.png");
+      background-image: -webkit-image-set(url("images/slider-block/01.webp") 1x);'>
+                <div class="slider-block__content">
+                  <h2 class="slider-block__title" data-swiper-parallax-opacity="0" data-swiper-parallax-scale="0.2">
+                    Lightning Fast Shipping
+                  </h2>
+                  <div class="swiper-slide slider-block__subtitle" data-swiper-parallax-opacity="0"
+                    data-swiper-parallax="-300" data-swiper-parallax-durration="500">
+                    From Our Haus to Yours
+                  </div>
+                </div>
+              </div><!-- main-slider -->
+              <div class="swiper-slide slider-block__item" style='background-image: url("images/slider-block/01.png");
+  background-image: -webkit-image-set(url("images/slider-block/01.webp") 1x);'>
+                <div class="slider-block__content">
+                  <h2 class="slider-block__title" data-swiper-parallax-opacity="0" data-swiper-parallax-scale="0.2">
+                    Lightning Fast Shipping
+                  </h2>
+                  <div class="swiper-slide slider-block__subtitle" data-swiper-parallax-opacity="0"
+                    data-swiper-parallax="-300" data-swiper-parallax-durration="500">
+                    From Our Haus to Yours
+                  </div>
+                </div>
+              </div><!-- main-slider -->
+            </div><!-- slider-block__items -->
+            <div class="button-arrow button-prev"></div>
+            <div class="button-arrow button-next"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div><!-- container -->
+      </section><!-- slider-block -->
+
+      <section class="advanteges">
+        <div class="container">
+          <div class="advanteges__row">
+            <div class="advanteges__item">
+              <div class="advanteges__content">
+                <div class="advanteges__title-wrapper">
+                  <h3 class="advanteges__title">Search</h3>
+                </div>
+                <div class="advanteges__text">1500+ bottles to choose from</div>
+              </div><!-- advateges__content -->
+              <div class="advanteges__img">
+                <picture>
+                  <source srcset="images/advanteges/01.webp" type="image/webp">
+                  <img src="images/advanteges/01.png" alt="Person">
+                </picture>
+              </div>
+
+            </div><!-- advanteges__item -->
+            <div class="advanteges__item">
+              <div class="advanteges__content">
+                <div class="advanteges__title-wrapper">
+                  <h3 class="advanteges__title">Tap</h3>
+                </div>
+                <div class="advanteges__text advanteges__text--cart">Checkout in seconds with express checkout</div>
+              </div><!-- advateges__content -->
+              <div class="advanteges__img advanteges__img--cart">
+                <picture>
+                  <source srcset="images/advanteges/02.webp" type="image/webp">
+                  <img src="images/advanteges/02.png" alt="cart">
+                </picture>
+              </div>
+
+            </div><!-- advanteges__item -->
+            <div class="advanteges__item">
+              <div class="advanteges__content">
+                <div class="advanteges__title-wrapper">
+                  <h3 class="advanteges__title">Drink</h3>
+                </div>
+                <div class="advanteges__text advanteges__text--right">Delivered to your
+                  door within days</div>
+              </div><!-- advateges__content -->
+              <div class="advanteges__img">
+                <picture>
+                  <source srcset="images/advanteges/03.webp" type="image/webp">
+                  <img src="images/advanteges/03.png" alt="Person">
+                </picture>
+              </div>
+
+            </div><!-- advanteges__item -->
+          </div><!-- adavanteges__row -->
+        </div><!-- container -->
+      </section><!-- advanteges -->
+      <section class="goods-one">
+        <div class="container">
+          <div class="goods-one__top">
+            <div class="goods-one__top-content">
+              <h3 class="goods-one__title">Bottles</h3>
+              <div class="goods-one__subtitle">
+                Under $50
+              </div>
+            </div><!-- goods-one__top-content -->
+            <a class="goods-one__subtitle-button button-show" href='#'>Show all</a>
+          </div><!-- goods-one__top -->
+          <div class="goods-items" id="goods-items-one">
+            <article class="goods-item" data-pid="1">
+              <a class='goods-item__add' href="#"></a>
+              <a class="goods-item__content" href="#">
+                <div class="goods-item__body">
+                  <span class="goods-item__img">
+                    <picture>
+                      <source srcset="images/goods-one/01.webp" type="image/webp">
+                      <img src="images/goods-one/01.jpg" alt="Goods">
+                    </picture>
+                  </span>
+
+                </div><!-- goods-item__body -->
+                <h5 class="goods-item__name">
+                  Buffalo Trace Bourbon Cream 750ml
+                </h5><!-- goods-item__name -->
+              </a>
+              <div class="goods-item__prices">
+                <div class="goods-item__price">$20.95</div>
+                <div class="goods-item__price goods-item__price--old">$24.95</div>
+              </div><!-- goods-item__prices -->
+            </article><!-- goods__item -->
+            <article class="goods-item" data-pid="2">
+              <a class='goods-item__add' href="#"></a>
+              <a class="goods-item__content" href="#">
+                <div class="goods-item__body">
+                  <span class="goods-item__img">
+                    <picture>
+                      <source srcset="images/goods-one/01.webp" type="image/webp">
+                      <img src="images/goods-one/01.jpg" alt="Goods">
+                    </picture>
+                  </span>
+
+                </div><!-- goods-item__body -->
+                <h5 class="goods-item__name">
+                  Buffalo Trace Whiskey 750ml
+                </h5><!-- goods-item__name -->
+              </a>
+              <div class="goods-item__prices">
+                <div class="goods-item__price">$20.95</div>
+                <div class="goods-item__price goods-item__price--old">$24.95</div>
+              </div><!-- goods-item__prices -->
+            </article><!-- goods__item -->
+            <article class="goods-item" data-pid="3">
+              <a class='goods-item__add' href="#"></a>
+              <a class="goods-item__content" href="#">
+                <div class="goods-item__body">
+                  <span class="goods-item__img">
+                    <picture>
+                      <source srcset="images/goods-one/02.webp" type="image/webp">
+                      <img src="images/goods-one/02.jpg" alt="Goods">
+                    </picture>
+                  </span>
+
+                </div><!-- goods-item__body -->
+                <h5 class="goods-item__name">
+                  Bourbon Trace Bourbon Cream 750ml
+                </h5><!-- goods-item__name -->
+              </a>
+              <div class="goods-item__prices">
+                <div class="goods-item__price">$20.95</div>
+                <div class="goods-item__price goods-item__price--old">$24.95</div>
+              </div><!-- goods-item__prices -->
+            </article><!-- goods__item -->
+            <article class="goods-item" data-pid="4">
+              <a class='goods-item__add' href="#"></a>
+              <a class="goods-item__content" href="#">
+                <div class="goods-item__body">
+                  <span class="goods-item__img">
+                    <picture>
+                      <source srcset="images/goods-one/03.webp" type="image/webp">
+                      <img src="images/goods-one/03.jpg" alt="Goods">
+                    </picture>
+                  </span>
+
+                </div><!-- goods-item__body -->
+                <h5 class="goods-item__name">
+                  Elijah Craig Small Batch Bourbon Whiskey 750ml
+                </h5><!-- goods-item__name -->
+              </a>
+              <div class="goods-item__prices">
+                <div class="goods-item__price">$20.95</div>
+                <div class="goods-item__price goods-item__price--old">$24.95</div>
+              </div><!-- goods-item__prices -->
+            </article><!-- goods__item -->
+            <article class="goods-item" data-pid="5">
+              <a class='goods-item__add' href="#"></a>
+              <a class="goods-item__content" href="#">
+                <div class="goods-item__body">
+                  <span class="goods-item__img">
+                    <picture>
+                      <source srcset="images/goods-one/01.webp" type="image/webp">
+                      <img src="images/goods-one/01.jpg" alt="Goods">
+                    </picture>
+                  </span>
+
+                </div><!-- goods-item__body -->
+                <h5 class="goods-item__name">
+                  Hendrick's Lunar Gin Limited Release 750ml
+                </h5><!-- goods-item__name -->
+              </a>
+              <div class="goods-item__prices">
+                <div class="goods-item__price">$20.95</div>
+                <div class="goods-item__price goods-item__price--old">$24.95</div>
+              </div><!-- goods-item__prices -->
+            </article><!-- goods__item -->
+            <article class="goods-item" data-pid="6">
+              <a class='goods-item__add' href="#"></a>
+              <a class="goods-item__content" href="#">
+                <div class="goods-item__body">
+                  <span class="goods-item__img">
+                    <picture>
+                      <source srcset="images/goods-one/02.webp" type="image/webp">
+                      <img src="images/goods-one/02.jpg" alt="Goods">
+                    </picture>
+                  </span>
+
+                </div><!-- goods-item__body -->
+                <h5 class="goods-item__name">
+                  High West American Prairie Bourbon Whiskey 750ml
+                </h5><!-- goods-item__name -->
+              </a>
+              <div class="goods-item__prices">
+                <div class="goods-item__price">$20.95</div>
+                <div class="goods-item__price goods-item__price--old">$24.95</div>
+              </div><!-- goods-item__prices -->
+            </article><!-- goods__item -->
+            <article class="goods-item" data-pid="7">
+              <a class='goods-item__add' href="#"></a>
+              <a class="goods-item__content" href="#">
+                <div class="goods-item__body">
+                  <span class="goods-item__img">
+                    <picture>
+                      <source srcset="images/goods-one/03.webp" type="image/webp">
+                      <img src="images/goods-one/03.jpg" alt="Goods">
+                    </picture>
+                  </span>
+
+                </div><!-- goods-item__body -->
+                <h5 class="goods-item__name">
+                  Tito's Vodka 750ml
+                </h5><!-- goods-item__name -->
+              </a>
+              <div class="goods-item__prices">
+                <div class="goods-item__price">$20.95</div>
+                <div class="goods-item__price goods-item__price--old">$24.95</div>
+              </div><!-- goods-item__prices -->
+            </article><!-- goods__item -->
+            <article class="goods-item" data-pid="8">
+              <a class='goods-item__add' href="#"></a>
+              <a class="goods-item__content" href="#">
+                <div class="goods-item__body">
+                  <span class="goods-item__img">
+                    <picture>
+                      <source srcset="images/goods-one/01.webp" type="image/webp">
+                      <img src="images/goods-one/01.jpg" alt="Goods">
+                    </picture>
+                  </span>
+
+                </div><!-- goods-item__body -->
+                <h5 class="goods-item__name">
+                  Four Roses Single Barrel Bourbon Whiskey 750ml
+                </h5><!-- goods-item__name -->
+              </a>
+              <div class="goods-item__prices">
+                <div class="goods-item__price">$20.95</div>
+                <div class="goods-item__price goods-item__price--old">$24.95</div>
+              </div><!-- goods-item__prices -->
+            </article><!-- goods__item -->
+
+          </div><!-- goods-one__items -->
+        </div><!-- container -->
+      </section><!-- goods-one -->
+      <section class="rare-product">
+        <div class="container">
+          <div class="rare-product__top">
+
+            <div class="rare-product__title-wrap">
+              <h2 class="rare-product__title">Rare & Hard To Find</h2>
+            </div>
+            <div class="rare-product__text">
+              <div class="rare-product__text--first">
+                The Bottle Haus's team of connoisseurs have done all the hard work for you.
+              </div>
+              <div class="rare-product__text--last">
+                <h5 class="rare-product__text-title"><span>Louis</span> XIII Cognac</h5>
+                <div class="rare-product__text-content">
+                  The oldest being over 100 years old
+                </div>
+              </div><!-- rare-product__text-last -->
+            </div><!-- rare-product__text -->
+            <div class="rare-product__label">
+              <picture>
+                <source srcset="images/rare-product/01.webp" type="image/webp">
+                <img src="images/rare-product/01.png" alt="Goods">
+              </picture>
+            </div>
+          </div><!-- rare-product__top -->
+          <div class="rare-product__inner">
+            <div class="goods-items rare-product__items">
+              <article class="goods-item rare-product__item" data-pid="1">
+                <a class='goods-item__add' href="#"></a>
+                <a class="goods-item__content" href="#">
+                  <div class="goods-item__body rare-item__body">
+                    <span class="goods-item__img">
+                      <picture>
+                        <source srcset="images/rare-product/03.webp" type="image/webp">
+                        <img src="images/rare-product/03.jpg" alt="Goods">
+                      </picture>
+                    </span>
+
+                  </div><!-- goods-item__body -->
+                  <h5 class="goods-item__name">Hendrick's Lunar Gin Limited Release 750ml
+                  </h5><!-- goods-item__name -->
+                </a>
+                <div class="goods-item__prices">
+                  <div class="goods-item__price">$20.95</div>
+                  <div class="goods-item__price goods-item__price--old">$24.95</div>
+                </div><!-- goods-item__prices -->
+              </article><!-- goods__item -->
+              <article class="goods-item rare-product__item" data-pid="2">
+                <a class='goods-item__add' href="#"></a>
+                <a class="goods-item__content" href="#">
+                  <div class="goods-item__body rare-item__body">
+                    <span class="goods-item__img">
+                      <picture>
+                        <source srcset="images/rare-product/03.webp" type="image/webp">
+                        <img src="images/rare-product/03.jpg" alt="Goods">
+                      </picture>
+                    </span>
+
+                  </div><!-- goods-item__body -->
+                  <h5 class="goods-item__name"> Hendrick's Lunar Gin Limited Release 750ml
+                  </h5><!-- goods-item__name -->
+                </a>
+                <div class="goods-item__prices">
+                  <div class="goods-item__price">$20.95</div>
+                  <div class="goods-item__price goods-item__price--old">$24.95</div>
+                </div><!-- goods-item__prices -->
+              </article><!-- goods__item -->
+              <article class="goods-item rare-product__item" data-pid="3">
+                <a class='goods-item__add' href="#"></a>
+                <a class="goods-item__content" href="#">
+                  <div class="goods-item__body rare-item__body">
+                    <span class="goods-item__img">
+                      <picture>
+                        <source srcset="images/rare-product/04.webp" type="image/webp">
+                        <img src="images/rare-product/04.jpg" alt="Goods">
+                      </picture>
+                    </span>
+
+                  </div><!-- goods-item__body -->
+                  <h5 class="goods-item__name"> Hendrick's Lunar Gin Limited Release 750ml
+                  </h5><!-- goods-item__name -->
+                </a>
+                <div class="goods-item__prices">
+                  <div class="goods-item__price">$20.95</div>
+                  <div class="goods-item__price goods-item__price--old">$24.95</div>
+                </div><!-- goods-item__prices -->
+              </article><!-- goods__item -->
+              <div class="goods-item rare-product__item rare-product__body rare-product__item--text">
+                <div class="rare-product__wrap">
+                  <p class="rare-product__item-text rare-product__item-text--orange">I told</p>
+                  <p class="rare-product__item-text rare-product__item-text--pink">my wife</p>
+                  <p class="rare-product__item-text rare-product__item-text--green">it’s an</p>
+                  <p class="rare-product__item-text rare-product__item-text--red">investment</p>
+                </div><!-- rare-product__wrap -->
+                <div class="rare-product__item-img">
+                  <picture>
+                    <source srcset="images/rare-product/05.webp" type="image/webp">
+                    <img src="images/rare-product/05.img" alt="picture">
+                  </picture>
+                </div>
+              </div><!-- goods__item -->
+              <article class="goods-item rare-product__item" data-pid="4">
+                <a class='goods-item__add' href="#"></a>
+                <a class="goods-item__content" href="#">
+                  <div class="goods-item__body rare-item__body">
+                    <span class="goods-item__img">
+                      <picture>
+                        <source srcset="images/rare-product/03.webp" type="image/webp">
+                        <img src="images/rare-product/03.jpg" alt="Goods">
+                      </picture>
+                    </span>
+
+                  </div><!-- goods-item__body -->
+                  <h5 class="goods-item__name">Hendrick's Lunar Gin Limited Release 750ml
+                  </h5><!-- goods-item__name -->
+                </a>
+                <div class="goods-item__prices">
+                  <div class="goods-item__price">$20.95</div>
+                  <div class="goods-item__price goods-item__price--old">$24.95</div>
+                </div><!-- goods-item__prices -->
+              </article><!-- goods__item -->
+              <article class="goods-item rare-product__item" data-pid="5">
+                <a class='goods-item__add' href="#"></a>
+                <a class="goods-item__content" href="#">
+                  <div class="goods-item__body rare-item__body">
+                    <span class="goods-item__img">
+                      <picture>
+                        <source srcset="images/rare-product/04.webp" type="image/webp">
+                        <img src="images/rare-product/04.jpg" alt="Goods">
+                      </picture>
+                    </span>
+
+                  </div><!-- goods-item__body -->
+                  <h5 class="goods-item__name">Hendrick's Lunar Gin Limited Release 750ml
+                  </h5><!-- goods-item__name -->
+                </a>
+                <div class="goods-item__prices">
+                  <div class="goods-item__price">$20.95</div>
+                  <div class="goods-item__price goods-item__price--old">$24.95</div>
+                </div><!-- goods-item__prices -->
+              </article><!-- goods__item -->
+              <article class="goods-item rare-product__item" data-pid="6">
+                <a class='goods-item__add' href="#"></a>
+                <a class="goods-item__content" href="#">
+                  <div class="goods-item__body rare-item__body">
+                    <span class="goods-item__img">
+                      <picture>
+                        <source srcset="images/rare-product/03.webp" type="image/webp">
+                        <img src="images/rare-product/03.jpg" alt="Goods">
+                      </picture>
+                    </span>
+
+                  </div><!-- goods-item__body -->
+                  <h5 class="goods-item__name">Hendrick's Lunar Gin Limited Release 750ml
+                  </h5><!-- goods-item__name -->
+                </a>
+                <div class="goods-item__prices">
+                  <div class="goods-item__price">$20.95</div>
+                  <div class="goods-item__price goods-item__price--old">$24.95</div>
+                </div><!-- goods-item__prices -->
+              </article><!-- goods__item -->
+              <article class="goods-item rare-product__item" data-pid="7">
+                <a class='goods-item__add' href="#"></a>
+                <a class="goods-item__content" href="#">
+                  <div class="goods-item__body rare-item__body">
+                    <span class="goods-item__img">
+                      <picture>
+                        <source srcset="images/rare-product/04.webp" type="image/webp">
+                        <img src="images/rare-product/04.jpg" alt="Goods">
+                      </picture>
+                    </span>
+
+                  </div><!-- goods-item__body -->
+                  <h5 class="goods-item__name">Hendrick's Lunar Gin Limited Release 750ml
+                  </h5><!-- goods-item__name -->
+                </a>
+                <div class="goods-item__prices">
+                  <div class="goods-item__price">$20.95</div>
+                  <div class="goods-item__price goods-item__price--old">$24.95</div>
+                </div><!-- goods-item__prices -->
+              </article><!-- goods__item -->
+            </div><!-- goods-one__items -->
+            <div class="rare-product__footer">
+              <div class="rare-product__footer-text">
+                Whether you're sending a gift to someone
+                special or simply just adding to your collection,
+                let The Bottle Haus be your one stop shop for everything rare.
+              </div>
+              <a class="button-show rare-product__show" href="#">show all</a>
+            </div><!-- rare-product__footer -->
+          </div>
+        </div><!-- container -->
+      </section>
+      <section class="reviews">
+        <div class="container">
+          <h2 class="reviews__title title">Let customers</h2>
+          <h5 class="reviews__subtitle subtitle">Speak for us</h5>
+          <div class="reviews__row swiper-container">
+            <div class="swiper-wrapper">
+              <div class="reviews__item swiper-slide">
+                <div class="reviews__item-text">
+                  To create this extraordinary blend,
+                  crown royal whiskies are carefully
+                  selected by their master blender
+                </div>
+                <div class="reviews__item-autor">
+                  Josh Doae
+                </div>
+                <div class="reviews__item-img">
+                  <picture>
+                    <source srcset="images/reviews/01.webp" type="image/webp">
+                    <img src="images/reviews/01.jpg" alt="Whiskey">
+                  </picture>
+                </div>
+                <div class="reviews__item-name">High West American Prairie Bourbon Whiskey</div>
+              </div><!-- reviews__item -->
+              <div class="reviews__item reviews__item--middle swiper-slide">
+                <div class="reviews__item-bg">
+                  <div class="reviews__item-text reviews__item--middle-text">
+                    To create this extraordinary blend, crown royal
+                    whiskies are carefully selected
+                    by their master blender.
+                    Checkout in seconds with express checkout
+                  </div>
+                  <div class="reviews__item-autor reviews__item--middle-autor">
+                    Josh Doae
+                  </div>
+                </div><!-- reviews__item-bg -->
+                <div class="reviews__item-img reviews__item--middle-img">
+                  <picture>
+                    <source srcset="images/reviews/02.webp" type="image/webp">
+                    <img src="images/reviews/02.jpg" alt="Whiskey">
+                  </picture>
+                </div>
+                <div class="reviews__item-name reviews__item--middle-name">Sazerac Straight Rye Whiskey</div>
+
+              </div><!-- reviews__item -->
+              <div class="reviews__item swiper-slide">
+                <div class="reviews__item-text">
+                  To create this extraordinary blend,
+                  crown royal whiskies are carefully
+                  selected by their master blender
+                </div>
+                <div class="reviews__item-autor">
+                  Josh Doae
+                </div>
+                <div class="reviews__item-img">
+                  <picture>
+                    <source srcset="images/reviews/03.webp" type="image/webp">
+                    <img src="images/reviews/03.jpg" alt="Whiskey">
+                  </picture>
+                </div>
+                <div class="reviews__item-name">Buffalo Trace Bourbon Cream</div>
+              </div><!-- reviews__item -->
+            </div>
+            <div class="swiper-pagination"></div>
+          </div><!-- reviews__row -->
+        </div><!-- container -->
+      </section><!-- reviews -->
+      <section class="royal-slider">
+        <div class="swiper-container royal-slider__items">
+          <div class="swiper-wrapper">
+            <div class="royal-slider__row swiper-slide">
+              <div class="royal-slider__content">
+                <div class="container royal-slider__container">
+                  <h6 class="royal-slider__subtitle">Lightning Fast Delivery</h6>
+                  <h2 class="royal-slider__title">
+                    Crown Royal Peach <br><span>in Stock</span>
+                  </h2>
+                  <div class="royal-slider__text">
+                    To create this extraordinary blend, crown royal whiskies are carefully selected
+                    by their master blender and infused with the juicy flavor
+                    <br>of fresh Georgia peaches
+                  </div>
+                  <a class="royal-slider__button" href="#">Shop Now</a>
+                </div><!-- container -->
+              </div><!-- royal-slider__content -->
+              <div class="royal-slider__column">
+                <div class="royal-slider__img">
+                  <picture>
+                    <source srcset="images/royal-slider/01.webp" type="image/webp">
+                    <img src="images/royal-slider/01.jpg" alt="royal whiskies">
+                  </picture>
+                </div>
+
+                <div class="royal-slider__navigation" data-swiper-parallax-opacity="0" data-swiper-parallax-X='-100%'>
+                  <div class="swiper-pagination swiper-pagination--mobile"></div>
+                  <div class="royal-slider__navigation-body">
+                    <div class="royal-slider__counter">
+                      <span>Next slide</span>
+                      <span class='royal-slider__current'>01</span>
+                    </div><!-- roayl-slider__counter -->
+                    <div class="royal-slider__price">Enjoy $10 off $50 <br>Subtotal</div>
+                  </div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                </div><!-- royal-slider__content -->
+              </div><!-- royal-slider__column -->
+            </div><!-- royal-slider__row swiper-slide -->
+            <div class="royal-slider__row swiper-slide">
+              <div class="royal-slider__content">
+                <div class="container">
+                  <h6 class="royal-slider__subtitle">Lightning Fast Delivery</h6>
+                  <h2 class="royal-slider__title">
+                    Crown Royal Peach <br><span>in Stock</span>
+                  </h2>
+                  <div class="royal-slider__text">
+                    To create this extraordinary blend, crown royal whiskies are carefully selected
+                    by their master blender and infused with the juicy flavor
+                    of fresh Georgia peaches
+                  </div>
+                  <a class="royal-slider__button" href="#">Shop Now</a>
+                </div><!-- container -->
+              </div><!-- royal-slider__content -->
+              <div class="royal-slider__column">
+                <div class="royal-slider__img">
+                  <picture>
+                    <source srcset="images/royal-slider/01.webp" type="image/webp">
+                    <img src="images/royal-slider/01.jpg" alt="royal whiskies">
+                  </picture>
+                </div>
+                <div class="royal-slider__navigation" data-swiper-parallax-opacity="0" data-swiper-parallax-X='-100%'>
+                  <div class="swiper-pagination swiper-pagination--mobile"></div>
+                  <div class="royal-slider__navigation-body">
+                    <div class="royal-slider__counter">
+                      <span>Next slide</span>
+                      <span class='royal-slider__current'>01</span>
+                    </div><!-- roayl-slider__counter -->
+                    <div class="royal-slider__price">Enjoy $10 off $50 <br>Subtotal</div>
+                  </div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                </div><!-- royal-slider__content -->
+              </div><!-- royal-slider__column -->
+            </div><!-- royal-slider__row swiper-slide -->
+            <div class="royal-slider__row swiper-slide">
+              <div class="royal-slider__content">
+                <div class="container">
+                  <h6 class="royal-slider__subtitle">Lightning Fast Delivery</h6>
+                  <h2 class="royal-slider__title">
+                    Crown Royal Peach <br><span>in Stock</span>
+                  </h2>
+                  <div class="royal-slider__text">
+                    To create this extraordinary blend, crown royal whiskies are carefully selected
+                    by their master blender and infused with the juicy flavor
+                    of fresh Georgia peaches
+                  </div>
+                  <a class="royal-slider__button" href="#">Shop Now</a>
+                </div><!-- container -->
+              </div><!-- royal-slider__content -->
+              <div class="royal-slider__column">
+                <div class="royal-slider__img">
+                  <picture>
+                    <source srcset="images/royal-slider/01.webp" type="image/webp">
+                    <img src="images/royal-slider/01.jpg" alt="royal whiskies">
+                  </picture>
+                </div>
+                <div class="royal-slider__navigation" data-swiper-parallax-opacity="0" data-swiper-parallax-X='-100%'>
+                  <div class="swiper-pagination swiper-pagination--mobile"></div>
+                  <div class="royal-slider__navigation-body">
+                    <div class="royal-slider__counter">
+                      <span>Next slide</span>
+                      <span class='royal-slider__current'>01</span>
+                    </div><!-- roayl-slider__counter -->
+                    <div class="royal-slider__price">Enjoy $10 off $50 <br>Subtotal</div>
+                  </div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                </div><!-- royal-slider__content -->
+              </div><!-- royal-slider__column -->
+            </div><!-- royal-slider__row swiper-slide -->
+          </div><!-- swiper__wrapper -->
+
+          <div class="container container-swiper">
+            <div class="royal-slider__fraction">
+              <div class="royal-slider__current">01</div>
+            </div>
+            <div class="swiper-pagination swiper-pagination--desctop"></div>
+          </div><!-- container-swiper -->
+
+        </div> <!-- swiper__container -->
+      </section><!-- royal-slider -->
+      <section class="suplaer">
+        <div class="container">
+          <div class="suplaer__row">
+            <div class="suplaer__column">
+
+              <div class="suplaer__img">
+                <picture>
+                  <source srcset="images/suplaer/01.webp" type="image/webp">
+                  <img src="images/suplaer/01.jpg" alt="Whiskey">
+                </picture>
+              </div><!-- suplaer__img -->
+
+            </div><!-- suplaer__column -->
+            <div class="suplaer__content">
+              <div class="suplaer__body">
+                <div class="suplaer__top">
+                  <h6 class="suplaer__suptitle">Suplaer</h6>
+                  <h2 class="suplaer__title">Alberta Premium Cask Strength Rye Canadian Whiskey 750ml</h2>
+                  <div class="suplaer__calc">
+                    <div class="suplaer__calc-counter calc-counter">
+                      <span class="suplaer__calc-column calc-counter__minus">-</span>
+                      <span class="suplaer__calc-column calc-counter__amount" id="suplaer-amount">1</span>
+                      <span class="suplaer__calc-column calc-counter__plus">+</span>
+                    </div><!-- suplaer__calc-caunter -->
+                    <div class="suplaer__price"><span>$</span><span class="suplaer__numbers">89.95</span></div>
+                    <div class="suplaer__old-price">$129.95</div>
+                  </div><!-- suplaer__calc" -->
+                </div>
+                <div class="suplaer__stars">
+                  <div class="suplaer__star">
+                    <picture>
+                      <source srcset="images/suplaer/star.webp" type="image/webp">
+                      <img src="images/suplaer/star.jpg" alt="star">
+                    </picture>
+                  </div>
+                  <div class="suplaer__star">
+                    <picture>
+                      <source srcset="images/suplaer/star.webp" type="image/webp">
+                      <img src="images/suplaer/star.jpg" alt="star">
+                    </picture>
+                  </div>
+                  <div class="suplaer__star">
+                    <picture>
+                      <source srcset="images/suplaer/star.webp" type="image/webp">
+                      <img src="images/suplaer/star.jpg" alt="star">
+                    </picture>
+                  </div>
+                  <div class="suplaer__star">
+
+                    <picture>
+                      <source srcset="images/suplaer/star.webp" type="image/webp">
+                      <img src="images/suplaer/star.jpg" alt="star">
+                    </picture>
+                  </div>
+                  <div class="suplaer__star">
+                    <picture>
+                      <source srcset="images/suplaer/emptyStar.webp" type="image/webp">
+                      <img src="images/suplaer/emptyStar.jpg" alt="star">
+                    </picture>
+                  </div>
+                  <a class="suplaer__reviews-link" href="#"><span class="suplaer__reviews-amount">28</span> reviews</a>
+                </div><!-- suplaer__stars -->
+                <div class="suplaer__text">
+                  A timeless style of malt whisky, Balcones “1” Texas Single
+                  Malt breathes new life into centuries of distilling tradition
+                  with classic techniques and ingredients adapted for New Wos...
+                  <a class="suplaer__read-more" href="#">Read more</a>
+                </div>
+
+                <a class="suplaer__button" href="#">
+                  add to cart
+                </a>
+              </div><!-- suplaer__body -->
+
+            </div><!-- suplaer__content -->
+          </div><!-- suplaer__row -->
+        </div><!-- container -->
+      </section><!-- suplaer -->
+      <section class="featured">
+        <div class="container">
+          <h2 class="title featured__title">Featured</h2>
+          <h5 class="subtitle featured__subtitle">Collections</h5>
+          <div class="featured__row swiper-container">
+            <div class="swiper-wrapper">
+
+              <div class="featured__column featured__column--one swiper-slide">
+                <a href="#" class="featured__item featured__item--one">
+                  <picture>
+                    <source srcset="images/featured/01.webp" type="image/webp">
+                    <img src="images/featured/01.jpg" alt="image">
+                  </picture>
+                </a><!-- featured__item -->
+                <a href="#" class="featured__item">
+                  <picture>
+                    <source srcset="images/featured/06.webp" type="image/webp">
+                    <img src="images/featured/06.jpg" alt="image">
+                  </picture>
+                </a><!-- featured__item -->
+                <a href="#" class="featured__item featured__item--color featured__item--pink">
+                  Tequila
+                </a><!-- featured__item -->
+              </div><!-- featured__column -->
+              <div class="featured__column featured__column--two swiper-slide">
+                <a href="#" class="featured__item">
+                  <picture>
+                    <source srcset="images/featured/02.webp" type="image/webp">
+                    <img src="images/featured/02.jpg" alt="image">
+                  </picture>
+                </a><!-- featured__item -->
+                <a href="#" class="featured__item featured__item--color featured__item--orange">
+                  Gin
+                </a><!-- featured__item -->
+                <a href="#" class="featured__item">
+                  <picture>
+                    <source srcset="images/featured/07.webp" type="image/webp">
+                    <img src="images/featured/07.jpg" alt="image">
+                  </picture>
+                </a><!-- featured__item -->
+              </div><!-- featured__column -->
+              <div class="featured__column featured__column--three swiper-slide">
+                <a href="#" class="featured__item">
+                  <picture>
+                    <source srcset="images/featured/03.webp" type="image/webp">
+                    <img src="images/featured/03.jpg" alt="image">
+                  </picture>
+                </a><!-- featured__item -->
+                <a href="#" class="featured__item">
+                  <picture>
+                    <source srcset="images/featured/04.webp" type="image/webp">
+                    <img src="images/featured/04.jpg" alt="image">
+                  </picture>
+                </a><!-- featured__item -->
+                <a href="#" class="featured__item">
+                  <picture>
+                    <source srcset="images/featured/08.webp" type="image/webp">
+                    <img src="images/featured/08.jpg" alt="image">
+                  </picture>
+                </a><!-- featured__item -->
+              </div><!-- featured__column -->
+              <div class="featured__column featured__column--four swiper-slide">
+                <a href="#" class="featured__item featured__item--color featured__item--blue">
+                  wine
+                </a><!-- featured__item -->
+                <a href="#" class="featured__item">
+                  <picture>
+                    <source srcset="images/featured/05.webp" type="image/webp">
+                    <img src="images/featured/05.jpg" alt="image">
+                  </picture>
+                </a><!-- featured__item -->
+                <a href="#" class="featured__item featured__item--color featured__item--green">
+                  Rare &<br>Hard To Find
+                </a><!-- featured__item -->
+              </div><!-- featured__column -->
+            </div><!-- swiper__wrapper -->
+          </div><!-- featured__row -->
+
+        </div><!-- container -->
+      </section><!-- featured -->
+
+      <!-- blogs -->
+      <section class="blogs" id="blogs">
+        <div class="container">
+          <div class="blogs__row">
+            <div class="blogs__column blogs__column--left">
+              <h2 class="blogs__title">Our Blogs</h2>
+              <div class="blogs__text">
+                To create this extraordinary blend, crown blender and infused with the juicy flavor
+              </div>
+              <a href="#" class="blogs__button" data-da=".blogs__button-mobile, 767, 1">Read All</a>
+
+            </div><!-- blogs__column -->
+            <div class="blogs__column">
+              <a class="blogs__img" href="#">
+                <picture>
+                  <source srcset="images/blogs/01.webp" type="image/webp">
+                  <img src="images/blogs/01.png" alt="image">
+                </picture>
+              </a>
+              <a class="blogs__column-title" href="#">Enjoy $10 off $50 Subtotal</a>
+              <div class="blogs__data">02.10.21</div>
+            </div><!-- blogs__column -->
+            <div class="blogs__column">
+              <a class="blogs__img" href="#">
+                <picture>
+                  <source srcset="images/blogs/03.webp" type="image/webp">
+                  <img src="images/blogs/03.png" alt="image">
+                </picture>
+              </a>
+              <a class="blogs__column-title" href="#">Enjoy $10 off $50 Subtotal</a>
+              <div class="blogs__data">02.10.21</div>
+            </div><!-- blogs__column -->
+            <div class="blogs__column">
+              <a class="blogs__img" href="#">
+                <picture>
+                  <source srcset="images/blogs/02.webp" type="image/webp">
+                  <img src="images/blogs/02.png" alt="image">
+                </picture>
+              </a>
+              <a class="blogs__column-title" href="#">Enjoy $10 off $50 Subtotal</a>
+              <div class="blogs__data">02.10.21</div>
+            </div><!-- blogs__column -->
+            <div class="blogs__button-mobile"></div>
+          </div><!-- blogs__row -->
+        </div><!-- container -->
+      </section><!-- blogs -->
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <div class="footer__row">
+            <div class="footer__column">
+              <h5 class="footer__title">Proposition 65 Warning</h5>
+              <div class="footer__text footer__text--left">
+                <span>warning: </span>Drinking distilled spirits, beer, coolers,
+                wine and other alcoholic beverages may increase cancer risk, and,
+                during pregnancy, can cause birth defects. For more information go
+                to www.P65Warnings.ca.gov/alcohol
+              </div>
+            </div><!-- footer__column -->
+            <div class="footer__column">
+              <h5 class="footer__title footer__title--middle">Newsletter</h5>
+              <div class="footer__text footer__text--middle">
+                Subscribe to be the first to hear about our exclusive offers and latest arrivals.
+              </div>
+              <form action="#" class="footer__form">
+                <div class="footer__input-wrap">
+                  <input class="footer__input" type="text" placeholder="Compony(optional)">
+                  <input class="footer__button" type="submit" value="Go">
+                </div><!-- footer__inputinput-wrap -->
+              </form>
+            </div><!-- footer__column -->
+            <div class="footer__column">
+              <h5 class="footer__title footer__title--mobile">Resources</h5>
+              <div class="footer__links">
+                <a class="footer__text footer__link" href="#">Terms and Conditions</a>
+                <a class="footer__text footer__link" href="#">Privacy Policy</a>
+                <a class="footer__text footer__link" href="#">Shipping & Returns</a>
+                <a class="footer__text footer__link" href="#">Contact Us</a>
+                <a class="footer__text footer__link" href="#">Order Tracking</a>
+              </div><!-- footer__links -->
+            </div><!-- footer__column -->
+          </div><!-- footer__row -->
+        </div><!-- footer__top -->
+        <div class="footer__payment">
+          <div class="footer__payment-title">Accepted <span>Payments</span></div>
+          <div class="footer__cards">
+            <a href="#" class="footer__card"><img src="images/footer/01.png" alt="card-image"></a>
+            <a href="#" class="footer__card"><img src="images/footer/02.png" alt="card-image"></a>
+            <a href="#" class="footer__card"><img src="images/footer/03.png" alt="card-image"></a>
+            <a href="#" class="footer__card"><img src="images/footer/04.png" alt="card-image"></a>
+            <a href="#" class="footer__card"><img src="images/footer/05.png" alt="card-image"></a>
+            <a href="#" class="footer__card"><img src="images/footer/06.png" alt="card-image"></a>
+            <a href="#" class="footer__card"><img src="images/footer/07.png" alt="card-image"></a>
+            <a href="#" class="footer__card"><img src="images/footer/08.png" alt="card-image"></a>
+            <a href="#" class="footer__card"><img src="images/footer/09.png" alt="card-image"></a>
+          </div><!-- footer__cards -->
+        </div><!-- footer__payment -->
+        <div class="footer__slogan">
+          Please Drink Responsibly
+        </div><!-- footer__slogan -->
+        <div class="footer__copy">© 2021, <a class="footer__logo" href="#">Logo</a></div>
+      </div><!-- container -->
+    </footer>
+  </div><!-- wrapper -->
+
+
+  <div id="popup" class="popup popup-login">
+    <div class="popup__body popup-login__body">
+      <div class="popup__content popup-login__content">
+        <a href="#header" class="popup__close close-popup popup-login__close"></a>
+        <div class="popup__login__row row-login">
+          <div class="row-login__column row-login__column--left">
+            <div class="row-login__text">
+              <span>Premium</span> Spirits Shipped
+              Right To Your Door
+            </div>
+            <div class="row-login__img _ibg">
+              <picture>
+                <source srcset="images/popup/loginPopup.webp" type="image/webp">
+                <img src="images/popup/loginPopup.png" alt="image">
+              </picture>
+            </div>
+          </div><!-- row-login__column -->
+          <div class="row-login__column">
+            <div class="row-login__body">
+              <div class="row-login__title">Sign in</div>
+              <div class="row-login__subtitle">Don't have an account yet? <a class='popup-link' href="#popup2">Sign up
+                  here</a></div>
+              <form action="#" class="row-login__form form">
+
+                <div class="form__google-input input">
+                  <input type="text" placeholder="Sign in with Google" name="google">
+                </div>
+                <div class="form__border"><span>or</span></div>
+                <div class="form__email-input input">
+                  <input data-modal type="email" name="email" placeholder="Email">
+                  <p class="input__text _hide">Email</p>
+                </div>
+                <div class="form__password-input input">
+                  <input data-modal type="password" name="password" placeholder="Password">
+                  <p class="input__text _hide">Password</p>
+                </div>
+                <a class="form__foget" href="#">Fogot Password</a>
+                <button class="form__button" type="submit">Sign In</button>
+              </form>
+            </div><!-- row-login__body -->
+          </div><!-- row-login__column -->
+        </div><!-- popup__row -->
+      </div>
+    </div>
+  </div>
+
+  <div id="popup2" class="popup popup-login">
+    <div class="popup__body popup-login__body">
+      <div class="popup__content popup-login__content">
+        <a href="#header" class="popup__close close-popup popup-login__close"></a>
+        <div class="popup__login__row row-login">
+          <div class="row-login__column row-login__column--left">
+            <div class="row-login__text">
+            </div>
+            <div class="row-login__img _ibg">
+              <picture>
+                <source srcset="images/popup/createLogin.webp" type="image/webp">
+                <img src="images/popup/createLogin.png" alt="image">
+              </picture>
+            </div>
+          </div><!-- row-login__column -->
+          <div class="row-login__column">
+            <div class="row-login__body">
+              <div class="row-login__title">Sign up</div>
+              <div class="row-login__subtitle">Already have an account? <a class='popup-link' href="#popup">Sign in</a>
+              </div>
+              <form action="#" class="row-login__form form">
+
+                <div class="form__google-input input">
+                  <input type="text" placeholder="Sign in with Google" name="google">
+                </div>
+                <div class="form__border"><span>or</span></div>
+                <div class="form__names">
+                  <div class="form__name-input input">
+                    <input data-modal type="text" name="name1" placeholder="First name">
+                    <p class="input__text _hide">First name</p>
+                  </div>
+                  <div class="form__name-input input">
+                    <input data-modal type="text" name="name2" placeholder="Last name">
+                    <p class="input__text _hide">Last name</p>
+                  </div>
+                </div>
+                <div class="form__email-input input">
+                  <input data-modal type="email" name="email" placeholder="Email">
+                  <p class="input__text _hide">Email</p>
+                </div>
+                <div class="form__password-input input">
+                  <input data-modal type="password" name="password" placeholder="Password">
+                  <p class="input__text _hide">Password</p>
+                </div>
+                <button class="form__button" type="submit">Sign up</button>
+              </form>
+            </div><!-- row-login__body -->
+          </div><!-- row-login__column -->
+        </div><!-- popup__row -->
+      </div>
+    </div>
+  </div>
+
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
