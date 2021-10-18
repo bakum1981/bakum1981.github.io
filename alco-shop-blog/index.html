@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <header class="header" id="header">
+      <div class="header__wrapper _lp">
+        <div class="container">
+          <div class="header__row">
+            <div class="header__button header__el">
+              <img src="images/icons/header-button.svg" alt="Button burger">
+            </div>
+            <a class="header__logo" href='#'>Logo</a>
+            <div class="header__panel">
+              <div class="header__panel-block">
+              <div class="header__panel-items" data-da=".header__nav-hidden, 768, first">
+                <a href="#popup" class="header__panel-item popup-link">Log in</a>
+                <a href="#popup2" class="header__panel-item popup-link">Create account</a>
+              </div><!-- header__panel-items -->
+            </div>
+              <form action="#" class="header__form header__el header__el--search" data-da=".header__nav-hidden, 768, 0">
+                <button class="header__search" data-trigger type='submit'><img src="images/icons/search.svg"
+                  alt="Иконка поиска"></button>
+                  <div class="header__input">
+                    <input type="text" placeholder="Search">
+                    <button class="header__search" type='submit'><img src="images/icons/search.svg"
+                      alt="Иконка поиска"></button>
+                    </div>
+                  </form>
+                  <a href="#" class="header__cart header__el header__el--cart">
+                    <img class="header__cart-img" src="images/icons/cart.svg" alt="Cart">
+                    <span class="header__price">40,25$</span>
+                  </a>
+                </div><!-- header__panel -->
+              </div><!-- header__row -->
+            </div><!-- container -->
+          </div><!-- header__wrapper -->
+          <div class="header__bottom">
+            <div class="header__container container">
+              <nav class="header__nav">
+                <ul class="header__menu _lp">
+                  <li class='header__menu-item' data-spollers="768,max"><a class='header__link' href="#">Whiskey</a>
+                    <button class="header__arrow" data-spoller></button>
+                    <ul class="header__menu-sublist">
+                      <li class="header__sub-item"><a class='header__sublink' href="#">Product1</a></li>
+                      <li class="header__sub-item"><a class='header__sublink' href="#">Product2</a></li>
+                      <li class="header__sub-item"><a class='header__sublink' href="#">Product3</a></li>
+                      <li class="header__sub-item"><a class='header__sublink' href="#">Product4</a></li>
+                      <li class="header__sub-item"><a class='header__sublink' href="#">Product5</a></li>
+                    </ul>
+                  </li>
+                  <li class='header__menu-item' data-spollers="768,max"><a class='header__link' href="#">Tequila</a>
+                    <button class="header__arrow" data-spoller></button>
+                    <ul class="header__menu-sublist">
+                      <li class="header__sub-item"><a class='header__sublink' href="#">Product1</a></li>
+                      <li class="header__sub-item"><a class='header__sublink' href="#">Product2</a></li>
+                      <li class="header__sub-item"><a class='header__sublink' href="#">Product3</a></li>
+                      <li class="header__sub-item"><a class='header__sublink' href="#">Product4</a></li>
+                      <li class="header__sub-item"><a class='header__sublink' href="#">Product5</a></li>
+                    </ul>
+                  </li>
+                  <li class='header__menu-item'><a class='header__link' href="#">Vodka</a></li>
+                  <li class='header__menu-item'><a class='header__link' href="#">Gin</a></li>
+                  <li class='header__menu-item'><a class='header__link' href="#">Cognac & Brandy</a></li>
+                  <li class='header__menu-item'><a class='header__link' href="#">Rum</a></li>
+                  <li class='header__menu-item' data-spollers="768,max"><a class='header__link' href="#">Liqueur & More</a>
+                    <button class="header__arrow" data-spoller></button>
+                    <ul class="header__menu-sublist">
+                      <li class="header__sub-item"><a class='header__sublink' href="#">Product1</a></li>
+                      <li class="header__sub-item"><a class='header__sublink' href="#">Product2</a></li>
+                      <li class="header__sub-item"><a class='header__sublink' href="#">Product3</a></li>
+                      <li class="header__sub-item"><a class='header__sublink' href="#">Product4</a></li>
+                      <li class="header__sub-item"><a class='header__sublink' href="#">Product5</a></li>
+                    </ul>
+                  </li>
+                  <li class='header__menu-item'><a class='header__link' href="#">Champagne</a></li>
+                  <li class='header__menu-item' data-spollers="768,max"><a class='header__link' href="#">Wine</a>
+                    <button class="header__arrow" data-spoller></button>
+                    <ul class="header__menu-sublist header__menu-sublist--bottom">
+                      <li class="header__sub-item"><a class='header__sublink' href="#">Product1</a></li>
+                      <li class="header__sub-item"><a class='header__sublink' href="#">Product2</a></li>
+                      <li class="header__sub-item"><a class='header__sublink' href="#">Product3</a></li>
+                      <li class="header__sub-item"><a class='header__sublink' href="#">Product4</a></li>
+                      <li class="header__sub-item"><a class='header__sublink' href="#">Product5</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+              <nav class="header__nav-hidden">
+                <ul class="header__menu">
+                  <li class='header__menu-item' data-spollers="768,max"><a class='header__link' href="#">Whiskey</a>
+                    <button class="header__arrow" data-spoller></button>
+                    <ul class="header__menu-sublist">
+                      <li class="header__sub-item"><a class='header__sublink' href="#">Product1</a></li>
+                      <li class="header__sub-item"><a class='header__sublink' href="#">Product2</a></li>
+                      <li class="header__sub-item"><a class='header__sublink' href="#">Product3</a></li>
+                      <li class="header__sub-item"><a class='header__sublink' href="#">Product4</a></li>
+                      <li class="header__sub-item"><a class='header__sublink' href="#">Product5</a></li>
+                    </ul>
+                  </li>
+                  <li class='header__menu-item' data-spollers="768,max"><a class='header__link' href="#">Tequila</a>
+                    <button class="header__arrow" data-spoller></button>
+                    <ul class="header__menu-sublist">
+                      <li class="header__sub-item"><a class='header__sublink' href="#">Product1</a></li>
+                      <li class="header__sub-item"><a class='header__sublink' href="#">Product2</a></li>
+                      <li class="header__sub-item"><a class='header__sublink' href="#">Product3</a></li>
+                      <li class="header__sub-item"><a class='header__sublink' href="#">Product4</a></li>
+                      <li class="header__sub-item"><a class='header__sublink' href="#">Product5</a></li>
+                    </ul>
+                  </li>
+                  <li class='header__menu-item'><a class='header__link' href="#">Vodka</a></li>
+                  <li class='header__menu-item'><a class='header__link' href="#">Gin</a></li>
+                  <li class='header__menu-item'><a class='header__link' href="#">Cognac & Brandy</a></li>
+                  <li class='header__menu-item'><a class='header__link' href="#">Rum</a></li>
+                  <li class='header__menu-item' data-spollers="768,max"><a class='header__link' href="#">Liqueur & More</a>
+                    <button class="header__arrow" data-spoller></button>
+                    <ul class="header__menu-sublist">
+                      <li class="header__sub-item"><a class='header__sublink' href="#">Product1</a></li>
+                      <li class="header__sub-item"><a class='header__sublink' href="#">Product2</a></li>
+                      <li class="header__sub-item"><a class='header__sublink' href="#">Product3</a></li>
+                      <li class="header__sub-item"><a class='header__sublink' href="#">Product4</a></li>
+                      <li class="header__sub-item"><a class='header__sublink' href="#">Product5</a></li>
+                    </ul>
+                  </li>
+                  <li class='header__menu-item'><a class='header__link' href="#">Champagne</a></li>
+                  <li class='header__menu-item' data-spollers="768,max"><a class='header__link' href="#">Wine</a>
+                    <button class="header__arrow" data-spoller></button>
+                    <ul class="header__menu-sublist header__menu-sublist--bottom">
+                      <li class="header__sub-item"><a class='header__sublink' href="#">Product1</a></li>
+                      <li class="header__sub-item"><a class='header__sublink' href="#">Product2</a></li>
+                      <li class="header__sub-item"><a class='header__sublink' href="#">Product3</a></li>
+                      <li class="header__sub-item"><a class='header__sublink' href="#">Product4</a></li>
+                      <li class="header__sub-item"><a class='header__sublink' href="#">Product5</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav><!-- hide__menu -->
+            </div><!-- header__container -->
+          </div><!-- header__bottom -->
+        </header>
+
+        <!-- main -->
+        <main class="main">
+          <div class="main__recent-posts recent-posts">
+            <div class="container">
+              <div class="recent-posts__container container">
+                <div class="recent-posts__row">
+                  <div class="recent-posts__column recent-posts__column--left">
+                    <div class="recent-posts__body">
+                      <a  class="recent-posts__img _ibg" href="#">
+                        <picture>
+                          <source srcset="images/blogs-page/01.webp" type="image/webp">
+                            <img src="images/blogs-page/01.png" alt="recent-post">
+                          </picture>
+                        </a>
+                      </div><!-- recent-posts__body -->
+                    </div><!-- recent-posts__column -->
+                    <div class="recent-posts__column">
+                      <h3 class="recent-posts__suptitle" data-da=".recent-posts__container, 768, first">Recent posts</h3>
+                      <h1 class="recent-posts__title">
+                        <a href="#">7 Sensational Summer Cocktails</a>
+                      </h1>
+                      <div class="recent-posts__inner"> 
+                        <a  class="recent-posts__avatar" href="#">
+                          <picture>
+                            <source srcset="images/blogs-page/avatar.webp" type="image/webp">
+                              <img src="images/blogs-page/avatar.png" alt="avatar">
+                            </picture>
+                          </a>
+                          <div class="recent-posts__author">
+                            Posted by <a href="#">MATT M</a>
+                          </div><!-- recent-posts__author -->
+                          <div class="recent-posts__date">
+                            January 24, 2020
+                          </div><!-- recent-posts__date -->
+                        </div><!-- recent-posts__inner -->
+                        <ul class="recent-posts__pagination  pagination">
+                          <li class="pagination__item pagination__item--active"><a  class="pagination__link" href="#">1</a></li>
+                          <li class="pagination__item "><a  class="pagination__link" href="#">2</a></li>
+                          <li class="pagination__item"><a  class="pagination__link" href="#">3</a></li>
+                          <li class="pagination__item"><a  class="pagination__link" href="#">4</a></li>
+                          <li class="pagination__item"><a  class="pagination__link" href="#">5</a></li>
+                        </ul><!-- recent-posts__pagination -->
+                      </div><!-- recent-posts__column -->
+                    </div><!-- resent-post__row -->
+                  </div><!-- resent-post -->
+                </div><!-- recent-post__container -->
+              </div><!-- container -->
+
+              <section class="main__articles articles">
+                <div class="container articles__container">
+                <div class="title-wrap articles__title-wrap">
+                  <h3 class="articles__title title-wrap__title">New</h3>
+                  <div class="articles__subtitle title-wrap__subtitle">
+                    Articles
+                  </div>
+                </div><!-- articles__title-wrap -->
+                <div class="articles__new new-articles">
+                  <div class="new-articles__row">
+                    <div class="new-articles__column new-articles__column--big">
+                      <div class="new-articles__body">
+                        <a  class="new-articles__img new-articles__img--big _ibg" href="#">
+                         <picture>
+                          <source srcset="images/blogs-page/01.webp" type="image/webp">
+                            <img src="images/blogs-page/01.png" alt="new-post">
+                          </picture>
+                        </a>
+                        <div class="new-articles__text new-articles__text--center">
+                          Posted by <a href="#">Matt M</a> • January 24, 2020
+                        </div>
+                        <a class="new-articles__title new-articles__title--big" href="#">7 Sensational Summer Cocktails</a>
+                      </div><!-- new-articles__body -->
+                  </div><!-- new-articles__column -->
+                  <div class="new-articles__column new-articles__column--big">
+                      <div class="new-articles__body">
+                        <a  class="new-articles__img new-articles__img--big _ibg" href="#">
+                         <picture>
+                          <source srcset="images/blogs-page/02.webp" type="image/webp">
+                            <img src="images/blogs-page/02.png" alt="new-post">
+                          </picture>
+                        </a>
+                        <div class="new-articles__text new-articles__text--center">
+                          Posted by <a href="#">Matt M</a> • January 24, 2020
+                        </div>
+                        <a class="new-articles__title new-articles__title--big" href="#">Our Fav Hangover Cures</a>
+                      </div><!-- new-articles__body -->
+                  </div><!-- new-articles__column -->
+                  <div class="new-articles__column">
+                      <div class="new-articles__body">
+                        <a  class="new-articles__img  _ibg" href="#">
+                         <picture>
+                          <source srcset="images/blogs-page/03.webp" type="image/webp">
+                            <img src="images/blogs-page/03.png" alt="new-post">
+                          </picture>
+                        </a>
+                        <div class="new-articles__text">
+                          Posted by <a href="#">Matt M</a> • January 24, 2020
+                        </div>
+                        <a class="new-articles__title" href="#">Our Fav Hangover Cures</a>
+                      </div><!-- new-articles__body -->
+                  </div><!-- new-articles__column -->
+                  <div class="new-articles__column">
+                      <div class="new-articles__body">
+                        <a  class="new-articles__img  _ibg" href="#">
+                         <picture>
+                          <source srcset="images/blogs-page/04.webp" type="image/webp">
+                            <img src="images/blogs-page/04.png" alt="new-post">
+                          </picture>
+                        </a>
+                        <div class="new-articles__text">
+                          Posted by <a href="#">Matt M</a> • January 24, 2020
+                        </div>
+                        <a class="new-articles__title" href="#">Our Fav Hangover Cures</a>
+                      </div><!-- new-articles__body -->
+                    </div><!-- new-articles__column -->
+                  <div class="new-articles__column">
+                      <div class="new-articles__body">
+                        <a  class="new-articles__img  _ibg" href="#">
+                         <picture>
+                          <source srcset="images/blogs-page/05.webp" type="image/webp">
+                            <img src="images/blogs-page/05.png" alt="new-post">
+                          </picture>
+                        </a>
+                        <div class="new-articles__text">
+                          Posted by <a href="#">Matt M</a> • January 24, 2020
+                        </div>
+                        <a class="new-articles__title" href="#">Our Fav Hangover Cures</a>
+                      </div><!-- new-articles__body -->
+                  </div><!-- new-articles__column -->
+                  <div class="new-articles__column">
+                      <div class="new-articles__body">
+                        <a  class="new-articles__img  _ibg" href="#">
+                         <picture>
+                          <source srcset="images/blogs-page/06.webp" type="image/webp">
+                            <img src="images/blogs-page/06.png" alt="new-post">
+                          </picture>
+                        </a>
+                        <div class="new-articles__text">
+                          Posted by <a href="#">Matt M</a> • January 24, 2020
+                        </div>
+                        <a class="new-articles__title" href="#">Our Fav Hangover Cures</a>
+                      </div><!-- new-articles__body -->
+                  </div><!-- new-articles__column -->
+                  <div class="new-articles__column">
+                      <div class="new-articles__body">
+                        <a  class="new-articles__img  _ibg" href="#">
+                         <picture>
+                          <source srcset="images/blogs-page/07.webp" type="image/webp">
+                            <img src="images/blogs-page/07.png" alt="new-post">
+                          </picture>
+                        </a>
+                        <div class="new-articles__text">
+                          Posted by <a href="#">Matt M</a> • January 24, 2020
+                        </div>
+                        <a class="new-articles__title" href="#">Our Fav Hangover Cures</a>
+                      </div><!-- new-articles__body -->
+                  </div><!-- new-articles__column -->  
+                  <div class="new-articles__column">
+                      <div class="new-articles__body">
+                        <a  class="new-articles__img  _ibg" href="#">
+                         <picture>
+                          <source srcset="images/blogs-page/08.webp" type="image/webp">
+                            <img src="images/blogs-page/08.png" alt="new-post">
+                          </picture>
+                        </a>
+                        <div class="new-articles__text">
+                          Posted by <a href="#">Matt M</a> • January 24, 2020
+                        </div>
+                        <a class="new-articles__title" href="#">Our Fav Hangover Cures</a>
+                      </div><!-- new-articles__body -->
+                  </div><!-- new-articles__column -->
+                </div><!-- new-articles__row -->
+                </div><!-- new-articles -->
+                <ul class="articles__pagination  pagination">
+                  <li class="articles__item-pagination "><a  class="pagination__link" href="#">1</a></li>
+                </ul><!-- recent-posts__pagination -->
+              </div><!-- container -->
+          
+        </section>
+
+
+      </main>
+
+      <!-- footer -->
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__top">
+            <div class="footer__row">
+              <div class="footer__column">
+                <h5 class="footer__title">Proposition 65 Warning</h5>
+                <div class="footer__text footer__text--left">
+                  <span>warning: </span>Drinking distilled spirits, beer, coolers,
+                  wine and other alcoholic beverages may increase cancer risk, and,
+                  during pregnancy, can cause birth defects. For more information go
+                  to www.P65Warnings.ca.gov/alcohol
+                </div>
+              </div><!-- footer__column -->
+              <div class="footer__column">
+                <h5 class="footer__title footer__title--middle">Newsletter</h5>
+                <div class="footer__text footer__text--middle">
+                  Subscribe to be the first to hear about our exclusive offers and latest arrivals.
+                </div>
+                <form action="#" class="footer__form">
+                  <div class="footer__input-wrap">
+                    <input class="footer__input" type="text" placeholder="Compony(optional)">
+                    <input class="footer__button" type="submit" value="Go">
+                  </div><!-- footer__inputinput-wrap -->
+                </form>
+              </div><!-- footer__column -->
+              <div class="footer__column">
+                <h5 class="footer__title footer__title--mobile">Resources</h5>
+                <div class="footer__links">
+                  <a class="footer__text footer__link" href="#">Terms and Conditions</a>
+                  <a class="footer__text footer__link" href="#">Privacy Policy</a>
+                  <a class="footer__text footer__link" href="#">Shipping & Returns</a>
+                  <a class="footer__text footer__link" href="#">Contact Us</a>
+                  <a class="footer__text footer__link" href="#">Order Tracking</a>
+                </div><!-- footer__links -->
+              </div><!-- footer__column -->
+            </div><!-- footer__row -->
+          </div><!-- footer__top -->
+          <div class="footer__payment">
+            <div class="footer__payment-title">Accepted <span>Payments</span></div>
+            <div class="footer__cards">
+              <a href="#" class="footer__card"><img src="images/footer/01.png" alt="card-image"></a>
+              <a href="#" class="footer__card"><img src="images/footer/02.png" alt="card-image"></a>
+              <a href="#" class="footer__card"><img src="images/footer/03.png" alt="card-image"></a>
+              <a href="#" class="footer__card"><img src="images/footer/04.png" alt="card-image"></a>
+              <a href="#" class="footer__card"><img src="images/footer/05.png" alt="card-image"></a>
+              <a href="#" class="footer__card"><img src="images/footer/06.png" alt="card-image"></a>
+              <a href="#" class="footer__card"><img src="images/footer/07.png" alt="card-image"></a>
+              <a href="#" class="footer__card"><img src="images/footer/08.png" alt="card-image"></a>
+              <a href="#" class="footer__card"><img src="images/footer/09.png" alt="card-image"></a>
+            </div><!-- footer__cards -->
+          </div><!-- footer__payment -->
+          <div class="footer__slogan">
+            Please Drink Responsibly
+          </div><!-- footer__slogan -->
+          <div class="footer__copy">© 2021, <a class="footer__logo" href="#">Logo</a></div>
+        </div><!-- container -->
+      </footer>
+    </div><!-- wrapper -->
+
+
+    <div id="popup" class="popup popup-login">
+      <div class="popup__body popup-login__body">
+        <div class="popup__content popup-login__content">
+          <a href="#header" class="popup__close close-popup popup-login__close"></a>
+          <div class="popup__login__row row-login">
+            <div class="row-login__column row-login__column--left">
+              <div class="row-login__text">
+                <span>Premium</span> Spirits Shipped
+                Right To Your Door
+              </div>
+              <div class="row-login__img _ibg">
+                <picture>
+                  <source srcset="images/popup/loginPopup.webp" type="image/webp">
+                    <img src="images/popup/loginPopup.png" alt="image">
+                  </picture>
+                </div>
+              </div><!-- row-login__column -->
+              <div class="row-login__column">
+                <div class="row-login__body">
+                  <div class="row-login__title">Sign in</div>
+                  <div class="row-login__subtitle">Don't have an account yet? <a class='popup-link' href="#popup2">Sign up
+                  here</a></div>
+                  <form action="#" class="row-login__form form">
+
+                    <div class="form__google-input input">
+                      <input type="text" placeholder="Sign in with Google" name="google">
+                    </div>
+                    <div class="form__border"><span>or</span></div>
+                    <div class="form__email-input input">
+                      <input data-modal type="email" name="email" placeholder="Email">
+                      <p class="input__text _hide">Email</p>
+                    </div>
+                    <div class="form__password-input input">
+                      <input data-modal type="password" name="password" placeholder="Password">
+                      <p class="input__text _hide">Password</p>
+                    </div>
+                    <a class="form__foget" href="#">Fogot Password</a>
+                    <button class="form__button" type="submit">Sign In</button>
+                  </form>
+                </div><!-- row-login__body -->
+              </div><!-- row-login__column -->
+            </div><!-- popup__row -->
+          </div>
+        </div>
+      </div>
+
+      <div id="popup2" class="popup popup-login">
+        <div class="popup__body popup-login__body">
+          <div class="popup__content popup-login__content">
+            <a href="#header" class="popup__close close-popup popup-login__close"></a>
+            <div class="popup__login__row row-login">
+              <div class="row-login__column row-login__column--left">
+                <div class="row-login__text">
+                </div>
+                <div class="row-login__img _ibg">
+                  <picture>
+                    <source srcset="images/popup/createLogin.webp" type="image/webp">
+                      <img src="images/popup/createLogin.png" alt="image">
+                    </picture>
+                  </div>
+                </div><!-- row-login__column -->
+                <div class="row-login__column">
+                  <div class="row-login__body">
+                    <div class="row-login__title">Sign up</div>
+                    <div class="row-login__subtitle">Already have an account? <a class='popup-link' href="#popup">Sign in</a>
+                    </div>
+                    <form action="#" class="row-login__form form">
+
+                      <div class="form__google-input input">
+                        <input type="text" placeholder="Sign in with Google" name="google">
+                      </div>
+                      <div class="form__border"><span>or</span></div>
+                      <div class="form__names">
+                        <div class="form__name-input input">
+                          <input data-modal type="text" name="name1" placeholder="First name">
+                          <p class="input__text _hide">First name</p>
+                        </div>
+                        <div class="form__name-input input">
+                          <input data-modal type="text" name="name2" placeholder="Last name">
+                          <p class="input__text _hide">Last name</p>
+                        </div>
+                      </div>
+                      <div class="form__email-input input">
+                        <input data-modal type="email" name="email" placeholder="Email">
+                        <p class="input__text _hide">Email</p>
+                      </div>
+                      <div class="form__password-input input">
+                        <input data-modal type="password" name="password" placeholder="Password">
+                        <p class="input__text _hide">Password</p>
+                      </div>
+                      <button class="form__button" type="submit">Sign up</button>
+                    </form>
+                  </div><!-- row-login__body -->
+                </div><!-- row-login__column -->
+              </div><!-- popup__row -->
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+        <script src="js/main.min.js"></script>
+      </body>
+
+      </html>
