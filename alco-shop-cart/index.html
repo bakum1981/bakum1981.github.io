@@ -14,7 +14,7 @@
 
   <div class="wrapper">
     <header class="header" id="header">
-      <div class="header__wrapper">
+      <div class="header__wrapper _lp">
         <div class="container">
           <div class="header__row">
             <div class="header__button header__el">
@@ -23,12 +23,12 @@
             <a class="header__logo" href='#'>Logo</a>
             <div class="header__panel">
               <div class="header__panel-block">
-              <div class="header__panel-items" data-da=".header__nav-hidden, 767, first">
-                <a href="#" class="header__panel-item">Log in</a>
-                <a href="#" class="header__panel-item">Create account</a>
-              </div><!-- header__panel-items -->
-            </div>
-              <form action="#" class="header__form header__el header__el--search" data-da=".header__nav-hidden, 767, 0">
+                <div class="header__panel-items" data-da=".header__nav-hidden, 768, first">
+                  <a href="#popup" class="header__panel-item popup-link">Log in</a>
+                  <a href="#popup2" class="header__panel-item popup-link">Create account</a>
+                </div><!-- header__panel-items -->
+              </div>
+              <form action="#" class="header__form header__el header__el--search" data-da=".header__nav-hidden, 768, 0">
                 <button class="header__search" data-trigger type='submit'><img src="images/icons/search.svg"
                   alt="Иконка поиска"></button>
                   <div class="header__input">
@@ -48,7 +48,7 @@
           <div class="header__bottom">
             <div class="header__container container">
               <nav class="header__nav">
-                <ul class="header__menu">
+                <ul class="header__menu _lp">
                   <li class='header__menu-item' data-spollers="768,max"><a class='header__link' href="#">Whiskey</a>
                     <button class="header__arrow" data-spoller></button>
                     <ul class="header__menu-sublist">
@@ -93,8 +93,8 @@
                       <li class="header__sub-item"><a class='header__sublink' href="#">Product4</a></li>
                       <li class="header__sub-item"><a class='header__sublink' href="#">Product5</a></li>
                     </ul>
-                  </ul>
-                </li>
+                  </li>
+                </ul>
               </nav>
               <nav class="header__nav-hidden">
                 <ul class="header__menu">
@@ -142,14 +142,14 @@
                       <li class="header__sub-item"><a class='header__sublink' href="#">Product4</a></li>
                       <li class="header__sub-item"><a class='header__sublink' href="#">Product5</a></li>
                     </ul>
-                  </ul>
-                </li>
+                  </li>
+                </ul>
               </nav><!-- hide__menu -->
             </div><!-- header__container -->
           </div><!-- header__bottom -->
         </header>
 
-        <!-- ---------------------------------------main----------------------------------------------- -->
+        <!-- main -->
         <main class="main">
           <section class="main__order order">
             <div class="container order__container">
@@ -183,7 +183,7 @@
                     <div class="order__column row-order__column">
                       <div class="order__calc-counter calc-counter">
                         <span class="order__calc-column order__math order__math--minus calc-counter__minus"></span>
-                        <span class="order__calc-column calc-counter__amount order__amount" id="order-amount">1</span>
+                        <span class="order__calc-column calc-counter__amount order__amount">1</span>
                         <span class="order__calc-column order__math order__math--plus calc-counter__plus"></span>
                       </div><!-- suplaer__calc-caunter -->
                     </div><!-- order__column -->
@@ -213,7 +213,7 @@
                     <div class="order__column row-order__column">
                       <div class="order__calc-counter calc-counter">
                         <span class="order__calc-column order__math order__math--minus calc-counter__minus"></span>
-                        <span class="order__calc-column calc-counter__amount order__amount" id="order-amount">1</span>
+                        <span class="order__calc-column calc-counter__amount order__amount">1</span>
                         <span class="order__calc-column order__math order__math--plus calc-counter__plus"></span>
                       </div><!-- suplaer__calc-caunter -->
                     </div><!-- order__column -->
@@ -255,130 +255,230 @@
                     <a class="order__close" href='#'></a>
                   </div><!-- order__column -->
                 </div>
-              </section><!-- order -->
-              <div class="order-bottom">
-                <div class="container">
-                  <div class="order-bottom__container">
-                    <div class="order-bottom__row">
-                      <div class="order-bottom__column">
-                        <form action="#" class="order-bottom__form">
-                          <div class="order-bottom__title">Special instructions for seller</div>
-                          <div class="order-bottom__textarea">
-                            <textarea name="message" placeholder="Message"></textarea>
-                          </div>
-                        </form><!-- order-bottom__form -->
-                      </div><!-- order-bottom__column -->
-                      <div class="order-bottom__column">
-                        <div class="order-bottom__sum">
-                          <div class="order-bottom__text">Subtotal</div>
-                          <div class="order-bottom__price">$135.78</div>
-                        </div><!-- order-bottom__sum -->
-                        <div class="order-bottom__subtitle">
-                          Shipping & taxes calculated at checkout
-                        </div>
-                        <form action="#" class="order-bottom__form order-bottom__form--right">
-                          <div class="order__checkbox checkbox-order">
-                            <input type="checkbox" id="checkbox-item">
-                            <label for="checkbox-item" class="checkbox-order__fake">
-                            </label>
-                            <div class="checkbox-order__label">
-                              <div class="checkbox-order__body">
-                                <div class="checkbox-order__inner">
-                                  <div class="checkbox-order__unit">
-
-                                    <div class="checkbox-order__title">Shipping Protection</div>
-                                    <div class="checkbox-order__text">from Damage,<br>
-                                    Loss & Theft</div>
-                                  </div>
-                                  <div class="checkbox-order__price"> $3.75</div>
-                                </div><!-- checkbox-order__inner -->
-                              </div><!-- order__body -->
-                            </div>
-                          </div><!-- order__checkbox -->
-                          <div class="order-bottom__protection">
-                            *By deselecting shipping protection, The Bottle Haus. is not liable for items lost,  damaged, or stolen in transit
-                          </div>
-                          <button class="order-bottom__btn" type="submit">Checkout</button>
-                        </form><!-- order-bottom__form -->
-                        <div class="order-bottom__payments payments">
-                          <div class="payments__block"><a  class="payments__payment" href="#"><img src="images/payments/01.png" alt="payment"></a></div>                          
-                          <div class="payments__block"><a  class="payments__payment" href="#"><img src="images/payments/02.png" alt="payment"></a></div>                          
-                          <div class="payments__block"><a  class="payments__payment" href="#"><img src="images/payments/03.png" alt="payment"></a></div>                          
-                          <div class="payments__block"><a  class="payments__payment" href="#"><img src="images/payments/04.png" alt="payment"></a></div>                          
-                          
-
-                        </div>
-                      </div><!-- order-bottom__column -->
-                      
-                    </div><!-- order-bottom__row -->
-
-                  </div><!-- container -->
-
-                </div>
-              </div><!-- order-bottom -->
-            </main>
-
-            <!-- ----------------------------------footer------------------------------------------------- -->
-            <footer class="footer">
-              <div class="container">
-                <div class="footer__top">
-                  <div class="footer__row">
-                    <div class="footer__column">
-                      <h5 class="footer__title">Proposition 65 Warning</h5>
-                      <div class="footer__text footer__text--left">
-                        <span>warning: </span>Drinking distilled spirits, beer, coolers,
-                        wine and other alcoholic beverages may increase cancer risk, and, 
-                        during pregnancy, can cause birth defects. For more information go 
-                        to www.P65Warnings.ca.gov/alcohol
+              </div>
+            </div>
+          </section><!-- order -->
+          <div class="order-bottom">
+            <div class="container">
+              <div class="order-bottom__container">
+                <div class="order-bottom__row">
+                  <div class="order-bottom__column">
+                    <form action="#" class="order-bottom__form">
+                      <div class="order-bottom__title">Special instructions for seller</div>
+                      <div class="order-bottom__textarea">
+                        <textarea name="message" placeholder="Message"></textarea>
                       </div>
-                    </div><!-- footer__column -->
-                    <div class="footer__column">
-                      <h5 class="footer__title footer__title--middle">Newsletter</h5>
-                      <div class="footer__text footer__text--middle">
-                        Subscribe to be the first to hear about our exclusive offers and latest arrivals.
+                    </form><!-- order-bottom__form -->
+                  </div><!-- order-bottom__column -->
+                  <div class="order-bottom__column">
+                    <div class="order-bottom__sum">
+                      <div class="order-bottom__text">Subtotal</div>
+                      <div class="order-bottom__price">$135.78</div>
+                    </div><!-- order-bottom__sum -->
+                    <div class="order-bottom__subtitle">
+                      Shipping & taxes calculated at checkout
+                    </div>
+                    <form action="#" class="order-bottom__form order-bottom__form--right">
+                      <div class="order__checkbox checkbox-order">
+                        <input type="checkbox" id="checkbox-item">
+                        <label for="checkbox-item" class="checkbox-order__fake">
+                        </label>
+                        <div class="checkbox-order__label">
+                          <div class="checkbox-order__body">
+                            <div class="checkbox-order__inner">
+                              <div class="checkbox-order__unit">
+
+                                <div class="checkbox-order__title">Shipping Protection</div>
+                                <div class="checkbox-order__text">from Damage,<br>
+                                Loss & Theft</div>
+                              </div>
+                              <div class="checkbox-order__price"> $3.75</div>
+                            </div><!-- checkbox-order__inner -->
+                          </div><!-- order__body -->
+                        </div>
+                      </div><!-- order__checkbox -->
+                      <div class="order-bottom__protection">
+                        *By deselecting shipping protection, The Bottle Haus. is not liable for items lost,  damaged, or stolen in transit
                       </div>
-                      <form action="#" class="footer__form">
-                        <div class="footer__input-wrap">
-                          <input class="footer__input" type="text" placeholder="Compony(optional)" >
-                          <input class="footer__button" type="submit" value="Go">
-                        </div><!-- footer__inputinput-wrap -->
-                      </form>
-                    </div><!-- footer__column -->
-                    <div class="footer__column">
-                      <h5 class="footer__title footer__title--mobile">Resources</h5>
-                      <div class="footer__links">
-                        <a class="footer__text footer__link" href="#">Terms and Conditions</a>
-                        <a class="footer__text footer__link" href="#">Privacy Policy</a>
-                        <a class="footer__text footer__link" href="#">Shipping & Returns</a>
-                        <a class="footer__text footer__link" href="#">Contact Us</a>
-                        <a class="footer__text footer__link" href="#">Order Tracking</a>
-                      </div><!-- footer__links -->
-                    </div><!-- footer__column -->
-                  </div><!-- footer__row -->
-                </div><!-- footer__top -->
-                <div class="footer__payment">
-                  <div class="footer__payment-title">Accepted <span>Payments</span></div>
-                  <div class="footer__cards">
-                    <a href="#" class="footer__card"><img src="images/footer/01.png" alt="card-image"></a>
-                    <a href="#" class="footer__card"><img src="images/footer/02.png" alt="card-image"></a>
-                    <a href="#" class="footer__card"><img src="images/footer/03.png" alt="card-image"></a>
-                    <a href="#" class="footer__card"><img src="images/footer/04.png" alt="card-image"></a>
-                    <a href="#" class="footer__card"><img src="images/footer/05.png" alt="card-image"></a>
-                    <a href="#" class="footer__card"><img src="images/footer/06.png" alt="card-image"></a>
-                    <a href="#" class="footer__card"><img src="images/footer/07.png" alt="card-image"></a>
-                    <a href="#" class="footer__card"><img src="images/footer/08.png" alt="card-image"></a>
-                    <a href="#" class="footer__card"><img src="images/footer/09.png" alt="card-image"></a>
-                  </div><!-- footer__cards -->
-                </div><!-- footer__payment -->
-                <div class="footer__slogan">
-                 Please Drink Responsibly
-               </div><!-- footer__slogan -->
-               <div class="footer__copy">© 2021, <a class="footer__logo" href="#">Logo</a></div>
-             </div><!-- container -->
-           </footer>
-         </div><!-- wrapper -->
+                      <button class="order-bottom__btn" type="submit">Checkout</button>
+                    </form><!-- order-bottom__form -->
+                    <div class="order-bottom__payments payments">
+                      <div class="payments__block"><a  class="payments__payment" href="#"><img src="images/payments/01.png" alt="payment"></a></div>                          
+                      <div class="payments__block"><a  class="payments__payment" href="#"><img src="images/payments/02.png" alt="payment"></a></div>                          
+                      <div class="payments__block"><a  class="payments__payment" href="#"><img src="images/payments/03.png" alt="payment"></a></div>                          
+                      <div class="payments__block"><a  class="payments__payment" href="#"><img src="images/payments/04.png" alt="payment"></a></div>                          
 
 
+                    </div>
+                  </div><!-- order-bottom__column -->
+
+                </div><!-- order-bottom__row -->
+
+              </div>
+            </div><!-- container -->
+
+          </div><!-- order-bottom -->
+        </main>
+
+        <!-- footer -->
+        <footer class="footer">
+          <div class="container">
+            <div class="footer__top">
+              <div class="footer__row">
+                <div class="footer__column">
+                  <h5 class="footer__title">Proposition 65 Warning</h5>
+                  <div class="footer__text footer__text--left">
+                    <span>warning: </span>Drinking distilled spirits, beer, coolers,
+                    wine and other alcoholic beverages may increase cancer risk, and, 
+                    during pregnancy, can cause birth defects. For more information go 
+                    to www.P65Warnings.ca.gov/alcohol
+                  </div>
+                </div><!-- footer__column -->
+                <div class="footer__column">
+                  <h5 class="footer__title footer__title--middle">Newsletter</h5>
+                  <div class="footer__text footer__text--middle">
+                    Subscribe to be the first to hear about our exclusive offers and latest arrivals.
+                  </div>
+                  <form action="#" class="footer__form">
+                    <div class="footer__input-wrap">
+                      <input class="footer__input" type="text" placeholder="Compony(optional)" >
+                      <input class="footer__button" type="submit" value="Go">
+                    </div><!-- footer__inputinput-wrap -->
+                  </form>
+                </div><!-- footer__column -->
+                <div class="footer__column">
+                  <h5 class="footer__title footer__title--mobile">Resources</h5>
+                  <div class="footer__links">
+                    <a class="footer__text footer__link" href="#">Terms and Conditions</a>
+                    <a class="footer__text footer__link" href="#">Privacy Policy</a>
+                    <a class="footer__text footer__link" href="#">Shipping & Returns</a>
+                    <a class="footer__text footer__link" href="#">Contact Us</a>
+                    <a class="footer__text footer__link" href="#">Order Tracking</a>
+                  </div><!-- footer__links -->
+                </div><!-- footer__column -->
+              </div><!-- footer__row -->
+            </div><!-- footer__top -->
+            <div class="footer__payment">
+              <div class="footer__payment-title">Accepted <span>Payments</span></div>
+              <div class="footer__cards">
+                <a href="#" class="footer__card"><img src="images/footer/01.png" alt="card-image"></a>
+                <a href="#" class="footer__card"><img src="images/footer/02.png" alt="card-image"></a>
+                <a href="#" class="footer__card"><img src="images/footer/03.png" alt="card-image"></a>
+                <a href="#" class="footer__card"><img src="images/footer/04.png" alt="card-image"></a>
+                <a href="#" class="footer__card"><img src="images/footer/05.png" alt="card-image"></a>
+                <a href="#" class="footer__card"><img src="images/footer/06.png" alt="card-image"></a>
+                <a href="#" class="footer__card"><img src="images/footer/07.png" alt="card-image"></a>
+                <a href="#" class="footer__card"><img src="images/footer/08.png" alt="card-image"></a>
+                <a href="#" class="footer__card"><img src="images/footer/09.png" alt="card-image"></a>
+              </div><!-- footer__cards -->
+            </div><!-- footer__payment -->
+            <div class="footer__slogan">
+             Please Drink Responsibly
+           </div><!-- footer__slogan -->
+           <div class="footer__copy">© 2021, <a class="footer__logo" href="#">Logo</a></div>
+         </div><!-- container -->
+       </footer>
+     </div><!-- wrapper -->
+
+
+     <div id="popup" class="popup popup-login">
+       <div class="popup__body popup-login__body">
+         <div class="popup__content popup-login__content">
+           <a href="#header" class="popup__close close-popup popup-login__close"></a>
+           <div class="popup__login__row row-login">
+             <div class="row-login__column row-login__column--left">
+               <div class="row-login__text">
+                 <span>Premium</span> Spirits Shipped
+                 Right To Your Door
+               </div>
+               <div class="row-login__img _ibg">
+                 <picture>
+                   <source srcset="images/popup/loginPopup.webp" type="image/webp">
+                     <img src="images/popup/loginPopup.png" alt="image">
+                   </picture>
+                 </div>
+               </div><!-- row-login__column -->
+               <div class="row-login__column">
+                 <div class="row-login__body">
+                   <div class="row-login__title">Sign in</div>
+                   <div class="row-login__subtitle">Don't have an account yet? <a class='popup-link' href="#popup2">Sign up
+                   here</a></div>
+                   <form action="#" class="row-login__form form">
+
+                     <div class="form__google-input input">
+                       <input type="text" placeholder="Sign in with Google" name="google">
+                     </div>
+                     <div class="form__border"><span>or</span></div>
+                     <div class="form__email-input input">
+                       <input data-modal type="email" name="email" placeholder="Email">
+                       <p class="input__text _hide">Email</p>
+                     </div>
+                     <div class="form__password-input input">
+                       <input data-modal type="password" name="password" placeholder="Password">
+                       <p class="input__text _hide">Password</p>
+                     </div>
+                     <a class="form__foget" href="#">Fogot Password</a>
+                     <button class="form__button" type="submit">Sign In</button>
+                   </form>
+                 </div><!-- row-login__body -->
+               </div><!-- row-login__column -->
+             </div><!-- popup__row -->
+           </div>
+         </div>
+       </div>
+
+       <div id="popup2" class="popup popup-login">
+         <div class="popup__body popup-login__body">
+           <div class="popup__content popup-login__content">
+             <a href="#header" class="popup__close close-popup popup-login__close"></a>
+             <div class="popup__login__row row-login">
+               <div class="row-login__column row-login__column--left">
+                 <div class="row-login__text">
+                 </div>
+                 <div class="row-login__img _ibg">
+                   <picture>
+                     <source srcset="images/popup/createLogin.webp" type="image/webp">
+                       <img src="images/popup/createLogin.png" alt="image">
+                     </picture>
+                   </div>
+                 </div><!-- row-login__column -->
+                 <div class="row-login__column">
+                   <div class="row-login__body">
+                     <div class="row-login__title">Sign up</div>
+                     <div class="row-login__subtitle">Already have an account? <a class='popup-link' href="#popup">Sign in</a>
+                     </div>
+                     <form action="#" class="row-login__form form">
+
+                       <div class="form__google-input input">
+                         <input type="text" placeholder="Sign in with Google" name="google">
+                       </div>
+                       <div class="form__border"><span>or</span></div>
+                       <div class="form__names">
+                         <div class="form__name-input input">
+                           <input data-modal type="text" name="name1" placeholder="First name">
+                           <p class="input__text _hide">First name</p>
+                         </div>
+                         <div class="form__name-input input">
+                           <input data-modal type="text" name="name2" placeholder="Last name">
+                           <p class="input__text _hide">Last name</p>
+                         </div>
+                       </div>
+                       <div class="form__email-input input">
+                         <input data-modal type="email" name="email" placeholder="Email">
+                         <p class="input__text _hide">Email</p>
+                       </div>
+                       <div class="form__password-input input">
+                         <input data-modal type="password" name="password" placeholder="Password">
+                         <p class="input__text _hide">Password</p>
+                       </div>
+                       <button class="form__button" type="submit">Sign up</button>
+                     </form>
+                   </div><!-- row-login__body -->
+                 </div><!-- row-login__column -->
+               </div><!-- popup__row -->
+             </div>
+           </div>
+         </div>
 
 
          <script src="js/main.min.js"></script>
