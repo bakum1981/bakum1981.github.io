@@ -126,12 +126,6 @@ body.lock {
 	margin-left: 15px;	
 }
 
-@media (max-width: 940px) {
-	.title {
-		margin-left: 0;
-	}
-}
-
 .main__footer {
 	display: -webkit-box;
 	display: -ms-flexbox;
