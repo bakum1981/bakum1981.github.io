@@ -23,11 +23,11 @@
             <a class="header__logo" href='#'>Logo</a>
             <div class="header__panel">
               <div class="header__panel-block">
-              <div class="header__panel-items" data-da=".header__nav-hidden, 768, first">
-                <a href="#popup" class="header__panel-item popup-link">Log in</a>
-                <a href="#popup2" class="header__panel-item popup-link">Create account</a>
-              </div><!-- header__panel-items -->
-            </div>
+                <div class="header__panel-items" data-da=".header__nav-hidden, 768, first">
+                  <a href="#popup" class="header__panel-item popup-link">Log in</a>
+                  <a href="#popup2" class="header__panel-item popup-link">Create account</a>
+                </div><!-- header__panel-items -->
+              </div>
               <form action="#" class="header__form header__el header__el--search" data-da=".header__nav-hidden, 768, 0">
                 <button class="header__search" data-trigger type='submit'><img src="images/icons/search.svg"
                   alt="Иконка поиска"></button>
@@ -244,15 +244,16 @@
                                     <h3 class="sort-block__title sort-block__title--mobile title-wrap__title">Chosen</h3>
                                     <h4 class="sort-block__subtitle title-wrap__subtitle">Categories</h4>
                                   </div>
-                                 </div>
+                                </div>
 
-                                  <div class="sort-block__items">
-                                    <a  class="sort-block__item" href="#">Price</a>
-                                    <a  class="sort-block__item" href="#">Brand</a>
-                                    <a  class="sort-block__item" href="#">Sort by</a>
-                                  </div><!-- #sort-block__items -->
-                                </div><!-- sort-block -->
-                                <a class="catalog-items__show-more" href="#">View More</a>
+                                <div class="sort-block__items">
+                                  <a  class="sort-block__item" href="#">Price</a>
+                                  <a  class="sort-block__item" href="#">Brand</a>
+                                  <a  class="sort-block__item" href="#">Sort by</a>
+                                </div><!-- #sort-block__items -->
+                              </div><!-- sort-block -->
+                              <a class="catalog-items__show-more" href="#">View More</a>
+                              <div class="catalog-items__wrap">
                                 <div class="catalog-items__names sort-items">
                                   <a  class="sort-items__button" href="#">Whiskey</a>
                                   <a  class="sort-items__button" href="#">Vodka</a>
@@ -266,12 +267,35 @@
                                   <a  class="sort-items__button" href="#">Champagne</a>
                                   <a  class="sort-items__button" href="#">Moonshine</a>
                                   <a  class="sort-items__button" href="#">Rare & Hard 
-                                 to find</a>
+                                  to find</a>
                                 </div>
                               </div>
+                            </div>
 
-                              <div class="goods-items goods-items--catalog">
-                                <article class="goods-item grid-item goods-item--catalog" data-pid="1">
+                            <div class="goods-items goods-items--catalog">
+                              <article class="goods-item grid-item goods-item--catalog" data-pid="1">
+                                <a class='goods-item__add' href="#"></a>
+                                <a class="goods-item__content" href="#">
+                                  <div class="goods-item__body goods-item__body--catalog">
+                                    <span class="goods-item__img">
+                                      <picture>
+                                        <source srcset="images/goods-one/01.webp" type="image/webp">
+                                          <img src="images/goods-one/01.jpg" alt="Goods">
+                                        </picture>
+                                      </span>
+
+                                    </div><!-- goods-item__body -->
+                                    <h5 class="goods-item__name goods-item__name--catalog">
+                                      Buffalo Trace Bourbon Cream <br>750ml
+                                    </h5><!-- goods-item__name goods-item__name-catalog -->
+                                  </a>
+                                  <div class="goods-item__prices">
+                                    <div class="goods-item__price goods-item__price--catalog">$20.95</div>
+
+                                    <div class="goods-item__price goods-item__price--catalog goods-item__price--old">$24.95</div>
+                                  </div><!-- goods-item__prices -->
+                                </article><!-- goods__item -->
+                                <article class="goods-item grid-item goods-item--catalog" data-pid="2">
                                   <a class='goods-item__add' href="#"></a>
                                   <a class="goods-item__content" href="#">
                                     <div class="goods-item__body goods-item__body--catalog">
@@ -284,7 +308,7 @@
 
                                       </div><!-- goods-item__body -->
                                       <h5 class="goods-item__name goods-item__name--catalog">
-                                        Buffalo Trace Bourbon Cream <br>750ml
+                                        Buffalo Trace Whiskey <br>750ml
                                       </h5><!-- goods-item__name goods-item__name-catalog -->
                                     </a>
                                     <div class="goods-item__prices">
@@ -293,20 +317,20 @@
                                       <div class="goods-item__price goods-item__price--catalog goods-item__price--old">$24.95</div>
                                     </div><!-- goods-item__prices -->
                                   </article><!-- goods__item -->
-                                  <article class="goods-item grid-item goods-item--catalog" data-pid="2">
+                                  <article class="goods-item grid-item goods-item--catalog" data-pid="3">
                                     <a class='goods-item__add' href="#"></a>
                                     <a class="goods-item__content" href="#">
                                       <div class="goods-item__body goods-item__body--catalog">
                                         <span class="goods-item__img">
                                           <picture>
-                                            <source srcset="images/goods-one/01.webp" type="image/webp">
-                                              <img src="images/goods-one/01.jpg" alt="Goods">
+                                            <source srcset="images/goods-one/02.webp" type="image/webp">
+                                              <img src="images/goods-one/02.jpg" alt="Goods">
                                             </picture>
                                           </span>
 
                                         </div><!-- goods-item__body -->
                                         <h5 class="goods-item__name goods-item__name--catalog">
-                                          Buffalo Trace Whiskey <br>750ml
+                                          Bourbon Trace Bourbon Cream <br>750ml
                                         </h5><!-- goods-item__name goods-item__name-catalog -->
                                       </a>
                                       <div class="goods-item__prices">
@@ -315,20 +339,20 @@
                                         <div class="goods-item__price goods-item__price--catalog goods-item__price--old">$24.95</div>
                                       </div><!-- goods-item__prices -->
                                     </article><!-- goods__item -->
-                                    <article class="goods-item grid-item goods-item--catalog" data-pid="3">
+                                    <article class="goods-item grid-item goods-item--catalog" data-pid="4">
                                       <a class='goods-item__add' href="#"></a>
                                       <a class="goods-item__content" href="#">
                                         <div class="goods-item__body goods-item__body--catalog">
                                           <span class="goods-item__img">
                                             <picture>
-                                              <source srcset="images/goods-one/02.webp" type="image/webp">
-                                                <img src="images/goods-one/02.jpg" alt="Goods">
+                                              <source srcset="images/goods-one/03.webp" type="image/webp">
+                                                <img src="images/goods-one/03.jpg" alt="Goods">
                                               </picture>
                                             </span>
 
                                           </div><!-- goods-item__body -->
                                           <h5 class="goods-item__name goods-item__name--catalog">
-                                            Bourbon Trace Bourbon Cream <br>750ml
+                                            Elijah Craig Small Batch Bourbon <br>750ml
                                           </h5><!-- goods-item__name goods-item__name-catalog -->
                                         </a>
                                         <div class="goods-item__prices">
@@ -337,20 +361,20 @@
                                           <div class="goods-item__price goods-item__price--catalog goods-item__price--old">$24.95</div>
                                         </div><!-- goods-item__prices -->
                                       </article><!-- goods__item -->
-                                      <article class="goods-item grid-item goods-item--catalog" data-pid="4">
+                                      <article class="goods-item grid-item goods-item--catalog" data-pid="5">
                                         <a class='goods-item__add' href="#"></a>
                                         <a class="goods-item__content" href="#">
                                           <div class="goods-item__body goods-item__body--catalog">
                                             <span class="goods-item__img">
                                               <picture>
-                                                <source srcset="images/goods-one/03.webp" type="image/webp">
-                                                  <img src="images/goods-one/03.jpg" alt="Goods">
+                                                <source srcset="images/goods-one/04.webp" type="image/webp">
+                                                  <img src="images/goods-one/04.jpg" alt="Goods">
                                                 </picture>
                                               </span>
 
                                             </div><!-- goods-item__body -->
                                             <h5 class="goods-item__name goods-item__name--catalog">
-                                              Elijah Craig Small Batch Bourbon <br>750ml
+                                              Hendrick's Lunar Gin Limited Release <br>750ml
                                             </h5><!-- goods-item__name goods-item__name-catalog -->
                                           </a>
                                           <div class="goods-item__prices">
@@ -359,20 +383,20 @@
                                             <div class="goods-item__price goods-item__price--catalog goods-item__price--old">$24.95</div>
                                           </div><!-- goods-item__prices -->
                                         </article><!-- goods__item -->
-                                        <article class="goods-item grid-item goods-item--catalog" data-pid="5">
+                                        <article class="goods-item grid-item goods-item--catalog" data-pid="6">
                                           <a class='goods-item__add' href="#"></a>
                                           <a class="goods-item__content" href="#">
-                                            <div class="goods-item__body goods-item__body--catalog">
+                                            <div class="goods-item__body ">
                                               <span class="goods-item__img">
                                                 <picture>
-                                                  <source srcset="images/goods-one/04.webp" type="image/webp">
-                                                    <img src="images/goods-one/04.jpg" alt="Goods">
+                                                  <source srcset="images/goods-one/05.webp" type="image/webp">
+                                                    <img src="images/goods-one/05.jpg" alt="Goods">
                                                   </picture>
                                                 </span>
 
                                               </div><!-- goods-item__body -->
                                               <h5 class="goods-item__name goods-item__name--catalog">
-                                                Hendrick's Lunar Gin Limited Release <br>750ml
+                                                High West American Prairie Bourbon Whiskey <br>750ml
                                               </h5><!-- goods-item__name goods-item__name-catalog -->
                                             </a>
                                             <div class="goods-item__prices">
@@ -381,20 +405,20 @@
                                               <div class="goods-item__price goods-item__price--catalog goods-item__price--old">$24.95</div>
                                             </div><!-- goods-item__prices -->
                                           </article><!-- goods__item -->
-                                          <article class="goods-item grid-item goods-item--catalog" data-pid="6">
+                                          <article class="goods-item grid-item goods-item--catalog" data-pid="7">
                                             <a class='goods-item__add' href="#"></a>
                                             <a class="goods-item__content" href="#">
-                                              <div class="goods-item__body ">
+                                              <div class="goods-item__body goods-item__body--catalog">
                                                 <span class="goods-item__img">
                                                   <picture>
-                                                    <source srcset="images/goods-one/05.webp" type="image/webp">
-                                                      <img src="images/goods-one/05.jpg" alt="Goods">
+                                                    <source srcset="images/goods-one/06.webp" type="image/webp">
+                                                      <img src="images/goods-one/06.jpg" alt="Goods">
                                                     </picture>
                                                   </span>
 
                                                 </div><!-- goods-item__body -->
                                                 <h5 class="goods-item__name goods-item__name--catalog">
-                                                  High West American Prairie Bourbon Whiskey <br>750ml
+                                                  Tito's Vodka <br>750ml
                                                 </h5><!-- goods-item__name goods-item__name-catalog -->
                                               </a>
                                               <div class="goods-item__prices">
@@ -403,20 +427,20 @@
                                                 <div class="goods-item__price goods-item__price--catalog goods-item__price--old">$24.95</div>
                                               </div><!-- goods-item__prices -->
                                             </article><!-- goods__item -->
-                                            <article class="goods-item grid-item goods-item--catalog" data-pid="7">
+                                            <article class="goods-item grid-item goods-item--catalog" data-pid="8">
                                               <a class='goods-item__add' href="#"></a>
                                               <a class="goods-item__content" href="#">
                                                 <div class="goods-item__body goods-item__body--catalog">
                                                   <span class="goods-item__img">
                                                     <picture>
-                                                      <source srcset="images/goods-one/06.webp" type="image/webp">
-                                                        <img src="images/goods-one/06.jpg" alt="Goods">
+                                                      <source srcset="images/goods-one/07.webp" type="image/webp">
+                                                        <img src="images/goods-one/07.jpg" alt="Goods">
                                                       </picture>
                                                     </span>
 
                                                   </div><!-- goods-item__body -->
-                                                  <h5 class="goods-item__name goods-item__name--catalog">
-                                                    Tito's Vodka <br>750ml
+                                                  <h5 class="goods-item__name goods-item__name--catalogog">
+                                                    Four Roses Single Barrel Bourbon Whiskey <br>750ml
                                                   </h5><!-- goods-item__name goods-item__name-catalog -->
                                                 </a>
                                                 <div class="goods-item__prices">
@@ -424,7 +448,7 @@
 
                                                   <div class="goods-item__price goods-item__price--catalog goods-item__price--old">$24.95</div>
                                                 </div><!-- goods-item__prices -->
-                                              </article><!-- goods__item -->
+                                              </article><!-- goods__item --> 
                                               <article class="goods-item grid-item goods-item--catalog" data-pid="8">
                                                 <a class='goods-item__add' href="#"></a>
                                                 <a class="goods-item__content" href="#">
@@ -437,7 +461,7 @@
                                                       </span>
 
                                                     </div><!-- goods-item__body -->
-                                                    <h5 class="goods-item__name goods-item__name--catalogog">
+                                                    <h5 class="goods-item__name goods-item__name--catalog">
                                                       Four Roses Single Barrel Bourbon Whiskey <br>750ml
                                                     </h5><!-- goods-item__name goods-item__name-catalog -->
                                                   </a>
@@ -446,44 +470,22 @@
 
                                                     <div class="goods-item__price goods-item__price--catalog goods-item__price--old">$24.95</div>
                                                   </div><!-- goods-item__prices -->
-                                                </article><!-- goods__item --> 
-                                                <article class="goods-item grid-item goods-item--catalog" data-pid="8">
-                                                  <a class='goods-item__add' href="#"></a>
-                                                  <a class="goods-item__content" href="#">
-                                                    <div class="goods-item__body goods-item__body--catalog">
-                                                      <span class="goods-item__img">
-                                                        <picture>
-                                                          <source srcset="images/goods-one/07.webp" type="image/webp">
-                                                            <img src="images/goods-one/07.jpg" alt="Goods">
-                                                          </picture>
-                                                        </span>
-
-                                                      </div><!-- goods-item__body -->
-                                                      <h5 class="goods-item__name goods-item__name--catalog">
-                                                        Four Roses Single Barrel Bourbon Whiskey <br>750ml
-                                                      </h5><!-- goods-item__name goods-item__name-catalog -->
-                                                    </a>
-                                                    <div class="goods-item__prices">
-                                                      <div class="goods-item__price goods-item__price--catalog">$20.95</div>
-
-                                                      <div class="goods-item__price goods-item__price--catalog goods-item__price--old">$24.95</div>
-                                                    </div><!-- goods-item__prices -->
-                                                  </article><!-- goods__item -->
+                                                </article><!-- goods__item -->
 
 
-                                                </div><!-- catalog__items -->
-                                                <ul class="catalog-pagination  pagination">
-                                                  <li class="pagination__item catalog-pagination__item catalog-pagination__item--prev catalog-pagination__item--arrow pagination__item--active"><a  class="pagination__link pagination__link--arrow pagination__link pagination__link--arrow-prev" href="#"></a></li>
-                                                  <li class="pagination__item catalog-pagination__item pagination__item--active"><a  href="#">1</a></li>
-                                                  <li class="pagination__item catalog-pagination__item "><a  href="#">2</a></li>
-                                                  <li class="pagination__item catalog-pagination__item"><a  href="#">3</a></li>
-                                                  <li class="pagination__item catalog-pagination__item"><a  href="#">...</a></li>
-                                                  <li class="pagination__item catalog-pagination__item"><a  href="#">19</a></li>
-                                                  <li class="pagination__item catalog-pagination__item catalog-pagination__item--arrow pagination__item--active" ><a  class="pagination__link pagination__link--arrow " href="#"></a></li>
-                                                </ul><!-- recent-posts__pagination -->
-                                              </section><!-- catalog -->
+                                              </div><!-- catalog__items -->
+                                              <ul class="catalog-pagination  pagination">
+                                                <li class="pagination__item catalog-pagination__item catalog-pagination__item--prev catalog-pagination__item--arrow pagination__item--active"><a  class="pagination__link pagination__link--arrow pagination__link pagination__link--arrow-prev" href="#"></a></li>
+                                                <li class="pagination__item catalog-pagination__item pagination__item--active"><a  href="#">1</a></li>
+                                                <li class="pagination__item catalog-pagination__item "><a  href="#">2</a></li>
+                                                <li class="pagination__item catalog-pagination__item"><a  href="#">3</a></li>
+                                                <li class="pagination__item catalog-pagination__item"><a  href="#">...</a></li>
+                                                <li class="pagination__item catalog-pagination__item"><a  href="#">19</a></li>
+                                                <li class="pagination__item catalog-pagination__item catalog-pagination__item--arrow pagination__item--active" ><a  class="pagination__link pagination__link--arrow " href="#"></a></li>
+                                              </ul><!-- recent-posts__pagination -->
+                                            </section><!-- catalog -->
 
-                                            </div><!-- container -->
+                                          </div><!-- container -->
 
 
                                         </main>
@@ -547,96 +549,43 @@
                                           </div><!-- container -->
                                         </footer>
                                         <div id="popup" class="popup popup-login">
-                                        <div class="popup__body popup-login__body">
-                                          <div class="popup__content popup-login__content">
-                                            <a href="#header" class="popup__close close-popup popup-login__close"></a>
-                                            <div class="popup__login__row row-login">
-                                              <div class="row-login__column row-login__column--left">
-                                                <div class="row-login__text">
-                                                  <span>Premium</span> Spirits Shipped
-                                                  Right To Your Door
-                                                </div>
-                                                <div class="row-login__img _ibg">
-                                                  <picture>
-                                                    <source srcset="images/popup/loginPopup.webp" type="image/webp">
-                                                      <img src="images/popup/loginPopup.png" alt="image">
-                                                    </picture>
-                                                  </div>
-                                                </div><!-- row-login__column -->
-                                                <div class="row-login__column">
-                                                  <div class="row-login__body">
-                                                    <div class="row-login__title">Sign in</div>
-                                                    <div class="row-login__subtitle">Don't have an account yet? <a class='popup-link' href="#popup2">Sign up
-                                                    here</a></div>
-                                                    <form action="#" class="row-login__form form">
-
-                                                      <div class="form__google-input input">
-                                                        <input type="text" placeholder="Sign in with Google" name="google">
-                                                      </div>
-                                                      <div class="form__border"><span>or</span></div>
-                                                      <div class="form__email-input input">
-                                                        <input data-modal type="email" name="email" placeholder="Email">
-                                                        <p class="input__text _hide">Email</p>
-                                                      </div>
-                                                      <div class="form__password-input input">
-                                                        <input data-modal type="password" name="password" placeholder="Password">
-                                                        <p class="input__text _hide">Password</p>
-                                                      </div>
-                                                      <a class="form__foget" href="#">Fogot Password</a>
-                                                      <button class="form__button" type="submit">Sign In</button>
-                                                    </form>
-                                                  </div><!-- row-login__body -->
-                                                </div><!-- row-login__column -->
-                                              </div><!-- popup__row -->
-                                            </div>
-                                          </div>
-                                        </div>
-
-                                        <div id="popup2" class="popup popup-login">
                                           <div class="popup__body popup-login__body">
                                             <div class="popup__content popup-login__content">
                                               <a href="#header" class="popup__close close-popup popup-login__close"></a>
                                               <div class="popup__login__row row-login">
                                                 <div class="row-login__column row-login__column--left">
                                                   <div class="row-login__text">
+                                                    <span>Premium</span> Spirits Shipped
+                                                    Right To Your Door
                                                   </div>
                                                   <div class="row-login__img _ibg">
                                                     <picture>
-                                                      <source srcset="images/popup/createLogin.webp" type="image/webp">
-                                                        <img src="images/popup/createLogin.png" alt="image">
+                                                      <source srcset="images/popup/loginPopup.webp" type="image/webp">
+                                                        <img src="images/popup/loginPopup.png" alt="image">
                                                       </picture>
                                                     </div>
                                                   </div><!-- row-login__column -->
                                                   <div class="row-login__column">
                                                     <div class="row-login__body">
-                                                      <div class="row-login__title">Sign up</div>
-                                                      <div class="row-login__subtitle">Already have an account? <a class='popup-link' href="#popup">Sign in</a>
-                                                      </div>
+                                                      <div class="row-login__title">Sign in</div>
+                                                      <div class="row-login__subtitle">Don't have an account yet? <a class='popup-link' href="#popup2">Sign up
+                                                      here</a></div>
                                                       <form action="#" class="row-login__form form">
 
                                                         <div class="form__google-input input">
                                                           <input type="text" placeholder="Sign in with Google" name="google">
                                                         </div>
                                                         <div class="form__border"><span>or</span></div>
-                                                        <div class="form__names">
-                                                          <div class="form__name-input input">
-                                                            <input data-modal type="text" name="name1" placeholder="First name">
-                                                            <p class="input__text _hide">First name</p>
-                                                          </div>
-                                                          <div class="form__name-input input">
-                                                            <input data-modal type="text" name="name2" placeholder="Last name">
-                                                            <p class="input__text _hide">Last name</p>
-                                                          </div>
-                                                        </div>
                                                         <div class="form__email-input input">
-                                                          <input data-modal type="email" name="email" placeholder="Email">
+                                                          <input class='form-email' data-modal type="text" name="email" placeholder="Email">
                                                           <p class="input__text _hide">Email</p>
                                                         </div>
                                                         <div class="form__password-input input">
                                                           <input data-modal type="password" name="password" placeholder="Password">
                                                           <p class="input__text _hide">Password</p>
                                                         </div>
-                                                        <button class="form__button" type="submit">Sign up</button>
+                                                        <a class="form__foget" href="#">Fogot Password</a>
+                                                        <button class="form__button" type="submit">Sign In</button>
                                                       </form>
                                                     </div><!-- row-login__body -->
                                                   </div><!-- row-login__column -->
@@ -644,10 +593,63 @@
                                               </div>
                                             </div>
                                           </div>
-                                      </div><!-- wrapper -->
+
+                                          <div id="popup2" class="popup popup-login">
+                                            <div class="popup__body popup-login__body">
+                                              <div class="popup__content popup-login__content">
+                                                <a href="#header" class="popup__close close-popup popup-login__close"></a>
+                                                <div class="popup__login__row row-login">
+                                                  <div class="row-login__column row-login__column--left">
+                                                    <div class="row-login__text">
+                                                    </div>
+                                                    <div class="row-login__img _ibg">
+                                                      <picture>
+                                                        <source srcset="images/popup/createLogin.webp" type="image/webp">
+                                                          <img src="images/popup/createLogin.png" alt="image">
+                                                        </picture>
+                                                      </div>
+                                                    </div><!-- row-login__column -->
+                                                    <div class="row-login__column">
+                                                      <div class="row-login__body">
+                                                        <div class="row-login__title">Sign up</div>
+                                                        <div class="row-login__subtitle">Already have an account? <a class='popup-link' href="#popup">Sign in</a>
+                                                        </div>
+                                                        <form action="#" class="row-login__form form">
+
+                                                          <div class="form__google-input input">
+                                                            <input type="text" placeholder="Sign in with Google" name="google">
+                                                          </div>
+                                                          <div class="form__border"><span>or</span></div>
+                                                          <div class="form__names">
+                                                            <div class="form__name-input input">
+                                                              <input data-modal type="text" name="name1" placeholder="First name">
+                                                              <p class="input__text _hide">First name</p>
+                                                            </div>
+                                                            <div class="form__name-input input">
+                                                              <input data-modal type="text" name="name2" placeholder="Last name">
+                                                              <p class="input__text _hide">Last name</p>
+                                                            </div>
+                                                          </div>
+                                                          <div class="form__email-input input">
+                                                            <input class='form-email' data-modal type="text" name="email" placeholder="Email">
+                                                            <p class="input__text _hide">Email</p>
+                                                          </div>
+                                                          <div class="form__password-input input">
+                                                            <input data-modal type="password" name="password" placeholder="Password">
+                                                            <p class="input__text _hide">Password</p>
+                                                          </div>
+                                                          <button class="form__button" type="submit">Sign up</button>
+                                                        </form>
+                                                      </div><!-- row-login__body -->
+                                                    </div><!-- row-login__column -->
+                                                  </div><!-- popup__row -->
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div><!-- wrapper -->
 
 
-                                      
+
 
                                           
 
