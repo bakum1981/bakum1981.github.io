@@ -408,51 +408,50 @@
                           </div><!-- row-reviews -->
                         </div>
                         <div class="order-bottom order-bottom--product">
-                            <div class="order-bottom__row order-bottom__row--product">
-                              <div class="order-bottom__column order-bottom__column--product">
-                                <form action="#" class="order-bottom__form">
-                                  <div class="stars order-bottom__stars stars--white">
-                                    <span class="stars__item"><picture>
-                                      <source srcset="images/product/Star.webp" type="image/webp">
-                                        <img src="images/product/Star.jpg" alt="star">
-                                      </picture>
-                                    </span>
-                                    <span class="stars__item"><picture>
-                                      <source srcset="images/product/Star.webp" type="image/webp">
-                                        <img src="images/product/Star.jpg" alt="star">
-                                      </picture>
-                                    </span>
-                                    <span class="stars__item"><picture>
-                                      <source srcset="images/product/Star.webp" type="image/webp">
-                                        <img src="images/product/Star.jpg" alt="star">
-                                      </picture>
-                                    </span>
-                                    <span class="stars__item"><picture>
-                                      <source srcset="images/product/Star.webp" type="image/webp">
-                                        <img src="images/product/Star.jpg" alt="star">
-                                      </picture>
-                                    </span>
-                                    <span class="stars__item"><picture>
-                                      <source srcset="images/product/Star.webp" type="image/webp">
-                                        <img src="images/product/Star.jpg" alt="star">
-                                      </picture>
-                                    </span>
-                                  </div>
-                                  <div class="order-bottom__inputs">
-                                    <div class="order-bottom__input order-bottom__input--column">
-                                      <input type="text" placeholder="Name" required oninvalid="this.setCustomValidity('Fill is required!')">
-                                    </div>
-                                    <div class="order-bottom__input order-bottom__input--column">
-                                      <input type="email" placeholder="Email" required oninvalid="this.setCustomValidity('Fill is required!')">
-                                    </div>
-                                  </div>
-                                  <div class="order-bottom__input">
-                                   <input type="text" placeholder="Review Title" required oninvalid="this.setCustomValidity('Fill is required!')">
-                                 </div>
-                                 <div class="order-bottom__textarea">
-                                  <textarea name="message" placeholder="Message" required oninvalid="this.setCustomValidity('Fill is required!')"></textarea>
+                          <div class="order-bottom__row order-bottom__row--product">
+                            <div class="order-bottom__column order-bottom__column--product">
+                              <form action="#" class="order-bottom__form">
+                                <div class="stars order-bottom__stars stars--white">
+                                  <span class="stars__item"><picture>
+                                    <source srcset="images/product/Star.webp" type="image/webp">
+                                      <img src="images/product/Star.jpg" alt="star">
+                                    </picture>
+                                  </span>
+                                  <span class="stars__item"><picture>
+                                    <source srcset="images/product/Star.webp" type="image/webp">
+                                      <img src="images/product/Star.jpg" alt="star">
+                                    </picture>
+                                  </span>
+                                  <span class="stars__item"><picture>
+                                    <source srcset="images/product/Star.webp" type="image/webp">
+                                      <img src="images/product/Star.jpg" alt="star">
+                                    </picture>
+                                  </span>
+                                  <span class="stars__item"><picture>
+                                    <source srcset="images/product/Star.webp" type="image/webp">
+                                      <img src="images/product/Star.jpg" alt="star">
+                                    </picture>
+                                  </span>
+                                  <span class="stars__item"><picture>
+                                    <source srcset="images/product/Star.webp" type="image/webp">
+                                      <img src="images/product/Star.jpg" alt="star">
+                                    </picture>
+                                  </span>
                                 </div>
-                              </form>
+                                <div class="order-bottom__inputs">
+                                  <div class="order-bottom__input order-bottom__input--column">
+                                    <input type="text" placeholder="Name" required oninvalid="this.setCustomValidity('Fill is required!')">
+                                  </div>
+                                  <div class="order-bottom__input order-bottom__input--column">
+                                    <input class='form-email' type="text" placeholder="Email" required oninvalid="this.setCustomValidity('Fill is required!')">
+                                  </div>
+                                </div>
+                                <div class="order-bottom__input">
+                                 <input type="text" placeholder="Review Title" required oninvalid="this.setCustomValidity('Fill is required!')">
+                               </div>
+                               <div class="order-bottom__textarea">
+                                <textarea name="message" placeholder="Message" required oninvalid="this.setCustomValidity('Fill is required!')"></textarea>
+                              </div>
 
                             </div><!-- order-bottom__column -->
                             <div class="order-bottom__column order-bottom__column--product rating">
@@ -673,6 +672,8 @@
                     </div><!-- order-bottom__column -->
                   </div>
                   <button  class="button-show button-show--pink" type="submit">Cancel review</button>
+                </form>
+
               </div>
             </div><!-- reviews__container -->
           </section>
@@ -874,7 +875,7 @@
                               </div>
                               <div class="form__border"><span>or</span></div>
                               <div class="form__email-input input">
-                                <input data-modal type="email" name="email" placeholder="Email">
+                                <input class="form-email" data-modal type="text" name="email" placeholder="Email">
                                 <p class="input__text _hide">Email</p>
                               </div>
                               <div class="form__password-input input">
@@ -928,7 +929,7 @@
                                   </div>
                                 </div>
                                 <div class="form__email-input input">
-                                  <input data-modal type="email" name="email" placeholder="Email">
+                                  <input class="form-email" data-modal type="text" name="email" placeholder="Email">
                                   <p class="input__text _hide">Email</p>
                                 </div>
                                 <div class="form__password-input input">
